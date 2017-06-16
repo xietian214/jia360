@@ -1,0 +1,179 @@
+/* common01 */
+.productHome{padding-bottom:40px;}
+.productHome .common01{width:1200px;margin-top:27px;overflow:hidden;}
+.productHome .common01 .playbox{width:750px;height:500px;position: relative;overflow:hidden;}
+.productHome .common01 .playbox .swi_box{width:100%;height:100%;position: relative;}
+.productHome .common01 .playbox .swi_box p{width:100%;height:60px;line-height:60px;background:rgba(0,0,0,0.40);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);position: absolute;left:0;bottom:0;}
+.productHome .common01 .playbox .swi_box p a{display: block;width:570px;margin-left:20px;font-size:24px;color:#fff;}
+.productHome .common01 .swiper-container {width: 100%;height: 100%;}
+.productHome .common01 .swiper-container .swiper-slide{display: block;width:100%;height: 100%;position: relative;float:left;}
+.productHome .common01 .pagination {position: absolute;z-index: 20;right: 12px;bottom: 12px;}
+.productHome .common01 .swiper-pagination-switch {display: inline-block;margin-right: 5px;cursor: pointer;width:30px;height:6px;border-radius:0;background:#fff;opacity:1;}
+.productHome .common01 .swiper-visible-switch {background: #8f8f8f;}
+.productHome .common01 .swiper-active-switch {background: #8f8f8f;}
+.productHome .common01 .playbox .arrow-left {  width:38px;height:80px;background:url('../images/product_indexleft_swip.png') center center no-repeat;left:0;position: absolute;top: 50%;margin-top: -45px;z-index: 101;}
+.productHome .common01 .playbox .arrow-right {width:38px;height:80px;background:url('../images/product_indexright_swip.png') center center no-repeat;left:0;  position: absolute;left:auto;right: 0;top: 50%;margin-top: -45px;z-index: 101;}
+.productHome .common01 .a_box{width:394px;height:500px;border:1px #eee solid;padding:0 13px;}
+.productHome .common01 .a_box h6{height:40px;line-height:40px;font-weight:normal;margin:0;font-size:18px;color:#898989;}
+.productHome .common01 .a_box p{border-top:1px #eee solid;padding:13px 0;line-height: 30px;}
+.productHome .common01 .a_box a:hover{color:#1479d7;}
+.productHome .common01 .a_box .font_l{font-size:18px;color:#555;}
+.productHome .common01 .a_box .font_s{font-size:14px;color:#686868;}
+/* common02 */
+.productHome .common02{margin-top:27px;margin-bottom:30px;}
+.productHome .common02 .titlelist{width:100%;margin-top:20px;}
+.productHome .common02 .titlelist .imgbox{width:320px;height: 203px;float:left;}
+.productHome .common02 .titlelist .imgbox2{width:320px;height: 180px;float:left;}
+.productHome .common02 .titlelist .imgbox2 dl{width: 150px;}
+.productHome .common02 .titlelist .imgbox2 dl dd{width: 150px;height:130px;}
+.productHome .common02 .titlelist .imgbox2 dl dt{height:50px;line-height: 20px;padding:5px 0;overflow: hidden;}
+.productHome .common02 .titlelist .fontbox{width:510px;float:right;text-align: left;}
+.productHome .common02 .titlelist .fontbox p{width:100%;font-size:20px;height:45px;line-height:45px;margin-bottom:5px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.productHome .common02 .titlelist .fontbox p a{color: #555;}
+.productHome .common02 .titlelist .fontbox p a:hover{color:#1479d7;}
+.productHome .common02 .titlelist .fontbox ul li{font-size:18px;width:100%;height:38px;line-height:38px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.productHome .common02 .titlelist .fontbox ul li a{color:#898989;}
+.productHome .common02 .titlelist .fontbox ul li a:hover{color:#1479d7;}
+.productHome .common02 .comright .imgbox{width:300px;height:188px;overflow:hidden;margin-top:20px;}
+.productHome .common02 .playbox{position: relative;}
+.productHome .common02 .playbox .swi_box{width:100%;height:100%;position: relative;}
+.productHome .common02 .playbox .swi_box p{width:100%;height:38px;line-height:38px;overflow:hidden;background:rgba(0,0,0,0.40);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);position: absolute;left:0;bottom:0;}
+.productHome .common02 .playbox .swi_box p a{display: block;width:100%;font-size:16px;color:#fff;}
+.productHome .common02 .swiper-container {width: 100%;height: 100%;}
+.productHome .common02 .swiper-container .swiper-slide{display: block;width:100%;height: 100%;position: relative;float:left;}
+.productHome .common02 .hyplaybox .arrow-left {width:18px;height:40px;background:url('../images/product_indexleft_swip.png') center center no-repeat;background-size:100%;left:0;position: absolute;top: 50%;margin-top: -20px;z-index: 101;display:none}
+.productHome .common02 .hyplaybox .arrow-right {width:18px;height:40px;background:url('../images/product_indexright_swip.png') center center no-repeat;background-size:100%;left:0;  position: absolute;left:auto;right: 0;top: 50%;margin-top: -20px;z-index: 101;display:none}
+/* common03 */
+.productHome .common03{margin:0 0 35px 0;}
+.productHome .common03 .gzn_logo{float: left;margin-top:8px;height:30px;margin-left:5px;position:static;padding:0;line-height:30px;}
+.productHome .common03 .comleft{width:450px;}
+.productHome .common03 .comleft dd{width: 100%;height:308px;overflow: hidden;}
+.productHome .common03 .comleft dt{width: 100%;height:35px;line-height:35px;text-align:center;font-size:18px;white-space:nowrap; overflow:hidden;text-overflow:ellipsis;}
+.productHome .common03 .comcenter{margin-left:20px;width:400px;}
+.productHome .common03 .comcenter dl{width: 190px;height:171px;overflow:hidden;float: left;margin-left: 10px;}
+.productHome .common03 .comcenter dl dd{width: 190px;height:136px;overflow: hidden;}
+.productHome .common03 .comcenter dl dt{line-height: 35px;height: 35px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;font-size: 14px;}
+.productHome .common03 .comright{}
+.productHome .common03 .comright .tit{font-size: 14px;color:#686868;padding-bottom:5px;}
+.productHome .common03 .comright dd{font-size:16px;height:30px;line-height:30px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.productHome .common03 .comright dt{height:96px;line-height:20px;overflow:hidden;color:#898989;}
+.productHome .common03 .comright .line{border-top:1px #eee dashed;margin:10px 0;}
+/* common04 */
+.productHome .common04{margin:27px 0 20px 0;}
+.productHome .common04 .combox{margin-top:20px;width:100%;overflow: hidden;}
+.productHome .common04 .combox ul{margin-left:-26px;}
+.productHome .common04 .combox ul li{width:280px;height:280px;margin-bottom:10px;margin-left:26px;float: left;}
+.productHome .common04 .combox ul li .pic{display:block;width:280px;height:230px;overflow:hidden;}
+.productHome .common04 .combox ul li .tit{display:block;height:50px;line-height: 50px;font-size: 16px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+/* common05 */
+.productHome .common05{margin:35px 0 30px 0;}
+.productHome .common05 .comleft .tit{text-align: center;height:28px;color:#898989;font-size: 16px;}
+.productHome .common05 .comleft .titlediv{margin-bottom:20px;}
+.productHome .common05 .combox{width:850px;margin-bottom:36px;}
+.productHome .common05 .combox li{width: 212px;height:106px;float: left;position:relative;text-align:center;font-size:14px;}
+.productHome .common05 .combox li a img{width:120px;height:60px;margin-bottom: 10px;}
+.productHome .common05 .combox li a{display:block;width:100%;height:100%;padding-top:10px;}
+.productHome .common05 .combox li a:hover{-webkit-box-shadow: 0px 0 15px #e5e5e5;-moz-box-shadow: 0px 0 15px #e5e5e5;-ms-box-shadow: 0px 0 15px #e5e5e5;-o-box-shadow: 0px 0 15px #e5e5e5;box-shadow: 0px 0 15px #e5e5e5;position:absolute;top:0px;left:0;z-index:100;} 
+.productHome .common05 .combox li:after{content:'';width:1px;height:40px;background:#eee;position: absolute;right:0;top:20px;}
+.productHome .common05 .combox li:nth-child(4n):after{display:none;}
+.productHome .common05 .combox li a span{display: block;width:100%;text-align:center;}
+.productHome .common05 .comright ul{margin-top:5px;}
+.productHome .common05 .comright ul li{width:100%;height:50px;position: relative;margin:2px 0;}
+.productHome .common05 .comright ul li a{display:block;width:100%;height:100%;position: absolute;}
+.productHome .common05 .comright ul li a:hover{-webkit-box-shadow: 0px 0 15px #e5e5e5;-moz-box-shadow: 0px 0 15px #e5e5e5;-ms-box-shadow: 0px 0 15px #e5e5e5;-o-box-shadow: 0px 0 15px #e5e5e5;box-shadow: 0px 0 15px #e5e5e5;position:absolute;top:0;left:0;z-index:100;}
+.productHome .common05 .comright ul li i{float:left;width:20px;height:20px;line-height:20px;text-align:center;font-size:14px;background:#bdbdbd;font-style: normal;color:#fff;margin-top:15px}
+.productHome .common05 .comright ul li i.blue{background:#2888e2;}
+.productHome .common05 .comright ul li .g_logo{width:80px;height:40px;border:1px #eee solid;position: absolute;left:70px;top:4px;}
+.productHome .common05 .comright ul li .g_name{position: absolute;left:200px;top:15px;font-size:16px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;width:100px;}
+/* common06 */
+.productHome .common06{margin:30px 0 0 0;}
+.productHome .common06 .comleft{position: relative;margin-bottom:40px;}
+.productHome .common06 .tab_ul{position: absolute;right: 0;top:0;}
+.productHome .common06 .tab_ul li{display: inline;height:45px;line-height: 45px;}
+.productHome .common06 .tab_ul li span.line{border-right:1px #eee solid;margin:0 20px;}
+.productHome .common06 .tab_ul li a{font-size:16px;font-size:555;}
+.productHome .common06 .tab_ul li.active a{color:#1479d7;}
+.productHome .common06 .tab_box{height:617px;overflow: hidden;}
+.productHome .common06 .tab_box ul{display: none;overflow:hidden;padding-top:5px;}
+.productHome .common06 .tab_box ul.active{display: block;}
+.productHome .common06 .tab_box ul li{width:848px;height:116px;padding:10px 0;border:1px #eee solid;margin-top:15px;overflow:hidden;}
+.productHome .common06 .tab_box ul li .pic{width:160px;height:116px;line-height:116px;margin:0 10px;border:1px #f2f2f2 solid;text-align: center;vertical-align: middle;}
+.productHome .common06 .tab_box ul li .pic img{vertical-align: middle;}
+.productHome .common06 .tab_box ul li .font{width:655px;margin-right:10px;}
+.productHome .common06 .tab_box ul li .font .tit{font-size:18px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.productHome .common06 .tab_box ul li .font .des{font-size:12px;color:#898989;line-height: 25px;height:50px;text-indent: 2em;overflow: hidden;margin-top:10px;}
+.productHome .common06 .tab_box ul li .font .tim{font-size:12px;color:#898989;text-align:right;line-height: 25px;}
+.productHome .common06 .combox{padding-top:20px;}
+.productHome .common06 .comright .clearfl img{width:176px;height:94px;margin-bottom:5px;}
+.productHome .common06 .comright .clearfl div{width: 115px;line-height: 25px;font-size:14px;}
+.productHome .common06 .comright .clearfl i{font-style:normal}
+.productHome .common06 .comright .clearfl span{line-height: 25px;font-size:12px;}
+.productHome .common06 .comright .div1{height:100px;overflow:hidden;}
+.productHome .common06 .comright .div2{height:25px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.productHome .common06 .comright .adv{width:300px;height:188px;margin-top:20px;}
+.productHome .common06 .comright .adv img{width:100%;height:100%;}
+/*硅藻泥模块*/
+.productHome .snav_listbox{border:1px #eeeeee solid;width:1200px;position: relative;}
+.productHome .snav_listbox span.sp{width:1px;height: 100%;position: absolute;right:0;top:0;background:#fff;}
+.productHome .snav_listbox .lab_box{padding-bottom:15px;height:35px;overflow:hidden;}
+.productHome .snav_listbox .lab_box label{width:99px;float:left;text-align: center;border-right:1px #eee solid;margin-top:15px;font-size: 14px;}
+.productHome .snav_listbox .lab_box label:nth-child(12n),.snav_listbox .lab_box label:last-child{border-right:none;}
+.productHome .snav_listbox .sl_up{width:1160px;margin:0 auto;border-top:1px #eee dashed;height:33px;line-height: 33px;position: relative;}
+.productHome .snav_listbox .sl_up span{position: absolute;right:0;bottom:0;width:78px;height:30px;line-height:30px;text-align:center;color:#1479d7;background:url('../images/snav_morebg.png') 56px -31px no-repeat;font-size:14px;cursor: pointer;}
+.productHome .snav_listbox .sl_more{width:74px;padding-left:25px;height:50px;line-height:50px;background:#fff;color:#1479d7;font-size:14px;position: absolute;right:0;top:0;text-align:left;cursor:pointer;}
+.productHome .snav_listbox .sl_more span{display: block;background:url('../images/snav_morebg.png') 30px 22px no-repeat;}
+
+/* 2017-0526添加开关样式 */
+.addcommon01{width:100%;margin-top:30px;}
+.addcommon01 dl{width: 206px;border:1px #e5e5e5 solid;float: left;border-left: 0;}
+.addcommon01 dl:first-child{border-left:1px #e5e5e5 solid;}
+.addcommon01 dl dd{width:206px;height:70px;}
+.addcommon01 dl dt{width:100%;height: 20px;line-height: 20px;font-size:14px;text-align:center;border-top:1px #e5e5e5 solid;}
+.addcommon01 dl dt a{display: block;}
+.addcommon01 dl dt a:hover{background:#2f8adf;color:#fff;}
+.addcommon01 .adv01{width: 830px;height: 100px;margin-top:13px;overflow: hidden;}
+.addcommon01 .adv02{width:360px;height:205px;overflow: hidden;}
+
+
+.kgplaybox{position: relative;width:780px;height:500px;}
+.kgplaybox img{width: 100%;height: 100%;}
+.kgplaybox .swi_box{width:100%;height:100%;position: relative;}
+.kgplaybox .swi_box p{width:100%;height:62px;line-height:62px;overflow:hidden;background:rgba(0,0,0,0.50);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);position: absolute;left:0;bottom:0;}
+.kgplaybox .swi_box p a{display: block;width:80%;font-size:24px;color:#fff;margin-left:20px;}
+.kgplaybox .swiper-container {width: 100%;height: 100%;}
+.kgplaybox .swiper-container .swiper-slide{display: block;width:100%;height: 100%;position: relative;float:left;}
+.kgplaybox .arrow-left {display:none;width:38px;height:80px;background:url('../images/product_indexleft_swip.png') center center no-repeat;background-size:100%;left:0;position: absolute;top: 50%;margin-top: -40px;z-index: 101;}
+.kgplaybox .arrow-right {display:none;width:38px;height:80px;background:url('../images/product_indexright_swip.png') center center no-repeat;background-size:100%;left:0;  position: absolute;left:auto;right: 0;top: 50%;margin-top: -40px;z-index: 101;}
+.kgplaybox .pagination {position: absolute;z-index: 20;right: 12px;bottom: 12px;}
+.kgplaybox .swiper-pagination-switch {display: inline-block;margin-right: 5px;cursor: pointer;width:30px;height:6px;border-radius:0;background:#fff;opacity:1;}
+.kgplaybox .swiper-visible-switch {background: #8f8f8f;}
+.kgplaybox .swiper-active-switch {background: #8f8f8f;}
+.addfontlist{width:419px;height:498px;border:1px #eee solid;border-left:0;}
+.addfontlist h6{color:#2f8adf;font-size:26px;width:380px;margin:0 auto;margin-top:15px;}
+.addfontlist a{width:370px;margin:0 auto;border-bottom:1px #eee solid;display: block;padding:20px 5px;}
+.addfontlist a:last-child{border:none;}
+.addfontlist a:hover .p1{color:#1479d7;}
+.addfontlist a:hover .p2{color:#549fe4;}
+.addfontlist a .p1{font-size: 16px;color:#555;line-height: 30px;height:30px;overflow:hidden;}
+.addfontlist a .p2{font-size:14px;color:#ccc;line-height:20px;height:40px;overflow:hidden;}
+.addcommon02{margin-top:26px;}
+.productHome .common02 .titlelist .imgbox1{width:320px;height: 188px;float:left;overflow:hidden;}
+.productHome .common02 .titlelist .fontbox p.p1{height:33px;line-height: 33px;}
+.productHome .common05 .comright ul li i.logobg1{background:#f63906;}
+.productHome .common05 .comright ul li i.logobg2{background:#f66606;}
+.productHome .common05 .comright ul li i.logobg3{background:#f68e06;}
+.productHome .common05 .comright .kgpaihang li .g_name{left:70px;display: none;}
+.productHome .common05 .comright .kgpaihang li a:hover .g_name{display: block;}
+.productHome .common05 .comright .kgpaihang li a:hover .g_logo{display: none;}
+.productHome .common05 .comright .kgpaihang li .gznum{font-size:14px;position: absolute;left: 180px;top:15px;color:#898989;}
+.productHome .common05 .comright .kgpaihang li .gznum span{color:#f89d20;}
+.productHome .common06 .combox1{font-size:14px;}
+.productHome .common06 .combox1 .clearfl{height:30px;line-height:30px;overflow:hidden;}
+
+/* 霍尔茨专区新添加 */
+.productHome .titlediv div{float: left;}
+.productHome .common03 .comcenter .hec_center{margin-top:20px;}
+.productHome .common03 .comcenter .hec_center a{display: block;width:190px;float:left;margin-left:10px;}
+.productHome .common03 .comcenter .hec_center a span{width:100%;margin-top:10px;display: block;overflow:hidden;height:14px;}
+.productHome .common03 .comright .hectit{background:url('../images/product_icon01.png') left 0px no-repeat;color:#fff;padding-left:15px;font-size:12px;height:25px;line-height:20px;}
+.productHome .common03 .comright .line2{border-top: 1px #eee dashed;margin:15px 0;}

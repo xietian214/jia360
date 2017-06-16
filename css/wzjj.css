@@ -1,0 +1,111 @@
+@charset "utf-8";
+.container{}
+.banner{height:460px;position: relative}
+.swiper-textBg{position: absolute;left:0;bottom:0;height:58px;width: 100%;background: #000;opacity:0.6;filter: alpha(opacity = 60)}
+.swiper-text{position: absolute;left:0;bottom:0;height:58px;line-height: 58px;text-indent:35px;}
+.swiper-text a{font-size:24px;color:#fff;}
+.swiper-btnLeft,.swiper-btnRight{width: 30px;height:40px;line-height:40px;color:#fff;background: #000;opacity: 0.6;filter: alpha(opacity = 60);
+    font-size:26px;font-weight: bold;position: absolute;top:50%;margin-top: -20px;z-index:500;text-align: center;cursor: pointer}
+.swiper-btnLeft{left:0;}
+.swiper-btnRight{right:0}
+
+/*整包家装*/
+.zbjz .zbjz-list{}
+.zbjz .zbjz-list>div{width: 350px;margin-left: 50px;}
+.zbjz .zbjz-list>div:first-child{margin-left: 0}
+.zbjz .zbjz-list .zbjz-pic{height:260px;overflow: hidden}
+.zbjz .zbjz-list .zbjz-pic img{width:100%;height:100%}
+.zbjz .zbjz-list .zbjz-tit{line-height: 50px;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+.zbjz .zbjz-list .zbjz-tit a{color:#333333;font-size:18px;}
+.zbjz .zbjz-list .zbjz-tit a:hover{color:#de641d}
+.zbjz .zbjz-list .zbjz-summary{height:60px;line-height: 24px;overflow: hidden}
+.zbjz .zbjz-list .zbjz-summary a{color:#555555;font-size:14px;}
+.zbjz .zbjz-list .zbjz-summary a:hover{color:#de641d}
+.zbjz .zbjz-list1 ul{padding:15px 0;border-bottom: 1px solid #eee;border-top: 1px dashed #eee;width:350px;margin-left: 50px;}
+.zbjz .zbjz-list1>ul:first-child{margin-left: 0}
+.zbjz .zbjz-list1 li{background: url("../images/point_icon03.png") left 8px no-repeat;text-indent: 10px;overflow: hidden}
+.zbjz .zbjz-list1 li a{font-size:14px;float: left}
+.zbjz .zbjz-list1 li a:hover{color:#de641d}
+.zbjz .zbjz-list1 li span{float: right}
+
+/*供应链优势*/
+.gylys .gylys-pic{width: 365px;height:300px;overflow: hidden}
+.gylys .gylys-pic img{width: 100%;height:100%}
+.gylys .gylys-list{width: 365px;}
+.gylys .gylys-list dl{height:99px;border-bottom: 1px solid #eee}
+.gylys .gylys-list dt{padding: 10px 0;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+.gylys .gylys-list dt a{font-size: 16px;color:#555}
+.gylys .gylys-list dt a:hover{color:#de641d}
+.gylys .gylys-list dd a{font-size: 12px;color:#686868}
+.gylys .gylys-list dd a:hover{color:#de641d}
+
+/*行业热点*/
+.hyrd .hyrd-headline{width:235px;}
+.hyrd .hyrd-pic{width: 150px;height:120px;overflow: hidden}
+.hyrd .hyrd-pic img{width: 100%;height:100%}
+.hyrd .hyrd-tit{padding-bottom: 5px;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+.hyrd .hyrd-tit a{font-size:16px;}
+.hyrd .hyrd-tit a:hover{color:#de641d}
+.hyrd .hyrd-row{padding-top: 15px;height:79px;border-bottom:1px solid #eee;}
+.hyrd .hyrd-summary a:hover{color:#de641d}
+
+/*东箭完整家居*/
+.djwzjj .djwzjj-pic{width: 100%;height:260px;overflow: hidden}
+.djwzjj .djwzjj-pic img{width: 100%;height:100%}
+.djwzjj .djwzjj-pic-tit{line-height: 24px;padding: 17px 0;height:50px;}
+.djwzjj .djwzjj-pic-tit a{font-size:16px;}
+.djwzjj .djwzjj-pic-tit a:hover{color:#de641d}
+.djwzjj ul{padding: 10px 0 15px 0;border-top: 1px dashed #eee;}
+.djwzjj li{height:26px;background: url("../images/point_icon02.png") left 9px no-repeat;text-indent: 15px;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+.djwzjj li a{line-height: 26px;font-size:14px;}
+.djwzjj li a:hover{color:#de641d}
+
+/*材料包 、单品及品牌推荐*/
+.clb .common-cont,.pptj .common-cont{padding:0;}
+.clb li,.pptj li{width: 380px;float: left;margin-top: 20px;margin-left: 30px;}
+.clb li:first-child,.pptj li:first-child{margin-left: 0}
+.clb .clb-pic,.pptj .pptj-pic{width: 100%;height:390px;overflow: hidden;position: relative;padding-bottom: 15px;}
+.clb .clb-pic img,.pptj .pptj-pic img{width: 100%;height:100%;}
+.clb .clb-textBg,.pptj .pptj-textBg{position: absolute;left:0;bottom: 15px;height:58px;width: 100%;background: #000;opacity:0.6;filter: alpha(opacity = 60);}
+.clb .clb-text,.pptj .pptj-text{position: absolute;left:0;bottom: 15px;height:58px;line-height: 58px;text-align: center;width: 100%;}
+.clb .clb-text a,.pptj .pptj-text a{font-size:24px;color:#fff;}
+.clb .clb-tit,.pptj .pptj-tit{line-height: 26px;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+.clb .clb-tit a,.pptj .pptj-tit a{font-size:16px;}
+.clb .clb-tit a:hover,.pptj .pptj-tit a:hover{color:#de641d;}
+
+/*体验馆*/
+.tyg .tyg-pic{width: 720px;height:425px;overflow: hidden;position: relative}
+.tyg .tyg-pic img{width: 100%;height:100%}
+.tyg .tyg-textBg{position: absolute;left:0;bottom: 0;height:58px;width: 100%;background: #000;opacity:0.6;filter: alpha(opacity = 60);}
+.tyg .tyg-text{position: absolute;left:0;bottom: 0;height:58px;line-height: 58px;text-indent:35px;width: 100%;}
+.tyg .tyg-text a{font-size:24px;color:#fff;}
+.tyg .tyg-list{width: 450px;}
+.tyg .tyg-row{height:141px;border-bottom: 1px solid #eee;overflow: hidden}
+.tyg .tyg-list .tyg-tit{padding-top: 10px;line-height: 30px;height:30px;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+.tyg .tyg-list .tyg-tit a{font-size:16px;color:#333}
+.tyg .tyg-list .tyg-tit a:hover{color:#de641d}
+.tyg .tyg-summary{line-height: 24px;}
+.tyg .tyg-summary a:hover{color:#de641d}
+
+/*精品案例*/
+.jpal .jpal-list{}
+.jpal .jpal-list li{width: 380px;float:left;margin-left: 30px;}
+.jpal .jpal-list li:first-child{margin-left: 0;}
+.jpal .jpal-pic{width: 100%;height:300px;overflow: hidden}
+.jpal .jpal-pic img{width: 100%;height:100%}
+.jpal .jpal-tit{text-align: center;padding-top: 16px;}
+.jpal .jpal-tit a{font-size:20px;}
+.jpal .jpal-tit a:hover{color:#de641d}
+.jpal .jpal-area{text-align: center;padding-top: 6px;}
+.jpal .jpal-area a{font-size:16px;}
+.jpal .jpal-area a:hover{color:#de641d}
+
+/*装修案例*/
+.zxkt .zxkt-wrapper{width: 50%;overflow: hidden}
+.zxkt .zxkt-pic{width: 288px;height:220px;float: left}
+.zxkt .zxkt-pic img{width: 100%;height:100%;}
+.zxkt .zxkt-list{float: left;width: 270px;margin-left: 20px;}
+.zxkt .zxkt-list li{height:43px;line-height: 43px;border-bottom:1px solid #eee;overflow:hidden;white-space:nowrap; text-overflow: ellipsis;
+    background: url("../images/point_icon02.png") left 18px no-repeat; text-indent: 12px;}
+.zxkt .zxkt-list li a{font-size:14px;}
+.zxkt .zxkt-list li a:hover{color:#de641d}

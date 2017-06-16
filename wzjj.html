@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="">
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/home.css" rel="stylesheet"/>
+    <link href="css/wzjj.css" rel="stylesheet"/>
+    <script src="js/lib/jquery-1.8.3.min.js"></script>
+    <script src="js/lib/idangerous.swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/wzjj.js"></script>
+    <title>腾讯家居_完整家居</title>
+</head>
+<body>
+<!--网页顶部-->
+<div class="top">
+    <div class="w1200 clearfl">
+        <div class="top-left">
+            <a href="http://www.qq.com" target="_blank">腾讯网首页</a>
+            <a href="javascript:void(0)" class="top-location">全国［切换］</a>
+            <div class="tabcity" id="tabcity">
+                <div class="ht">所有城市<span class="l"></span></div>
+                <ul class="citylist clearfix">
+                    <li><b>B</b></li>
+                    <li>北京</li>
+                    <li>保定</li>
+                    <li>包头</li>
+                    <li>北海</li>
+                    <li><b>C</b></li>
+                    <li>长春</li>
+                    <li>常州</li>
+                    <li>常熟</li>
+                    <li>承德</li>
+                    <li>长治</li>
+                    <li><b>D</b></li>
+                    <li>大连</li>
+                    <li>东莞</li>
+                    <li><b>E</b></li>
+                    <li>鄂州</li>
+                    <li>恩施</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>F</b></li>
+                    <li>佛山</li>
+                    <li><b>G</b></li>
+                    <li><a href="http://guiyang.jia360.com/" target="_blank" class="r">贵阳</a></li>
+                    <li><b>H</b></li>
+                    <li>哈尔滨</li>
+                    <li>呼和浩特</li>
+                    <li>合肥</li>
+                    <li>黄冈</li>
+                    <li>黄石</li>
+                    <li>海口</li>
+                    <li><b>J</b></li>
+                    <li>荆州</li>
+                    <li>济南</li>
+                    <li>江阴</li>
+                    <li>金华</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>K</b></li>
+                    <li>昆明</li>
+                    <li><b>L</b></li>
+                    <li>兰州</li>
+                    <li>洛阳</li>
+                    <li>廊坊</li>
+                    <li>六安</li>
+                    <li><b>N</b></li>
+                    <li>南京</li>
+                    <li>宁德</li>
+                    <li>南通</li>
+                    <li>宁波</li>
+                    <li>南昌</li>
+                    <li>南宁</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>P</b></li>
+                    <li>莆田</li>
+                    <li><b>Q</b></li>
+                    <li>泉州</li>
+                    <li>青岛</li>
+                    <li>秦皇岛</li>
+                    <li>齐齐哈尔</li>
+                    <li><b>S</b></li>
+                    <li>沈阳</li>
+                    <li>石家庄</li>
+                    <li>上海</li>
+                    <li>苏州</li>
+                    <li>随州</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>T</b></li>
+                    <li>太原</li>
+                    <li>天津</li>
+                    <li>台州</li>
+                    <li>唐山</li>
+                    <li><b>W</b></li>
+                    <li>无锡</li>
+                    <li>温州</li>
+                    <li>乌鲁木齐</li>
+                    <li><b>X</b></li>
+                    <li>厦门</li>
+                    <li>仙桃</li>
+                    <li>襄阳</li>
+                    <li>邢台</li>
+                    <li>徐州</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>Y</b></li>
+                    <li>烟台</li>
+                    <li>宜昌</li>
+                    <li>扬州</li>
+                    <li>银川</li>
+                    <li><b>Z</b></li>
+                    <li>漳州</li>
+                    <li>中山</li>
+                    <li>珠海</li>
+                    <li>镇江</li>
+                </ul>
+                <div class="hr10"></div>
+            </div>
+        </div>
+        <div class="top-right">
+            <a href="#" class="top-login">登录</a>
+            <a href="#" class="top-regsiter">注册</a>
+            <span class="top-line">|</span>
+            <a href="javascript:;" class="top-phone">
+                <span>手机版</span>
+                <span class="phone_tcode"><img src="images/phone_tcode.png" /></span>
+            </a>
+            <span class="top-line">|</span>
+            <a href="javascript:void(0)" class="top-telphone">
+                010-53028857
+            </a>
+        </div>
+    </div>
+</div>
+<!--网页头部-->
+<div class="header">
+    <div class="w1200 clearfl">
+        <div class="header-ad">
+            <img src="images/home/guanggao01.png"/>
+        </div>
+        <a href="http://www.jia360.com/"><img src="images/logo.png" class="logo"/></a>
+
+        <div class="search-box">
+            <div class="search-wrapper">
+                <div class="search-type"><span>新闻中心</span><img src="images/arrow_icon.png" class="arrow-icon"/></div>
+                <input type="text" name="search" class="search-input" placeholder="数据链接 解码未来"/>
+                <img src="images/search_icon.png" class="search-btn"/>
+
+                <div class="search-select">
+                    <div data-value="新闻中心" class="cur">新闻中心</div>
+                    <div data-value="灵感案例">灵感案例</div>
+                    <div data-value="找设计师">找设计师</div>
+                    <div data-value="找装修">找装修</div>
+                    <div data-value="品牌产品">品牌产品</div>
+                </div>
+            </div>
+            <div class="search-link">
+                <ul class="clearfl">
+                    <li><a href="">智能家居</a></li>
+                    <li><a href="">智能晾衣</a></li>
+                    <li><a href="">智能马桶</a></li>
+                    <li><a href="">沙发部落</a></li>
+                    <li><a href="">电视组柜</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        //地址切换
+        (function(){
+            var topLocation = $(".top-location");
+            var tabCity = $("#tabcity");
+            var timer;
+            topLocation.on("mouseenter",function(){
+                clearTimeout(timer);
+                tabCity.fadeIn();
+            });
+
+            topLocation.on("mouseleave",function(){
+                timer = setTimeout(function(){
+                    tabCity.fadeOut();
+                },150)
+            });
+
+            tabCity.on("mouseenter",function(){
+                clearTimeout(timer);
+                tabCity.show();
+            });
+
+            tabCity.on("mouseleave",function(){
+                timer = setTimeout(function(){
+                    tabCity.fadeOut();
+                },150)
+            });
+        })();
+
+        //搜索框选项
+        (function(){
+            var searchType =  $(".search-type");
+            var searchSelect = $(".search-select");
+            var arrowIcon = $(".arrow-icon");
+            var timer;
+            searchType.on("mouseenter",function(){
+                clearTimeout(timer);
+                searchSelect.slideDown();
+                arrowIcon.addClass("up");
+            })
+
+            searchType.on("mouseleave",function(){
+                timer = setTimeout(function(){
+                    searchSelect.slideUp();
+                    arrowIcon.removeClass("up");
+                },150)
+            })
+
+            searchSelect.on("mouseenter",function(){
+                clearTimeout(timer);
+                $(this).show();
+            })
+
+            searchSelect.on("mouseleave",function(){
+                timer = setTimeout(function() {
+                    searchSelect.slideUp();
+                    arrowIcon.removeClass("up");
+                },150)
+            })
+
+            searchSelect.on("click","div",function(){
+                var _this = $(this);
+                searchType.children("span").text(_this.attr("data-value"));
+                searchSelect.slideUp();
+                _this.addClass("cur").siblings().removeClass("cur");
+            })
+        })();
+        //nav导航更多
+        $(".nav .more").hover(function(){
+            $(this).addClass("more_ad").find(".more_box").stop(true,true).slideDown(400);
+        },function(){
+            $(this).removeClass("more_ad").find(".more_box").stop(true,false).slideUp(400);
+        });
+        //手机二维码
+        $(".top-phone").hover(function(){
+            $(this).children('.phone_tcode').stop(true,true).slideDown(400);
+        },function(){
+            $(this).children('.phone_tcode').stop(true,false).slideUp(400);
+        });
+        
+    })
+</script>
+<!--网页导航-->
+<div class="nav">
+    <div class="w1200">
+        <ul class="clearfl">
+            <li><a href="http://www.jia360.com">首页</a></li>
+            <li><a href="http://www.jia360.com">新闻中心</a></li>
+            <li><a href="http://www.jia360.com">灵感案例</a></li>
+            <li><a href="http://www.jia360.com">找设计师</a></li>
+            <li><a href="http://www.jia360.com">找装修</a></li>
+            <li><a href="http://www.jia360.com">品牌产品</a></li>
+            <li><a href="http://www.jia360.com">装修课堂</a></li>
+            <li><a href="#">百企万亿</a></li>
+            <li class="cur"><a href="#">完整家居</a></li>
+        </ul>
+    </div>
+</div>
+<!--网页主体内容-->
+<div class="container">
+    <div class="w1200 marb_40">
+        <div class="wrapper02 clearfl">
+            <div class="w750 fl">
+                <div class="banner">
+                    <div class="swiper-container" id="banner_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"><img src="images/wzjj/wzjj_banner.png"/> </a>
+                                <div class="swiper-textBg"></div>
+                                <div class="swiper-text">
+                                    <a href="#">完整家居体验馆开业仪式</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="images/wzjj/wzjj_banner.png"/> </a>
+                                <div class="swiper-textBg"></div>
+                                <div class="swiper-text">
+                                    <a href="#">完整家居体验馆开业仪式</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-btnLeft">&lt;</div>
+                    <div class="swiper-btnRight">&gt;</div>
+                </div>
+                <!--整包家装 start-->
+                <div class="wrapper02">
+                    <div class="common-box02 zbjz">
+                        <div class="common-tit"><div>整包家装</div></div>
+                        <div class="common-cont">
+                            <div class="zbjz-list clearfl">
+                                <div class="fl">
+                                    <div class="zbjz-pic"><a href="#"><img src="images/wzjj/wzjj_zbjz01.png"/> </a></div>
+                                    <div class="zbjz-tit"><a href="#">“合者匠心 • 聚志共赢”中装速配2016</a></div>
+                                    <div class="zbjz-summary"><a href="#">第三方供应链平台中装速配召开了主题为“合者匠心•聚志共赢的年度供应商会议.三方供应年度供应商会....</a></div>
+                                    
+                                </div>
+                                <div class="fl">
+                                    <div class="zbjz-pic"><a href="#"><img src="images/wzjj/wzjj_zbjz02.png"/> </a></div>
+                                    <div class="zbjz-tit"><a href="#">“合者匠心 • 聚志共赢”中装速配2016</a></div>
+                                    <div class="zbjz-summary"><a href="#">第三方供应链平台中装速配召开了主题为“合者匠心•聚志共赢的年度供应商会议.三方供应年度供应商会....</a></div>
+                                   
+                                </div>
+                            </div>
+                            <div class="zbjz-list1 clearfl">
+                            	<ul class="fl">
+                                    <li><a href="#">过去一周 世界互联网大会....</a> <span>2017-01-01</span></li>
+                                    <li><a href="#">过去一周 世界互联网大会....</a>  <span>2017-01-01</span></li>
+                                </ul>
+                                <ul class="fl">
+                                    <li><a href="#">过去一周 世界互联网大会....</a> <span>2017-01-01</span></li>
+                                    <li><a href="#">过去一周 世界互联网大会....</a>  <span>2017-01-01</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--整包家装 end-->
+                <!--供应链优势 start-->
+                <div class="wrapper02">
+                    <div class="common-box02 gylys">
+                        <div class="common-tit"><div>供应链优势</div></div>
+                        <div class="common-cont">
+                            <div class="gylys-pic fl">
+                                <div class="swiper-container" id="gylys_swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="images/wzjj/wzjj_gylys.png"/> </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="images/wzjj/wzjj_gylys.png"/> </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="images/wzjj/wzjj_gylys.png"/> </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="images/wzjj/wzjj_gylys.png"/> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gylys-list fr">
+                                <dl>
+                                    <dt><a href="#">世界互联网大会和各大媒体都关注了这件事</a> </dt>
+                                    <dd><a href="#">第二届世界互联网大会开幕的次日，两项“第一”在此诞生：这一天摄影师拍下了中国互联网2015年度最(珍)贵的一张...</a> </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">世界互联网大会和各大媒体都关注了这件事</a> </dt>
+                                    <dd><a href="#">第二届世界互联网大会开幕的次日，两项“第一”在此诞生：这一天摄影师拍下了中国互联网2015年度最(珍)贵的一张...</a> </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#">世界互联网大会和各大媒体都关注了这件事</a> </dt>
+                                    <dd><a href="#">第二届世界互联网大会开幕的次日，两项“第一”在此诞生：这一天摄影师拍下了中国互联网2015年度最(珍)贵的一张...</a> </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--供应链优势 end-->
+            </div>
+            <div class="w400 fr">
+               <!-- 行业热点 start-->
+                 <div class="common-box02 hyrd">
+                     <div class="common-tit"><div>行业热点</div></div>
+                     <div class="common-cont">
+                         <div class="clearfl">
+                             <div class="hyrd-pic fl">
+                                 <a href="#"><img src="images/wzjj/wzjj_hyrd.png"/> </a>
+                             </div>
+                             <div class="hyrd-headline fr">
+                                 <div class="hyrd-tit"><a href="#">开启家居“新零售”时代乐章</a> </div>
+                                 <div class="hyrd-summary"><a href="#">伴随着如火如荼的“双十一”战场完美收官东箭完整家居在激烈竞争的电商领域里，硬是杀出一条血路，让整个行业为之惊叹。每个传奇数字的诞生，代表了东箭人的骄傲汇聚了东箭人的心血以...</a> </div>
+                             </div>
+                         </div>
+                         <div class="hyrd-row">
+                             <div class="hyrd-tit">
+                                 <a href="#">开启家居“新零售”时代乐章</a>
+                             </div>
+                             <div class="hyrd-summary"><a href="#">伴随着如火如荼的“双十一”战场完美收官东箭完整家居在激烈竞争的电商领域里，硬是杀出一条血路，让整个行业为之惊叹。每个传奇数字的诞生，代表了东箭人的骄傲汇聚了东箭人的心血以...</a> </div>
+                         </div>
+                         <div class="hyrd-row">
+                             <div class="hyrd-tit">
+                                 <a href="#">开启家居“新零售”时代乐章</a>
+                             </div>
+                             <div class="hyrd-summary"><a href="#">伴随着如火如荼的“双十一”战场完美收官东箭完整家居在激烈竞争的电商领域里，硬是杀出一条血路，让整个行业为之惊叹。每个传奇数字的诞生，代表了东箭人的骄傲汇聚了东箭人的心血以...</a> </div>
+                         </div>
+                         <div class="hyrd-row">
+                             <div class="hyrd-tit">
+                                 <a href="#">开启家居“新零售”时代乐章</a>
+                             </div>
+                             <div class="hyrd-summary"><a href="#">伴随着如火如荼的“双十一”战场完美收官东箭完整家居在激烈竞争的电商领域里，硬是杀出一条血路，让整个行业为之惊叹。每个传奇数字的诞生，代表了东箭人的骄傲汇聚了东箭人的心血以...</a> </div>
+                         </div>
+                     </div>
+                 </div>
+                <!-- 行业热点 end-->
+                <!-- 东箭完整家居 start-->
+                <div class="wrapper02">
+                    <div class="common-box02 djwzjj">
+                        <div class="common-tit"><div>东箭完整家居</div></div>
+                        <div class="common-cont">
+                            <div class="djwzjj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_djwzjj.png"/> </a>
+                            </div>
+                            <div class="djwzjj-pic-tit">
+                                <a href="#">东箭“完整家居全国标准体验馆”：为中小家装公司打造极致供应链</a>
+                            </div>
+                            <div class="djwzjj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_djwzjj.png"/> </a>
+                            </div>
+                            <div class="djwzjj-pic-tit">
+                                <a href="#">东箭“完整家居全国标准体验馆”：为中小家装公司打造极致供应链</a>
+                            </div>
+                            <ul>
+                                <li><a href="#">“双十一”来袭，东箭完整家居“主材包”受宠市场</a> </li>
+                                <li><a href="#">“双十一”来袭，东箭完整家居“主材包”受宠市场</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 东箭完整家居 end-->
+                <p class="jmrx"><img src="images/wzjj/wzjj_jmrx.png"/> </p>
+            </div>
+        </div>
+      <!--  材料包 start-->
+        <div class="wrapper02">
+            <div class="common-box02 clb">
+                <div class="common-tit"><div>材料包</div></div>
+                <div class="common-cont">
+                    <ul class="clb-list clearfl">
+                        <li>
+                            <div class="clb-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_clb01.png"/> </a>
+                                <div class="clb-textBg"></div>
+                                <div class="clb-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="clb-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_clb02.png"/> </a>
+                                <div class="clb-textBg"></div>
+                                <div class="clb-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="clb-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_clb03.png"/> </a>
+                                <div class="clb-textBg"></div>
+                                <div class="clb-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li style="margin-left: 0">
+                            <div class="clb-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_clb01.png"/> </a>
+                                <div class="clb-textBg"></div>
+                                <div class="clb-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="clb-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_clb02.png"/> </a>
+                                <div class="clb-textBg"></div>
+                                <div class="clb-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="clb-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_clb03.png"/> </a>
+                                <div class="clb-textBg"></div>
+                                <div class="clb-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="clb-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  材料包 end-->
+        <!--  单品及品牌推荐 start-->
+        <div class="wrapper02">
+            <div class="common-box02 pptj">
+                <div class="common-tit"><div>单品及品牌推荐</div></div>
+                <div class="common-cont">
+                    <ul class="pptj-list clearfl">
+                        <li>
+                            <div class="pptj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_dp01.png"/> </a>
+                                <div class="pptj-textBg"></div>
+                                <div class="pptj-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="pptj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_dp02.png"/> </a>
+                                <div class="pptj-textBg"></div>
+                                <div class="pptj-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="pptj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_dp03.png"/> </a>
+                                <div class="pptj-textBg"></div>
+                                <div class="pptj-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li style="margin-left: 0">
+                            <div class="pptj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_dp01.png"/> </a>
+                                <div class="pptj-textBg"></div>
+                                <div class="pptj-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="pptj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_dp02.png"/> </a>
+                                <div class="pptj-textBg"></div>
+                                <div class="pptj-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="pptj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_dp03.png"/> </a>
+                                <div class="pptj-textBg"></div>
+                                <div class="pptj-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li style="margin-left: 0">
+                            <div class="pptj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_dp01.png"/> </a>
+                                <div class="pptj-textBg"></div>
+                                <div class="pptj-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="pptj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_dp02.png"/> </a>
+                                <div class="pptj-textBg"></div>
+                                <div class="pptj-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                        <li>
+                            <div class="pptj-pic">
+                                <a href="#"><img src="images/wzjj/wzjj_dp03.png"/> </a>
+                                <div class="pptj-textBg"></div>
+                                <div class="pptj-text"><a href="#">优享包</a> </div>
+                            </div>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                            <p class="pptj-tit"><a href="#">[ 全屋包 ]  以“材料为核心”覆盖家装全领域 </a> </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  单品及品牌推荐 end-->
+        <!--  体验馆 start-->
+        <div class="wrapper02">
+            <div class="common-box02 tyg">
+                <div class="common-tit"><div>体验馆</div></div>
+                <div class="common-cont clearfl">
+                    <div class="tyg-pic fl">
+                        <div class="swiper-container" id="tyg_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/wzjj/wzjj_tyg.png" />
+                                    <div class="tyg-textBg"></div>
+                                    <div class="tyg-text"><a href="#">广州示范完整家居体验馆展示</a> </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/wzjj/wzjj_tyg.png" />
+                                    <div class="tyg-textBg"></div>
+                                    <div class="tyg-text"><a href="#">广州示范完整家居体验馆展示</a> </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/wzjj/wzjj_tyg.png" />
+                                    <div class="tyg-textBg"></div>
+                                    <div class="tyg-text"><a href="#">广州示范完整家居体验馆展示</a> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tyg-list fr">
+                        <div class="tyg-row">
+                            <div class="tyg-tit"><a href="#">东箭集团“完整家居全国标准体验馆”杭州开业 </a> </div>
+                            <div class="tyg-summary"><a href="#">9月20日，在迎来品牌20周年庆典之际，家居行业整体解决方案供应商东箭集团“新十年”战略的第一枚落子——“完整家居全国标准体验馆”宣告开业。“完整家居全国标准体验馆”是东箭集团最新类型实体店面，也是东箭集团对当下消费趋势精准把控的最新成果的展现。以“完整家居全国标准体验馆”开业为起点...</a> </div>
+                        </div>
+                        <div class="tyg-row">
+                            <div class="tyg-tit"><a href="#">东箭集团“完整家居全国标准体验馆”杭州开业 </a> </div>
+                            <div class="tyg-summary"><a href="#">9月20日，在迎来品牌20周年庆典之际，家居行业整体解决方案供应商东箭集团“新十年”战略的第一枚落子——“完整家居全国标准体验馆”宣告开业。“完整家居全国标准体验馆”是东箭集团最新类型实体店面，也是东箭集团对当下消费趋势精准把控的最新成果的展现。以“完整家居全国标准体验馆”开业为起点...</a> </div>
+                        </div>
+                        <div class="tyg-row">
+                            <div class="tyg-tit"><a href="#">东箭集团“完整家居全国标准体验馆”杭州开业 </a> </div>
+                            <div class="tyg-summary"><a href="#">9月20日，在迎来品牌20周年庆典之际，家居行业整体解决方案供应商东箭集团“新十年”战略的第一枚落子——“完整家居全国标准体验馆”宣告开业。“完整家居全国标准体验馆”是东箭集团最新类型实体店面，也是东箭集团对当下消费趋势精准把控的最新成果的展现。以“完整家居全国标准体验馆”开业为起点...</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  体验馆 end-->
+        <!--  精品案例 start-->
+        <div class="wrapper02">
+            <div class="common-box02 jpal">
+                <div class="common-tit"><div>精品案例</div></div>
+                <div class="common-cont">
+                    <ul class="jpal-list clearfl">
+                        <li>
+                            <div class="jpal-pic">
+                                <a href="#">
+                                    <img src="images/wzjj/wzjj_jpal01.png" />
+                                </a>
+                            </div>
+                            <p class="jpal-tit"><a href="#">箭牌客餐厅包</a> </p>
+                            <p class="jpal-area"><a href="#">40平方</a> </p>
+                        </li>
+                        <li>
+                            <div class="jpal-pic">
+                                <a href="#">
+                                    <img src="images/wzjj/wzjj_jpal02.png" />
+                                </a>
+                            </div>
+                            <p class="jpal-tit"><a href="#">箭牌客餐厅包</a> </p>
+                            <p class="jpal-area"><a href="#">40平方</a> </p>
+                        </li>
+                        <li>
+                            <div class="jpal-pic">
+                                <a href="#">
+                                    <img src="images/wzjj/wzjj_jpal03.png" />
+                                </a>
+                            </div>
+                            <p class="jpal-tit"><a href="#">箭牌客餐厅包</a> </p>
+                            <p class="jpal-area"><a href="#">40平方</a> </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  精品案例 end-->
+        <!--  装修课堂 start-->
+        <div class="wrapper02">
+            <div class="common-box02 zxkt">
+                <div class="common-tit"><div>装修课堂</div></div>
+                <div class="common-cont clearfl">
+                    <div class="zxkt-wrapper fl">
+                        <div class="zxkt-pic"><a href="#"><img src="images/wzjj/wzjj_zxkt01.png"/></a>  </div>
+                        <div class="zxkt-list">
+                            <ul>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="zxkt-wrapper fl">
+                        <div class="zxkt-pic"><a href="#"><img src="images/wzjj/wzjj_zxkt02.png"/></a>  </div>
+                        <div class="zxkt-list">
+                            <ul>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                                <li><a href="#">为儿童房墙面装饰把脉：安全与装饰</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--  装修课堂 end-->
+    </div>
+    <div id="goUp"><a href="javascript:;" title="返回顶部" target="_self"></a></div>
+</div>
+<!--页脚开始-->
+<div class="footer">
+    <div class="w1200">
+        <div class="footer-list-wrapper clearfl">
+            <div class="footer-list01 fl">
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">招贤纳士</a></li>
+                    <li><a href="#">免责声明</a></li>
+                </ul>
+            </div>
+            <div class="footer-list02 fl">
+                <ul>
+                    <li><a href="#">招商加盟</a></li>
+                    <li><a href="#">广告咨询</a></li>
+                    <li><a href="#">设计师入驻</a></li>
+                    <li><a href="#">装修公司入驻</a></li>
+                </ul>
+            </div>
+            <div class="footer-list03 fl">
+                <ul>
+                    <li><a href="#">网站地图</a></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">投稿</a></li>
+                </ul>
+            </div>
+            <div class="footer-list04 fl">
+                <p class="footer-telphone t-c">010-53028857</p>
+
+                <p class="footer-time t-c">周一至周五：9：00 - 18：00</p>
+
+                <div class="footer-btnJoin">联系客服</div>
+            </div>
+            <div class="footer-list05 fr">
+                <img src="images/code.png"/>
+            </div>
+        </div>
+        <p class="copyright t-c">Copyright 2009-2016，版权所有深圳市聚业美家科技有限公司</p>
+    </div>
+</div>
+<!--页脚结束-->
+</body>
+</html>

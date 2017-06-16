@@ -1,0 +1,96 @@
+@charset "utf-8";
+.container{}
+
+/*公司简介*/
+.cp-intro{width: 418px;height:470px;padding:10px;border:1px solid #eee;margin-top: 25px;overflow: hidden}
+.cp-intro .cp-left{border: 1px solid #eee;width: 124px;height:124px;line-height: 124px;text-align:center;float: left;}
+.cp-intro .cp-left img{width: 116px;}
+.cp-intro .cp-right{width: 280px;float: right}
+.cp-intro .cp-name{font-size:20px;color:#333333;padding-bottom: 10px;}
+.cp-intro .cp-address{  font-size:14px;  color:#898989;  line-height: 24px;  height: 66px;  overflow: hidden;
+    background: url("../images/byqy/location_blue_icon.png") left 2px no-repeat;  text-indent: 20px;  }
+.cp-intro .cp-collection,.cp-intro .cp-share{display: inline-block;*display: inline;*zoom:1;  font-size:14px;  color:#686868;  text-indent: 22px;
+    background: url("../images/byqy/collection_off.png") left center no-repeat;  height: 24px;  line-height: 24px; cursor: pointer }
+.cp-intro .cp-share{background: url("../images/byqy/share_off.png") left center no-repeat;margin-left: 30px;}
+.cp-intro .cp-collection-on{background-image: url("../images/byqy/collection_on.png");}
+.cp-intro .cp-share-on{background-image: url("../images/byqy/share_on.png");}
+.cp-intro .cp-tit{font-size:18px;color:#333;padding-top: 25px;padding-bottom: 10px;}
+.cp-intro .cp-info{font-size:14px;color:#898989;text-indent: 2em;line-height: 24px;position: relative}
+.cp-intro .cp-more{position: absolute;right:0;bottom:0;font-size:14px;color:#2888e2}
+
+/*焦点图*/
+.banner{width: 740px;height:490px;margin-top: 25px;border: 1px solid #eee;position: relative}
+.banner #banner_btnLeft{position: absolute;left:0;top:50%;margin-top:-50px;cursor: pointer;z-index:100}
+.banner #banner_btnRight{position: absolute;right:0;top:50%;margin-top:-50px; cursor: pointer;z-index:100}
+.banner-page{position: absolute;right: 5px;bottom:7px;z-index:300;}
+.banner-page .swiper-pagination-switch{width: 40px;height:5px;background:#fff;display: inline-block;*display: inline;*zoom:1;margin:0 3px;border-radius: 0}
+.banner-page .swiper-active-switch{background: #2888e2}
+
+/*热点新闻*/
+.byqy-news{width: 715px;}
+.byqy-news .common-row{padding:10px;border:1px solid #eee;margin-top: 10px;}
+.byqy-news .news-pic{float: left;width: 195px;height:135px;overflow: hidden;}
+.byqy-news .news-pic img{width: 100%;}
+.byqy-news .news-list{float: left;width: 480px;margin-left: 10px;}
+.byqy-news .news-list dt{color:#555;font-size:24px;padding-bottom: 5px;}
+.byqy-news .news-list dd{line-height: 24px;background: url("../images/point_icon01.png") left center no-repeat;font-size: 16px;
+    text-indent: 8px;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+.byqy-news .news-list dd a{color:#898989;}
+.byqy-news .news-list dd a:hover{color:#1479d7;}
+
+/*人物风采*/
+.rwfc{width: 440px;}
+.rwfc .common-cont{height:335px;}
+.rwfc .rwfc-pic{width: 440px;height:200px;overflow: hidden}
+.rwfc .rwfc-pic img{width: 100%}
+.rwfc .rwfc-tit{font-size:24px;padding-top: 10px;padding-bottom: 2px;}
+.rwfc .rwfc-summary{line-height: 24px;font-size:16px;}
+.rwfc .rwfc-summary a{color:#898989;}
+.rwfc .rwfc-summary a:hover{color:#1479d7;}
+.rwfc #rwfc_btnLeft{position: absolute;left:0;top:50%;margin-top:-114px;cursor: pointer;z-index:100}
+.rwfc #rwfc_btnRight{position: absolute;right:0;top:50%;margin-top:-114px; cursor: pointer;z-index:100}
+
+/*精选产品*/
+.jxcp .jxcp-tit{text-align: center;font-size:18px;padding-top:10px;}
+#jxcp_swiper{height:255px}
+#jxcp_swiper .swiper-slide{text-align: center;width: auto;padding-right:30px;}
+#jxcp_swiper .swiper-slide:last-child{padding-right:0;}
+#jxcp_btnLeft{position: absolute;left:0;top:50%;margin-top: -50px;z-index:100;cursor: pointer}
+#jxcp_btnRight{position: absolute;right:0;top:50%;margin-top: -50px;z-index:100;cursor: pointer}
+
+/*评测促销*/
+.pccx{width: 705px;}
+.shop{width: 440px;}
+.pccx .common-cont,.shop .common-cont {border:1px solid #eee;padding:10px 15px 10px 10px}
+.pccx .pccx-row,.shop .shop-row{border-bottom: 1px solid #eee;padding: 20px 0;}
+.pccx .pccx-list,.shop .shop-list{height:625px;overflow:auto}
+.pccx .pccx-pic,.shop .shop-pic{width: 160px;height:115px;overflow: hidden}
+.pccx .pccx-pic img,.shop .shop-pic img{width: 100%}
+.pccx .pccx-detail,.shop .shop-detail{width: 480px;margin-left: 10px;}
+.pccx .pccx-tit,.shop .shop-tit{font-size:18px;}
+.pccx .pccx-sunmary,.shop .shop-address{line-height: 24px;height:72px;}
+.pccx .pccx-time{text-align: right}
+.shop .shop-detail{width: 225px;}
+
+/*大事记*/
+.dsj .common-cont{padding:10px;border: 1px solid #eee}
+#dsj_swiper{height:460px;overflow: hidden;position: relative}
+.dsj_swiper_wrapper{position: absolute;left:0;top:0;height:100%;}
+.dsj-page{z-index:300;text-align: center}
+.dsj-page .swiper-pagination-switch{width: 40px;height:5px;background:#f2f2f2;display: inline-block;*display: inline;*zoom:1;margin:0 3px;border-radius: 0}
+.dsj-page .swiper-active-switch{background: #2888e2}
+
+.codeBar{}
+.codeBar .website{width: 590px;line-height: 100px;height:100px;border:1px solid #eee;overflow: hidden}
+.codeBar .website-logo{width: 280px;text-align: center;float: left}
+.codeBar .website-text{width: 306px;text-align: center;float: left;font-size:18px;height: 30px;line-height: 30px;
+    margin-top: 33px;border-left: 1px solid #eee;}
+.codeBar .byqy-website{width:270px;padding-left: 15px; border: 1px solid #eee;line-height: 100px;height:100px;margin-left: 15px;}
+.codeBar .byqy-code{width: 105px;float: left}
+.byqy-website .byqy-text{width: 140px;text-align: center;float: left;font-size:18px;height: 30px;line-height: 30px;
+    margin-top: 33px;border-left: 1px solid #eee;}
+.weixin-website{width: 290px;line-height: 100px;height:100px;border:1px solid #eee;overflow: hidden}
+.weixin-website .weixin-code{width: 91px;float: left;}
+.weixin-website .weixin-text{  width: 195px;  text-align: center;  float: left;  font-size:18px;  height: 30px;
+    line-height: 30px;  margin-top: 33px;  border-left: 1px solid #eee;  }
+.common-box01,.jxcp{position:relative;}

@@ -1,0 +1,30 @@
+/* common01 */
+.brandProducts{padding-bottom:40px;}
+.brandBox{width:1200px;padding-top:27px;}
+.brandBox .playbox{width:1200x;height:500px;position: relative;overflow:hidden;}
+.brandBox .playbox .swi_box{width:100%;height:100%;position: relative;}
+.brandBox .playbox .swi_box p{width:100%;height:80px;line-height:80px;background:rgba(0,0,0,0.40);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);position: absolute;left:0;bottom:0;}
+.brandBox .playbox .swi_box p a{display: block;width:950px;margin-left:50px;font-size:30px;color:#fff;}
+.brandBox .playbox .swi_box img{width: 100%;height:100%;}
+.brandBox .swiper-container {width: 100%;height: 100%;}
+.brandBox .swiper-container .swiper-slide{display: block;width:100%;height: 100%;position: relative;float:left;}
+.brandBox .pagination {position: absolute;z-index: 20;right: 12px;bottom: 12px;}
+.brandBox .swiper-pagination-switch {display: inline-block;margin-right: 5px;cursor: pointer;width:40px;height:6px;border-radius:0;background:#fff;opacity:1;}
+.brandBox .swiper-visible-switch {background: #2888e2;}
+.brandBox .swiper-active-switch {background: #2888e2;}
+.brandBox .playbox .arrow-left {  width:50px;height:90px;background:url('../images/brand_indexleft_swip.png') center center no-repeat;background-size:100%;left:0;position: absolute;top: 50%;margin-top: -45px;z-index: 101;}
+.brandBox .playbox .arrow-right {width:50px;height:90px;background:url('../images/brand_indexright_swip.png') center center no-repeat;background-size:100%;left:0;  position: absolute;left:auto;right: 0;top: 50%;margin-top: -45px;z-index: 101;}
+
+.floor1_title{width:155px;height:30px;line-height:30px;position: relative;margin:40px auto 30px auto;font-size:30px;}
+.floor2_title{width:120px;height:30px;line-height:30px;position: relative;margin:40px auto 30px auto;font-size:30px;}
+.floor1_title img{position: absolute;bottom:0;right:0;}
+.floor1_box{position: relative;width:100%;height:360px;overflow:hidden;}
+.floor1_box .tab_ul{width:100%;height:50px;line-height:50px;border-bottom:1px #eee solid;}
+.floor1_box .tab_ul li{width:70px;text-align:center;font-size:18px;color:#555;margin:0 15px;float: left;cursor: pointer;}
+.floor1_box .tab_ul li.active{color:#1f7bd4;}
+.floor1_box .line{width:70px;height:4px;position:absolute;top:46px;left:15px;background:#2f8adf;}
+.floor1_box .tab_box ul{height:310px;display:none;}
+.floor1_box .tab_box ul.active{display: block;}
+.floor1_box .tab_box ul li{width:200px;height:110px;float: left;margin-top:45px;text-align:center;position: relative;}
+.floor1_box .tab_box ul li .brandLogo{max-width: 160px;min-width:120px;}
+.floor1_box .tab_box ul li .sp{position: absolute;left:0;bottom:0;width:100%;text-align:center;font-size: 16px;}

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* 底部版权信息 */
+.copyright{background:#f7f7f7;}
+.copyright .nav_ul{width:270px;background:#fff;margin-top:20px;}
+.copyright .nav_ul li{height:60px;line-height: 60px;text-align: center;font-size:18px;position: relative;border-bottom:1px #f7f7f7 solid;}
+.copyright .nav_ul li a{display: block;}
+.copyright .nav_ul li.active a{color:#1479d7;}
+.copyright .nav_ul li a:hover{background:#2888e2;color:#fff;}
+.copyright .nav_ul li.active:before{content: '';width:4px;height:26px;background:#1479d7;left:8px;top:17px;position: absolute;}
+.copyright .containerBox{width:780px;padding:0 60px 60px;background:#fff;margin:20px 0 60px;}
+.copyright .containerBox h6{font-weight: normal;font-size:18px;color:#898989;height:60px;line-height:60px;border-bottom:1px #eee solid;}
+.copyright .containerBox h6 span{font-size:12px;margin-left:10px;}
+.copyright .containerBox p{margin-top:20px;line-height:25px;font-size:14px;color:#555;}

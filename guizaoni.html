@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="images/txjj_ico.ico">
+    <link href="css/productHome.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <script src="js/lib/jquery-1.8.3.min.js"></script>
+    <script src="js/lib/idangerous.swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/gzn.js"></script>
+    <title>腾讯家居_家居装修装饰时尚门户</title>
+</head>
+<body>
+<!--网页顶部-->
+<div class="top">
+    <div class="w1200 clearfl">
+        <div class="top-left">
+            <a href="http://www.qq.com" target="_blank">腾讯网首页</a>
+            <a href="javascript:void(0)" class="top-location">全国［切换］</a>
+            <div class="tabcity" id="tabcity">
+                <div class="ht">所有城市<span class="l"></span></div>
+                <ul class="citylist clearfix">
+                    <li><b>B</b></li>
+                    <li>北京</li>
+                    <li>保定</li>
+                    <li>包头</li>
+                    <li>北海</li>
+                    <li><b>C</b></li>
+                    <li>长春</li>
+                    <li>常州</li>
+                    <li>常熟</li>
+                    <li>承德</li>
+                    <li>长治</li>
+                    <li><b>D</b></li>
+                    <li>大连</li>
+                    <li>东莞</li>
+                    <li><b>E</b></li>
+                    <li>鄂州</li>
+                    <li>恩施</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>F</b></li>
+                    <li>佛山</li>
+                    <li><b>G</b></li>
+                    <li><a href="http://guiyang.jia360.com/" target="_blank" class="r">贵阳</a></li>
+                    <li><b>H</b></li>
+                    <li>哈尔滨</li>
+                    <li>呼和浩特</li>
+                    <li>合肥</li>
+                    <li>黄冈</li>
+                    <li>黄石</li>
+                    <li>海口</li>
+                    <li><b>J</b></li>
+                    <li>荆州</li>
+                    <li>济南</li>
+                    <li>江阴</li>
+                    <li>金华</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>K</b></li>
+                    <li>昆明</li>
+                    <li><b>L</b></li>
+                    <li>兰州</li>
+                    <li>洛阳</li>
+                    <li>廊坊</li>
+                    <li>六安</li>
+                    <li><b>N</b></li>
+                    <li>南京</li>
+                    <li>宁德</li>
+                    <li>南通</li>
+                    <li>宁波</li>
+                    <li>南昌</li>
+                    <li>南宁</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>P</b></li>
+                    <li>莆田</li>
+                    <li><b>Q</b></li>
+                    <li>泉州</li>
+                    <li>青岛</li>
+                    <li>秦皇岛</li>
+                    <li>齐齐哈尔</li>
+                    <li><b>S</b></li>
+                    <li>沈阳</li>
+                    <li>石家庄</li>
+                    <li>上海</li>
+                    <li>苏州</li>
+                    <li>随州</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>T</b></li>
+                    <li>太原</li>
+                    <li>天津</li>
+                    <li>台州</li>
+                    <li>唐山</li>
+                    <li><b>W</b></li>
+                    <li>无锡</li>
+                    <li>温州</li>
+                    <li>乌鲁木齐</li>
+                    <li><b>X</b></li>
+                    <li>厦门</li>
+                    <li>仙桃</li>
+                    <li>襄阳</li>
+                    <li>邢台</li>
+                    <li>徐州</li>
+                </ul>
+                <ul class="citylist">
+                    <li><b>Y</b></li>
+                    <li>烟台</li>
+                    <li>宜昌</li>
+                    <li>扬州</li>
+                    <li>银川</li>
+                    <li><b>Z</b></li>
+                    <li>漳州</li>
+                    <li>中山</li>
+                    <li>珠海</li>
+                    <li>镇江</li>
+                </ul>
+                <div class="hr10"></div>
+            </div>
+        </div>
+        <div class="top-right">
+            <a href="#" class="top-login">登录</a>
+            <a href="#" class="top-regsiter">注册</a>
+            <span class="top-line">|</span>
+            <a href="javascript:;" class="top-phone">
+                <span>手机版</span>
+                <span class="phone_tcode"><img src="images/phone_tcode.png" /></span>
+            </a>
+            <span class="top-line">|</span>
+            <a href="javascript:void(0)" class="top-telphone">
+                010-53028857
+            </a>
+        </div>
+    </div>
+</div>
+<!--网页头部-->
+<div class="header">
+    <div class="w1200 clearfl">
+        <div class="clearfl">
+            <a href="http://www.jia360.com/"><img src="images/logo.png" class="logo"/></a>
+            <div class="search-box">
+                <div class="search-wrapper">
+                    <div class="search-type"><span>新闻中心</span><img src="images/arrow_icon.png" class="arrow-icon"/></div>
+                    <input type="text" name="search" class="search-input" placeholder="数据链接 解码未来"/>
+                    <img src="images/search_icon.png" class="search-btn"/>
+
+                    <div class="search-select">
+                        <div data-value="新闻中心" class="cur">新闻中心</div>
+                        <div data-value="灵感案例">灵感案例</div>
+                        <div data-value="找设计师">找设计师</div>
+                        <div data-value="找装修">找装修</div>
+                        <div data-value="品牌产品">品牌产品</div>
+                    </div>
+                </div>
+                <div class="search-link">
+                    <ul class="clearfl">
+                        <li><a href="">智能家居</a></li>
+                        <li><a href="">智能晾衣</a></li>
+                        <li><a href="">智能马桶</a></li>
+                        <li><a href="">沙发部落</a></li>
+                        <li><a href="">电视组柜</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<script>
+    $(function(){
+        //地址切换
+        (function(){
+            var topLocation = $(".top-location");
+            var tabCity = $("#tabcity");
+            var timer;
+            topLocation.on("mouseenter",function(){
+                clearTimeout(timer);
+                tabCity.fadeIn();
+            });
+
+            topLocation.on("mouseleave",function(){
+                timer = setTimeout(function(){
+                    tabCity.fadeOut();
+                },150)
+            });
+
+            tabCity.on("mouseenter",function(){
+                clearTimeout(timer);
+                tabCity.show();
+            });
+
+            tabCity.on("mouseleave",function(){
+                timer = setTimeout(function(){
+                    tabCity.fadeOut();
+                },150)
+            });
+        })();
+
+        //搜索框选项
+        (function(){
+            var searchType =  $(".search-type");
+            var searchSelect = $(".search-select");
+            var arrowIcon = $(".arrow-icon");
+            var timer;
+            searchType.on("mouseenter",function(){
+                clearTimeout(timer);
+                searchSelect.slideDown();
+                arrowIcon.addClass("up");
+            })
+
+            searchType.on("mouseleave",function(){
+                timer = setTimeout(function(){
+                    searchSelect.slideUp();
+                    arrowIcon.removeClass("up");
+                },150)
+            })
+
+            searchSelect.on("mouseenter",function(){
+                clearTimeout(timer);
+                $(this).show();
+            })
+
+            searchSelect.on("mouseleave",function(){
+                timer = setTimeout(function() {
+                    searchSelect.slideUp();
+                    arrowIcon.removeClass("up");
+                },150)
+            })
+
+            searchSelect.on("click","div",function(){
+                var _this = $(this);
+                searchType.children("span").text(_this.attr("data-value"));
+                searchSelect.slideUp();
+                _this.addClass("cur").siblings().removeClass("cur");
+            })
+        })();
+        //nav导航更多
+        $(".nav .more").hover(function(){
+            $(this).addClass("more_ad").find(".more_box").stop(true,true).slideDown(400);
+        },function(){
+            $(this).removeClass("more_ad").find(".more_box").stop(true,false).slideUp(400);
+        });
+        //手机二维码
+        $(".top-phone").hover(function(){
+            $(this).children('.phone_tcode').stop(true,true).slideDown(400);
+        },function(){
+            $(this).children('.phone_tcode').stop(true,false).slideUp(400);
+        });
+        
+    })
+</script>
+<!--网页导航-->
+<div class="nav">
+    <div class="w1200">
+        <ul class="clearfl">
+            <li><a href="http://www.jia360.com/">首页</a></li>
+            <li><a href="http://news.jia360.com/">新闻中心</a></li>
+            <li><a href="http://zx.yoju360.com/case">灵感案例</a></li>
+            <li><a href="http://www.jia360.com/shejishi/index.html">找设计师</a></li>
+            <li><a href="http://www.jia360.com/">找装修</a></li>
+            <li><a href="http://www.jia360.com/">品牌产品</a></li>
+            <li><a href="http://www.jia360.com/">装修课堂</a></li>
+            <li class="cur"><a href="http://ztnew.jia360.com/jia/baiqi/">百企万亿</a></li>
+            <li><a href="http://m.jia360.com/?g=wzjj&amp;m=index&amp;a=index">完整家居</a></li>
+        </ul>
+    </div>
+</div>
+<!--网页主体内容-->
+<div class="container productHome">
+    <div class="w1200">
+        <!--adver01-->
+        <!-- <div class="snav_listbox">
+            <span class="sp"></span>
+            <div class="lab_box">
+                <div class="clearfl">
+                    <label><a href="" title="家具">家具</a></label>
+                    <label><a href="" title="家具">地板</a></label>
+                    <label><a href="" title="家具">瓷砖</a></label>
+                    <label><a href="" title="家具">卫浴</a></label>
+                    <label><a href="" title="家具">门窗</a></label>
+                    <label><a href="" title="家具">厨房</a></label>
+                    <label><a href="" title="家具">硅藻泥</a></label>
+                    <label><a href="" title="家具">门窗</a></label>
+                    <label><a href="" title="家具">涂料</a></label>
+                </div>
+            </div>
+            <div class="sl_more"><span>更多</span></div>
+            <div class="sl_up"><span>收起</span></div>
+        </div> -->
+        <!--common01-->
+        <div class="common01 clearfl">
+            <div class="fr playbox">
+                <a class="arrow-left" href="javascript:;"></a>
+                <a class="arrow-right" href="javascript:;"></a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper clearfl swiper-no-swiping">
+                        <div class="swiper-slide">
+                            <div class="swi_box">
+                                <a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2287" target="_blank" title="北疆硅藻泥携手佟大为打造全新品牌形象!"><img src="images/gzn/gzn_banner.jpg" alt="北疆硅藻泥携手佟大为打造全新品牌形象!" /></a>
+                                <p><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2287" title="北疆硅藻泥携手佟大为打造全新品牌形象!" target="_blank">北疆硅藻泥携手佟大为打造全新品牌形象!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+            </div>
+            <div class="fl a_box">
+                <h6>硅藻泥品牌</h6>
+                <p>
+                	<a href="http://www.beijianggzn.com/" target="_blank" class="font_l">北疆硅藻泥</a><br />
+                	<a href="http://www.abagzn.com/" target="_blank" class="font_s">澳霸</a>
+                	<a href="http://www.czygzn.com/" target="_blank" class="font_s" style="margin-left:113px;">春之元</a>
+                	<a href="http://www.dajinhome.com/" target="_blank" class="font_s" style="margin-left:70px;">大津硅藻泥</a>
+                </p>
+                <p>
+                	<a href="http://www.crosswaycn.com/" target="_blank" class="font_l">克洛斯威</a><br />
+                	<a href="http://www.lsgzn.com/" target="_blank" class="font_s">兰舍</a>
+                	<a href="http://www.lantiantun.com" target="_blank" class="font_s" style="margin-left:114px;">蓝天豚</a>
+                	<a href="http://www.lslgzn.com" target="_blank" class="font_s" style="margin-left:74px;">绿森林</a>
+                </p>
+                <p>
+                	<a href="http://www.cmt7.com/" target="_blank" class="font_l">蒙太奇</a><br />
+                	<a href="http://www.toloss.com/" target="_blank" class="font_s">涂乐师</a>
+                	<a href="http://www.abagzn.com/" target="_blank" class="font_s" style="margin-left:102px;">亚皇</a>
+                	<a href="http://www.zlgzn.com/" target="_blank" class="font_s" style="margin-left:89px;">芝兰</a>
+                </p>
+            </div>
+        </div>
+        <!--common02-->
+        <div class="common02 clearfl">
+            <div class="comleft">
+                <div class="titlediv">
+                    <span>产品知识</span>
+                </div>
+                <div class="titlelist clearfl">
+                    <div class="imgbox">
+                        <a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2321" title="看这里 关于硅藻泥最全面知识都在这" target="_blank"><img src="images/gzn/gzn_24.jpg" alt="看这里 关于硅藻泥最全面知识都在这" /></a>
+                        <p><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2321" target="_blank" title="看这里 关于硅藻泥最全面知识都在这">看这里 关于硅藻泥最全面知识都在这</a></p>
+                    </div>
+                    <div class="fontbox">
+                        <p><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2321" title="" target="_blank">看这里 关于硅藻泥最全面知识都在这</a></p>
+                        <ul>
+                            <li><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2118" title="" target="_blank">别再吹了，看中央电视台如何评价国产硅藻泥！</a></li>
+                            <li><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2119" title="" target="_blank">硅藻泥到底是什么材质</a></li>
+                            <li><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2121" title="" target="_blank">硅藻泥好吗？硅藻泥吸附甲醛的优势是啥？</a></li>
+                            <li><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2122" title="" target="_blank">硅藻泥真的可以保护视力？</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="titlelist clearfl">
+                    <div class="imgbox2 clearfl">
+                        <dl class="fl">
+                        	<dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2118" target="_blank" title="别再吹了，看中央电视台如何评价国产硅藻泥！"><img alt="别再吹了，看中央电视台如何评价国产硅藻泥！" src="images/gzn/gzn_25.jpg" /></a></dd>
+                        	<dt><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2118" target="_blank" title="别再吹了，看中央电视台如何评价国产硅藻泥！">别再吹了，看中央电视台如何评价国产硅藻泥！</a></dt>
+                        </dl>
+                        <dl class="fr">
+                        	<dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2124" target="_blank" title="网购硅藻泥真假难辨需谨慎！"><img alt="网购硅藻泥真假难辨需谨慎！" src="images/gzn/gzn_26.png" /></a></dd>
+                        	<dt><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2124" target="_blank" title="网购硅藻泥真假难辨需谨慎！">网购硅藻泥真假难辨需谨慎！</a></dt>
+                        </dl>
+                    </div>
+                    <div class="fontbox">
+                        <ul>
+                            <li><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2123" title="" target="_blank">你还在用乳胶漆和墙纸？而他们早就选用硅藻泥！</a></li>
+                            <li><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2124" title="" target="_blank">网购硅藻泥真假难辨需谨慎！</a></li>
+                            <li><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2161" title="" target="_blank">异味克星！硅藻泥让室内异味“无所遁形”</a></li>
+                            <li><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2126" title="" target="_blank">真正优质硅藻泥 不耐擦洗</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="comright">
+                <div class="titlediv">
+                    <span>行业热点</span>
+                </div>
+                <div class="imgbox playbox">
+	                <a class="arrow-left" href="javascript:;"></a>
+	                <a class="arrow-right" href="javascript:;"></a>
+	                <div class="swiper-container">
+	                    <div class="swiper-wrapper clearfl swiper-no-swiping">
+	                        <div class="swiper-slide">
+	                            <div class="swi_box">
+	                                <a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2127" target="_blank" title="硅藻泥市场“价格乱象”揭秘"><img src="images/gzn/gzn_01.png" alt="硅藻泥市场“价格乱象”揭秘" /></a>
+	                                <p><a href="" title="硅藻泥市场“价格乱象”揭秘" target="_blank">硅藻泥市场“价格乱象”揭秘</a></p>
+	                            </div>
+	                        </div>
+                            <div class="swiper-slide">
+                                <div class="swi_box">
+                                    <a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2128" target="_blank" title="品牌是硅藻泥行业发展的核心动力"><img src="images/gzn/gzn_02.jpg" alt="品牌是硅藻泥行业发展的核心动力" /></a>
+                                    <p><a href="" title="品牌是硅藻泥行业发展的核心动力" target="_blank">品牌是硅藻泥行业发展的核心动力</a></p>
+                                </div>
+                            </div>
+	                    </div>
+	                </div>
+	                <div class="pagination"></div>
+	            </div>
+	            <div class="imgbox"><a href="" target="_blank" title=""><img src="images/gzn/advertise02.jpg" alt="" /></a></div>
+            </div>
+        </div>
+        <div class="common03 clearfl">
+            <div class="titlediv">
+                <div><span>霍尔茨专区－</span></div>
+                <a href="" target="_blank" class="gzn_logo"><img src="images/gzn/hec_logo.png" height="30" /></a>
+            </div>
+            <div class="clearfl mar_20">
+                <a href="" target="_blank" class="fl comleft">
+                    <img src="images/gzn/hec_img01.jpg" width="450" height="332" />
+                </a>
+                <div class="fl comcenter clearfl">
+                    <a href="" target="_blank" style="margin-left:10px;"><img src="images/gzn/hec_img02.jpg" width="390" height="120" /></a>
+                    <div class="clearfix hec_center">
+                        <a href="" target="_blank">
+                            <img src="images/gzn/hec_img03.jpg" width="190" height="192" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="images/gzn/hec_img03.jpg" width="190" height="192" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="fr comright">
+                    <p class="tit hectit">新闻资讯</p>
+                    <dl>
+                        <dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2283" target="_blank" title="北疆硅藻泥参加国际壁材交流载誉而归">北疆硅藻泥参加国际壁材交流载誉而归</a></dd>
+                        <dt>为鼓励硅藻泥行业的龙头企业，更好地融入国际环保壁材圈，同时拥有更广阔的国际化视野，将硅藻泥民族品牌发为鼓励硅藻泥行业的龙头企业，更好地融入国际环保壁材圈，同时拥有更广阔的国际化视野，将硅藻泥民族品牌发扬光大，中国建材联合会生态建材分会组织了国内大型生态建材企业，组成2017年中国生态建材高级商务考察团，于2017年3月6日扬光大，中国建材联合会生态建材分会组织了国内大型生态建材企业，组成2017年中国生态建材高级商务考察团，于2017年3月6日~2017年3月12日，赴日本东京...</dt>
+                    </dl>
+                    <div class="line2"></div>
+                    <p class="tit hectit">优惠促销</p>
+                    <dl>
+                        <dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2287" target="_blank" title="北疆硅藻泥携手佟大为打造全新品牌形象!">北疆硅藻泥携手佟大为打造全新品牌形象!</a></dd>
+                        <dt style="height:80px;">为鼓励硅藻泥行业的龙头企业，更好地融入国际环保壁材圈，同时拥有更广阔的国际化视野，将硅藻泥民族品牌发扬光大，中国建材联合会生态建材分会组织了国内大型生态建材企业，组成2017年中国生态建材高级商务考察团，于2017年3月6日为鼓励硅藻泥行业的龙头企业，更好地融入国际环保壁材圈，同时拥有更广阔的国际化视野，将硅藻泥民族品牌发扬光大，中国建材联合会生态建材分会组织了国内大型生态建材企业，组成2017年中国生态建材高级商务考察团，于2017年3月6日为鼓励硅藻泥行业的龙头企业，更好地融入国际环保壁材圈，同时拥有更广阔的国际化视野，将硅藻泥民族品牌发扬光大，中国建材联合会生态建材分会组织了国内大型生态建材企业，组成2017年中国生态建材高级商务考察团，于2017年3月6日</dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--common03-->
+        <div class="common03 clearfl">
+            <div class="titlediv">
+                <div><span>北疆专区 -</span></div>
+                <a href="" target="_blank" class="gzn_logo"><img src="images/gzn/gzn_logo.png" height="30" /></a>
+            </div>
+            <div class="clearfl mar_20">
+            	<dl class="fl comleft">
+            		<dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2281" target="_blank" title="热烈庆祝北疆硅藻泥第二十八届北隽销售训练圆满结束"><img src="images/gzn/gzn_15.png" alt="热烈庆祝北疆硅藻泥第二十八届北隽销售训练圆满结束" /></a></dd>
+            		<dt><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2281" target="_blank" title="热烈庆祝北疆硅藻泥第二十八届北隽销售训练圆满结束">热烈庆祝北疆硅藻泥第二十八届北隽销售训练圆满结束</a></dt>
+	            </dl>
+	            <div class="fl comcenter clearfl">
+	            	<dl>
+	            		<dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2301" target="_blank" title="北疆产品案例：弹涂系列&丝网印系列"><img src="images/gzn/gzn_16.png" alt="北疆产品案例：弹涂系列&丝网印系列" /></a></dd>
+	            		<dt><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2301" target="_blank" title="北疆产品案例：弹涂系列&丝网印系列">北疆产品案例：弹涂系列&丝网印系列</a></dt>
+		            </dl>
+		            <dl>
+	            		<dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2300" target="_blank" title="北疆产品案例：肌理系列&云顶系列"><img src="images/gzn/gzn_17.png" alt="北疆产品案例：肌理系列&云顶系列" /></a></dd>
+	            		<dt><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2300" target="_blank" title="北疆产品案例：肌理系列&云顶系列">北疆产品案例：肌理系列&云顶系列</a></dt>
+		            </dl>
+		            <dl>
+	            		<dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2270" target="_blank" title="北疆产品案例：手绘系列&梦幻系列"><img src="images/gzn/gzn_18.png" alt="北疆产品案例：手绘系列&梦幻系列" /></a></dd>
+	            		<dt><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2270" target="_blank" title="北疆产品案例：手绘系列&梦幻系列">北疆产品案例：手绘系列&梦幻系列</a></dt>
+		            </dl>
+		            <dl>
+	            		<dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2302" target="_blank" title="北疆产品案例：压花系列&刻花系列"><img src="images/gzn/gzn_19.png" alt="北疆产品案例：压花系列&刻花系列" /></a></dd>
+	            		<dt><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2302" target="_blank" title="北疆产品案例：压花系列&刻花系列">北疆产品案例：压花系列&刻花系列</a></dt>
+		            </dl>
+	            </div>
+	            <div class="fr comright">
+	            	<p class="tit">【企业动态】</p>
+	            	<dl>
+	            		<dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2283" target="_blank" title="北疆硅藻泥参加国际壁材交流载誉而归">北疆硅藻泥参加国际壁材交流载誉而归</a></dd>
+	            		<dt>为鼓励硅藻泥行业的龙头企业，更好地融入国际环保壁材圈，同时拥有更广阔的国际化视野，将硅藻泥民族品牌发扬光大，中国建材联合会生态建材分会组织了国内大型生态建材企业，组成2017年中国生态建材高级商务考察团，于2017年3月6日~2017年3月12日，赴日本东京...</dt>
+	            	</dl>
+	            	<div class="line"></div>
+					<p class="tit">【企业动态】</p>
+	            	<dl>
+	            		<dd><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2287" target="_blank" title="北疆硅藻泥携手佟大为打造全新品牌形象!">北疆硅藻泥携手佟大为打造全新品牌形象!</a></dd>
+	            		<dt>在风起云涌的2017硅藻泥市场，北疆又迎来了一次全新升级，不仅与各大知名网络巨头强强联合，北疆又重磅推出了品牌代言人佟大为，全面升级品牌形象！</dt>
+	            	</dl>
+	            </div>
+            </div>
+        </div>
+        <!--adver-tit-->
+        <div class="adver-tit marb_30"><a href="" title="" target="_blank"><img src="images/gzn/guanggao06.png" alt=""></a></div>
+        <!--common04-->
+        <div class="common04">
+            <div class="titlediv">
+                <span>精选产品</span>
+            </div>
+            <div class="combox">
+            	<ul class="clearfl">
+            		<li>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2129" title="大津硅藻泥，全球领先的硅藻泥专家" target="_blank" class="pic"><img src="images/gzn/gzn_03.jpg" alt="大津硅藻泥，全球领先的硅藻泥专家" /></a>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2129" title="大津硅藻泥，全球领先的硅藻泥专家" target="_blank" class="tit">大津硅藻泥，全球领先的硅藻泥专家</a>
+            		</li>
+            		<li>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2136" title="金太郎硅藻泥“零甲醛”引领健康新时代" target="_blank" class="pic"><img src="images/gzn/gzn_04.jpg" alt="金太郎硅藻泥“零甲醛”引领健康新时代" /></a>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2136" title="金太郎硅藻泥“零甲醛”引领健康新时代" target="_blank" class="tit">金太郎硅藻泥“零甲醛”引领健康新时代</a>
+            		</li>
+            		<li>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2137" title="绿森林：硅藻泥正是美与健康的化身" target="_blank" class="pic"><img src="images/gzn/gzn_05.jpg" alt="绿森林：硅藻泥正是美与健康的化身" /></a>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2137" title="绿森林：硅藻泥正是美与健康的化身" target="_blank" class="tit">绿森林：硅藻泥正是美与健康的化身</a>
+            		</li>
+            		<li>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2138" title="蒙太奇硅藻泥：注重创新，功能和美观两不误" target="_blank" class="pic"><img src="images/gzn/gzn_06.jpg" alt="蒙太奇硅藻泥：注重创新，功能和美观两不误" /></a>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2138" title="蒙太奇硅藻泥：注重创新，功能和美观两不误" target="_blank" class="tit">蒙太奇硅藻泥：注重创新，功能和美观两不误</a>
+            		</li>
+            		<li>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2156" title="森卓硅藻泥—带来不一样的“视”界" target="_blank" class="pic"><img src="images/gzn/gzn_07.jpg" alt="森卓硅藻泥—带来不一样的“视”界" /></a>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2156" title="森卓硅藻泥—带来不一样的“视”界" target="_blank" class="tit">森卓硅藻泥—带来不一样的“视”界</a>
+            		</li>
+            		<li>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2158" title="双木林硅藻泥教你：如何使装修污染降到最低" target="_blank" class="pic"><img src="images/gzn/gzn_08.jpg" alt="双木林硅藻泥教你：如何使装修污染降到最低" /></a>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2158" title="双木林硅藻泥教你：如何使装修污染降到最低" target="_blank" class="tit">双木林硅藻泥教你：如何使装修污染降到最低</a>
+            		</li>
+            		<li>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2159" title="氧宜多硅藻泥卧室 ，我们用品质说话！" target="_blank" class="pic"><img src="images/gzn/gzn_09.jpg" alt="氧宜多硅藻泥卧室 ，我们用品质说话！" /></a>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2159" title="氧宜多硅藻泥卧室 ，我们用品质说话！" target="_blank" class="tit">氧宜多硅藻泥卧室 ，我们用品质说话！</a>
+            		</li>
+            		<li>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2160" title="氧宜多硅藻泥助您远离雾霾，回归清新生活" target="_blank" class="pic"><img src="images/gzn/gzn_10.jpg" alt="氧宜多硅藻泥助您远离雾霾，回归清新生活" /></a>
+            			<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2160" title="氧宜多硅藻泥助您远离雾霾，回归清新生活" target="_blank" class="tit">氧宜多硅藻泥助您远离雾霾，回归清新生活</a>
+            		</li>
+            	</ul>
+            </div>
+        </div>
+        <!--adver-tit-->
+        <div class="adver-tit"><a href="" title="" target="_blank"><img src="images/gzn/guanggao07.png" alt=""></a></div>
+        <!-- common05 -->
+        <div class="common05 clearfl">
+        	<div class="comleft">
+        		<div class="titlediv">
+	                <span>品牌推荐</span>
+	            </div>
+                <p class="tit">天然硅藻泥</p>
+	            <ul class="combox clearfl">
+	            	<li><a href="http://www.beijianggzn.com/" target="_blank" title="北疆硅藻泥"><img src="images/gzn/beijiang.jpg" alt="北疆硅藻泥" /><span>北疆硅藻泥</span></a></li>
+	            	<li><a href="http://www.abagzn.com/" target="_blank" title="澳霸"><img src="images/gzn/aoba.jpg" alt="澳霸" /><span>澳霸</span></a></li>
+	            	<li><a href="http://www.czygzn.com/" target="_blank" title="春之元"><img src="images/gzn/chunzhiyuan.jpg" alt="春之元" /><span>春之元</span></a></li>
+	            	<li><a href="http://www.dajinhome.com/" target="_blank" title="大津硅藻泥"><img src="images/gzn/dajin.jpg" alt="大津硅藻泥" /><span>大津硅藻泥</span></a></li>
+	            </ul>
+                <p class="tit">环保硅藻泥</p>
+                <ul class="combox clearfl">
+                    <li><a href="http://www.crosswaycn.com/" target="_blank" title="克洛斯威"><img src="images/gzn/keluo.jpg" alt="克洛斯威" /><span>克洛斯威</span></a></li>
+                    <li><a href="http://www.lsgzn.com/" target="_blank" title="兰舍"><img src="images/gzn/lanshe.png" alt="兰舍" /><span>兰舍</span></a></li>
+                    <li><a href="http://www.lantiantun.com" target="_blank" title="蓝天豚"><img src="images/gzn/lantiantun.jpg" alt="蓝天豚" /><span>蓝天豚</span></a></li>
+                    <li><a href="http://www.lslgzn.com" target="_blank" title="绿森林"><img src="images/gzn/lvsenlin.jpg" alt="绿森林" /><span>绿森林</span></a></li>
+                </ul>
+                <p class="tit">艺术硅藻泥</p>
+                <ul class="combox clearfl">
+                    <li><a href="http://www.cmt7.com/" target="_blank" title="蒙太奇"><img src="images/gzn/mengtaiqi.jpg" alt="蒙太奇" /><span>蒙太奇</span></a></li>
+                    <li><a href="http://www.toloss.com/" target="_blank" title="涂乐师"><img src="images/gzn/tuleshi.jpg" alt="涂乐师" /><span>涂乐师 </span></a></li>
+                    <li><a href="http://www.abagzn.com/" target="_blank" title="亚皇"><img src="images/gzn/yahuang.jpg" alt="亚皇" /><span>亚皇</span></a></li>
+                    <li><a href="http://www.zlgzn.com/" target="_blank" title="芝兰"><img src="images/gzn/zhilan.jpg" alt="芝兰" /><span>芝兰</span></a></li>
+                </ul>
+        	</div>
+        	<div class="comright">
+        		<div class="titlediv">
+                    <span>品牌排行榜</span>
+	            </div>
+	            <ul>
+                    <li>
+                        <a href="http://www.beijianggzn.com/" title="北疆硅藻泥" target="_blank">
+                            <i class="blue">1</i>
+                            <img src="images/gzn/beijiang.jpg" class="g_logo" alt="北疆硅藻泥" />
+                            <span class="g_name">北疆硅藻泥</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.abagzn.com/" title="澳霸" target="_blank">
+                            <i class="blue">2</i>
+                            <img src="images/gzn/aoba.jpg" class="g_logo" alt="澳霸" />
+                            <span class="g_name">澳霸</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="http://www.czygzn.com/" title="春之元" target="_blank">
+                            <i class="blue">3</i>
+                            <img src="images/gzn/chunzhiyuan.jpg" class="g_logo" alt="春之元" />
+                            <span class="g_name">春之元</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="http://www.dajinhome.com/" title="大津硅藻泥" target="_blank">
+                            <i>4</i>
+                            <img src="images/gzn/dajin.jpg" class="g_logo" alt="大津硅藻泥" />
+                            <span class="g_name">大津硅藻泥</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="http://www.crosswaycn.com/" title="克洛斯威" target="_blank">
+                            <i>5</i>
+                            <img src="images/gzn/keluo.jpg" class="g_logo" alt="克洛斯威" />
+                            <span class="g_name">克洛斯威</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="http://www.lsgzn.com/" title="兰舍" target="_blank">
+                            <i>6</i>
+                            <img src="images/gzn/lanshe.png" class="g_logo" alt="兰舍" />
+                            <span class="g_name">兰舍</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="http://www.lantiantun.com" title="蓝天豚" target="_blank">
+                            <i>7</i>
+                            <img src="images/gzn/lantiantun.jpg" class="g_logo" alt="蓝天豚" />
+                            <span class="g_name">蓝天豚</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="http://www.lslgzn.com" title="绿森林" target="_blank">
+                            <i>8</i>
+                            <img src="images/gzn/lvsenlin.jpg" class="g_logo" alt="绿森林" />
+                            <span class="g_name">绿森林</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="http://www.cmt7.com/" title="蒙太奇" target="_blank">
+                            <i>9</i>
+                            <img src="images/gzn/mengtaiqi.jpg" class="g_logo" alt="蒙太奇" />
+                            <span class="g_name">蒙太奇</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="http://www.toloss.com/" title="涂乐师" target="_blank">
+                            <i>10</i>
+                            <img src="images/gzn/tuleshi.jpg" class="g_logo" alt="涂乐师" />
+                            <span class="g_name">涂乐师</span>
+                        </a>
+                    </li>   
+                </ul>
+        	</div>
+        </div>
+        <!--adver-tit-->
+        <div class="adver-tit"><a href="" title="" target="_blank"><img src="images/gzn/guanggao08.png" alt=""></a></div>
+        <!-- common06 -->
+        <div class="common06 clearfl">
+        	<div class="comleft">
+        		<div class="titlediv">
+	                <span>产品攻略</span>
+	            </div>
+	            <ul class="tab_ul">
+	            	<li class="active"><a href="javascript:;">评测导购</a><span class="line"></span></li>
+	            	<li><a href="javascript:;">精品促销</a></li>
+	            </ul>
+	            <div class="tab_box">
+                    <ul class="active">
+                        <li class="clearfl">
+                            <div class="fl pic"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2292" title="自然硅藻泥产品评测：选购健康优质硅藻泥" target="_blank"><img src="images/gzn/gzn_23.jpg" alt="自然硅藻泥产品评测：选购健康优质硅藻泥" /></a></div>
+                            <div class="fr font">
+                                <p class="tit"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2292" title="自然硅藻泥产品评测：选购健康优质硅藻泥" target="_blank">自然硅藻泥产品评测：选购健康优质硅藻泥</a></p>
+                                <p class="des">装修污染越来越逼近大家的生活，长时间住在含有甲醛污染的房子内，可导致身体中毒从而引起疾病产生。 为了创造更好的生活环境，确保家人的健康，装修市场上近两年兴起了一种叫做硅藻泥的墙壁涂料，被网友誉为“会呼吸的墙壁”。这种新型涂料真的如此神奇?它又有哪些神奇功能呢?针对这些问题，小编走进自然硅藻泥，为大家做一一解答。</p>
+                                <p class="tim">2017-3-31</p>
+                            </div>
+                        </li>
+                        <li class="clearfl">
+                            <div class="fl pic"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2294" title="山亿硅藻泥产品测评：新型环保墙面材料" target="_blank"><img src="images/gzn/gzn_22.jpg" alt="山亿硅藻泥产品测评：新型环保墙面材料" /></a></div>
+                            <div class="fr font">
+                                <p class="tit"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2294" title="山亿硅藻泥产品测评：新型环保墙面材料" target="_blank">山亿硅藻泥产品测评：新型环保墙面材料</a></p>
+                                <p class="des">硅藻是一类最重要的浮游生物，分布极其广泛。在世界大洋中，只要有水的地方，一般都有硅藻的踪迹，尤其是在温带和热带海区。因为硅藻种类多、数量大，因而被称为海洋的草原。那么，今天小编给大家详细介绍这种新型的家装环保材料——硅藻泥。</p>
+                                <p class="tim">2017-3-31</p>
+                            </div>
+                        </li>
+                        <li class="clearfl">
+                            <div class="fl pic"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2295" title="如何判断硅藻泥的好坏 硅藻泥施工前后辨质量" target="_blank"><img src="images/gzn/gzn_21.jpg" alt="如何判断硅藻泥的好坏 硅藻泥施工前后辨质量" /></a></div>
+                            <div class="fr font">
+                                <p class="tit"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2295" title="如何判断硅藻泥的好坏 硅藻泥施工前后辨质量" target="_blank">如何判断硅藻泥的好坏 硅藻泥施工前后辨质量</a></p>
+                                <p class="des">近几年硅藻泥行业发展迅猛，环保家居生活也逐渐成为主流，市场上硅藻泥品牌也开始良莠不齐，而硅藻泥的好坏也成为了越来越多人关心的话题。</p>
+                                <p class="tim">2017-3-31</p>
+                            </div>
+                        </li>
+                        <li class="clearfl">
+                            <div class="fl pic"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2298" title="硅藻泥知识大讲堂：专业补习您所不知的硅藻泥知识" target="_blank"><img src="images/gzn/gzn_20.jpg" alt="硅藻泥知识大讲堂：专业补习您所不知的硅藻泥知识" /></a></div>
+                            <div class="fr font">
+                                <p class="tit"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2298" title="硅藻泥知识大讲堂：专业补习您所不知的硅藻泥知识" target="_blank">硅藻泥知识大讲堂：专业补习您所不知的硅藻泥知识</a></p>
+                                <p class="des">据统计调查发现，约有60%以上的咨询电话或来访者是刚刚装修完房子的人，又重新施工硅藻泥厂家的，约占所有硅藻泥用户的30%左右。他们当中有的是因为新装房晾了几个月后仍气味刺鼻，无法入住;有的已经入住，家人因污染出现了甲醛中毒反应不得不重新施工硅藻泥，劳民伤财。</p>
+                                <p class="tim">2017-3-31</p>
+                            </div>
+                        </li>
+                    </ul>
+	            	<ul>
+	            		<li class="clearfl">
+	            			<div class="fl pic"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2114" title="3.15超级顾客日，请认准北疆硅藻泥！" target="_blank"><img src="images/gzn/gzn_11.jpg" alt="3.15超级顾客日，请认准北疆硅藻泥！" /></a></div>
+	            			<div class="fr font">
+	            				<p class="tit"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2114" title="3.15超级顾客日，请认准北疆硅藻泥！" target="_blank">3.15超级顾客日，请认准北疆硅藻泥！</a></p>
+	            				<p class="des">活动时间:即日起至2017年3月25日。活动地点:北疆硅藻泥全国专营店。活动介绍:它奏响了五星联盟优质大牌的集结号！它创造了线上万人疯抢的震撼场面！它是一场O2O促销模式的超级联合！它是全心为消费者的3.15超级顾客日！</p>
+	            				<p class="tim">2017-03-27</p>
+	            			</div>
+	            		</li>
+	            		<li class="clearfl">
+	            			<div class="fl pic"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2115" title="看硅藻泥如何完胜“互联网焦虑症”" target="_blank"><img src="images/gzn/gzn_12.jpg" alt="看硅藻泥如何完胜“互联网焦虑症”" /></a></div>
+	            			<div class="fr font">
+	            				<p class="tit"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2115" title="看硅藻泥如何完胜“互联网焦虑症”" target="_blank">看硅藻泥如何完胜“互联网焦虑症”</a></p>
+	            				<p class="des">什么是互联网焦虑症呢？ 现今网络时代迅速发展，迫使传统企业陷入这样一种焦虑：时刻都能够感觉到互联网的步步紧逼，却又找不到互联网时代的“正确打开方式”。百度公司董事长李彦宏说：“中国互联网正在加速淘汰传统产业，传统产业都面临着互联网的冲击”。下面，小编就带领大家走进硅藻泥行业，看它是如何完胜“互联网焦虑症”的。</p>
+	            				<p class="tim">2017-03-27</p>
+	            			</div>
+	            		</li>
+	            		<li class="clearfl">
+	            			<div class="fl pic"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2116" title="买硅藻泥的N条理由，第一条就给跪了……" target="_blank"><img src="images/gzn/gzn_13.jpg" alt="买硅藻泥的N条理由，第一条就给跪了……" /></a></div>
+	            			<div class="fr font">
+	            				<p class="tit"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2116" title="买硅藻泥的N条理由，第一条就给跪了……" target="_blank">买硅藻泥的N条理由，第一条就给跪了……</a></p>
+	            				<p class="des">市场上产品万万千千，好产品总是不凤毛麟角！任何产品都是有成本的，便宜无好货的古训，至今仍然是真理！为了家人的健康，郑重建议，请不要再贪便宜去选择低价墙纸墙布！</p>
+	            				<p class="tim">2017-03-27</p>
+	            			</div>
+	            		</li>
+	            		<li class="clearfl">
+	            			<div class="fl pic"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2117" title="装修就要选择好的装修壁材，环保有益家人身体健康！" target="_blank"><img src="images/gzn/gzn_14.jpg" alt="装修就要选择好的装修壁材，环保有益家人身体健康！" /></a></div>
+	            			<div class="fr font">
+	            				<p class="tit"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2117" title="装修就要选择好的装修壁材，环保有益家人身体健康！" target="_blank">装修就要选择好的装修壁材，环保有益家人身体健康！</a></p>
+	            				<p class="des">近日，由北疆集团董事长黄宪斌先生亲自带队，由北疆集团硅藻泥事业部总经理董建庆等高层管理人员组成的北疆考察团抵达广东，深入了解了当地北疆专营店的经营管理、营销宣传及售前售后落地现状。</p>
+	            				<p class="tim">2017-03-27</p>
+	            			</div>
+	            		</li>
+	            	</ul>
+	            </div>
+        	</div>
+        	<div class="comright">
+        		<div class="titlediv">
+	                <span>消费回音壁</span>
+	            </div>
+	            <div class="combox">
+	            	<div class="clearfl div1">
+	            		<a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2317" title="消费观察 | 李卫泽：硅藻泥离大众生活有多远？" target="_blank"><img src="images/gzn/gzn_27.jpg" class="fl" alt="消费观察 | 李卫泽：硅藻泥离大众生活有多远？" /></a>
+	            		<div class="fr"><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2317" title="消费观察 | 李卫泽：硅藻泥离大众生活有多远？" target="_blank">消费观察 | 李卫泽：硅藻泥离大众生活有多远？</a></div>
+	            	</div>
+	            	<div class="clearfl div2"><i>●</i><span><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2319" title="硅藻泥市场十大黑幕 你知道吗？" target="_blank">硅藻泥市场十大黑幕 你知道吗？</a></span></div>
+	            	<div class="clearfl div2"><i>●</i><span><a href="http://m.jia360.com/index.php?g=portal&m=article&a=index&id=2320" title="硅藻泥行业惊爆内幕，多少消费者被“欺" target="_blank">硅藻泥行业惊爆内幕，多少消费者被“欺</a></span></div>
+	            </div>
+	            <div class="adv"><a href="" title="" target="_blank"><img src="images/gzn/advertise02.jpg" /></a></div>
+                <div class="adv"><a href="" title="" target="_blank"><img src="images/gzn/advertise02.jpg" /></a></div>
+        	</div>
+        </div>
+        <!--adver-tit-->
+        <div class="adver-tit"><a href="" title="" target="_blank"><img src="images/gzn/guanggao08.png" alt=""></a></div>
+    </div>
+    <div id="goUp"><a href="javascript:;" title="返回顶部" target="_self"></a></div>
+</div>
+<!--页脚开始-->
+<!-- <div class="w1200">
+    友情链接 start
+    <div class="wrapper02">
+        <div class="friends-links">
+            <div class="tit">友情链接：</div>
+            <div class="friends-links-list">
+                <a href="http://www.jia360.com/" target="_blank">腾讯家居</a>
+                <a href="http://news.jia360.com/" target="_blank">家居新闻</a>
+                <a href="http://www.yoju360.com/" target="_blank">优居</a>
+                <a href="http://www.pchouse.com.cn/" target="_blank">时尚家居</a>
+                <a href="http://www.jiuzheng.com/" target="_blank">装修网</a>
+                <a href="http://www.chinafloor.cn/" target="_blank">木地板</a>
+                <a href="http://www.zhuke.com/" target="_blank">别墅装修</a>
+                <a href="http://cs.focus.cn/" target="_blank">长沙房地产</a>
+                <a href="http://zx.meilele.com/" target="_blank">装修网</a>
+                <a href="http://www.whjzw.net/" target="_blank">武汉装修网</a>
+                <a href="http://nc.house.sina.com.cn/" target="_blank">南昌房地产</a>
+                <a href="http://baike.17house.com/" target="_blank">装修百科</a>
+                <a href="http://www.51hejia.com/" target="_blank">和家装修网</a>
+                <a href="http://sz.centanet.com/" target="_blank">深圳二手房</a>
+                <a href="http://www.china-designer.com/" target="_blank">设计师家园</a>
+                <a href="http://shop.jc001.cn/" target="_blank">建材企业</a>
+                <a href="http://guju.com.cn/" target="_blank">谷居家居网</a>
+                <a href="http://tj.lianjia.com/" target="_blank">天津房产</a>
+                <a href="http://www.jiancai365.cn" target="_blank">中国建材网</a>
+                <a href="http://www.qizuang.com/" target="_blank">装修网</a>
+                <a href="http://www.dyrs.com.cn/" target="_blank">东易日盛装饰</a>
+                <a href="http://www.wanshifu.com/" target="_blank">卫生洁具安装</a>
+                <a href="http://www.fuwo.com" target="_blank">装修</a>
+                <a href="http://www.jiazhuang.com/" target="_blank">家装网</a>
+                <a href="http://www.gojiaju.com/" target="_blank">家具网</a>
+                <a href="http://www.zhuke.com/" target="_blank">筑客网</a>
+                <a href="http://www.chinaweiyu.com/" target="_blank">卫浴</a>
+                <a href="http://www.7gz.com/" target="_blank">工长</a>
+            </div>
+        </div>
+    </div>
+    友情链接 end
+</div> -->
+<div class="footer">
+    <div class="w1200">
+        <div class="footer-list-wrapper clearfl">
+            <div class="footer-list01 fl">
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">招贤纳士</a></li>
+                    <li><a href="#">免责声明</a></li>
+                </ul>
+            </div>
+            <div class="footer-list02 fl">
+                <ul>
+                    <li><a href="#">招商加盟</a></li>
+                    <li><a href="#">广告咨询</a></li>
+                    <li><a href="#">设计师入驻</a></li>
+                    <li><a href="#">装修公司入驻</a></li>
+                </ul>
+            </div>
+            <div class="footer-list03 fl">
+                <ul>
+                    <li><a href="#">网站地图</a></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">投稿</a></li>
+                </ul>
+            </div>
+            <div class="footer-list04 fl">
+                <p class="footer-telphone t-c">010-53028857</p>
+
+                <p class="footer-time t-c">周一至周五：9：00 - 18：00</p>
+
+                <div class="footer-btnJoin">联系客服</div>
+            </div>
+            <div class="footer-list05 fr">
+                <img src="images/code.png"/>
+            </div>
+        </div>
+        <p class="copyright t-c">Copyright 2009-2016，版权所有深圳市聚业美家科技有限公司</p>
+    </div>
+</div>
+<!--页脚结束-->
+</body>
+</html>
