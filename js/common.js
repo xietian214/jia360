@@ -1,4 +1,6 @@
 $(function() {
+    //静态页面添加头部，后台不用加去掉。
+    $('#loadtop').load('./loadtop.html');
     // 返回顶部
     $("#goUp").hide();
     $(window).scroll(function() {

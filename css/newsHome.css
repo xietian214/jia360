@@ -67,13 +67,13 @@
 
 /* newsList */
 .newsLleft{width:830px;margin-top:30px;}
-.newsListli{width:790px;background:#fff;padding:0 20px;}
-.newsListli li{width:100%;height:130px;padding:20px 0;display: block;border-top:1px #eee solid;}
+.newsListli{width:770px;background:#fff;padding:0 30px;}
+.newsListli li{width:100%;height:120px;padding:20px 0;display: block;border-top:1px #eee solid;}
 .newsListli li:first-child{border:none;}
-.newsListli li a.fl{width:200px;height:130px;overflow:hidden;}
+.newsListli li a.fl{width:160px;height:120px;overflow:hidden;}
 .newsListli li a.fl img{max-width:100%;height:100%;}
-.newsListli li .font{width:570px;float:right;padding-top:10px;}
+.newsListli li .font{width:585px;float:right;padding-top:10px;}
 .newsListli li .font h6,.newsBox .tab_div li.li3 h6{font-size:18px;white-space:nowrap; overflow:hidden;text-overflow:ellipsis;margin:0;font-weight: normal;}
-.newsListli li .font p,.newsBox .tab_div li.li3 p{color:#898989;font-size:14px;line-height: 24px;height:48px;overflow:hidden;text-indent: 2rem;margin-top:10px;}
+.newsListli li .font p,.newsBox .tab_div li.li3 p{color:#898989;font-size:14px;line-height: 24px;height:48px;overflow:hidden;margin-top:10px;}
 .newsListli li .font span,.newsBox .tab_div li.li3 span{display: block;text-align: right;margin-top:20px;color:#898989;}
 .newsloadMore{height:30px;line-height: 30px;width:100%;background:#fff;font-size:14px;color:#898989;text-align:center;margin-top:20px;cursor:pointer;}

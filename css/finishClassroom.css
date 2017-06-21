@@ -62,3 +62,11 @@
 /* 添加广告位 */
 .titlediv a.recommendAdv{position:absolute;left:120px;width:60px;height:30px;line-height:0;top:8px;}
 .titlediv a.recommendAdv img{width:60px;height:30px;}
+
+/* 装修课堂列表 */
+.finishLiTab{background:#fff;}
+.finishLiTab .tab_ul{width:100%;height:30px;padding-top:30px;border-bottom:2px #f7f7f7 solid;}
+.finishLiTab .tab_ul li{width:120px;height:30px;float:left;text-align:center;font-size:16px;cursor:pointer;color:#555;}
+.finishLiTab .tab_ul li.active{border-bottom:2px #2888e2 solid;color:#1479d7}
+.finishLiTab .tab_box .tab_div span{display: block;cursor:pointer;width:80px;height:33px;text-align:center;line-height:33px;border:1px #eee solid;font-size:14px;color:#898989;border-radius:3px;margin:10px 0 0 20px;float:left;}
+.finishLiTab .tab_box .tab_div span.cur{color:#2888e2;border-color:#2888e2}

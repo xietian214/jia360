@@ -151,19 +151,27 @@ a:hover{color:#1479d7}
 .top .top-phone{background-image: url("../images/phone_icon.png");position: relative;}
 .top .top-phone .phone_tcode{width:110px;height:122px;overflow:hidden;background:url('../images/phone_tcodebg.png') center top no-repeat;text-align:center;position: absolute;left:-28px;top:22px;z-index: 9;display: none;}
 .top .top-phone .phone_tcode img{width:100px;height:100px;margin-top:17px;}
-.top .top-telphone{background-image: url("../images/tel_icon.png");padding-left: 22px}
-.tabcity {display:none;width:410px;padding:0 20px;color: #f7f7f7;background: #f7f7f7;opacity:0.9;filter:alpha(opacity=90);position:absolute;left: 88px;top: 30px;z-index:999;overflow:hidden;}
-.tabcity .ht { width:400px; height:30px;line-height:30px;font-weight:bold; position:relative; z-index:9999;color:#af874b}
-.tabcity .ht .l { display:block; width:332px; height:10px; overflow:hidden; border-bottom:1px solid #9b763b; position:absolute; right:0; top:6px}
-.tabcity .ht a,.tabcity .ht b { line-height:30px; font-weight:normal}
-.tabcity .ht span b { margin-right:5px;}
-.tabcity .cityall { height:120px;}
-.tabcity .citylist { float:left; width:68px; position:relative; z-index:9999;}
-.tabcity .citylist li {line-height:20px; color:#999}
-.tabcity .citylist li b { color:#af874b}
-.tabcity .citylist li span { padding-right:8px; font-size:14px; font-weight:bold;}
-.tabcity .citylist li span.n { font-size:12px; font-weight:normal;}
-.tabcity .tcmask { width:450px; height:260px;  position:absolute; left:0; top:0; z-index:999}
+
+.tabcity{width:715px;padding:0 20px;border:1px #ccc solid;background:#fff;position:absolute;left:100px;top:30px;z-index:999;font-size:12px;display: none;}
+.tabcity .ht {width:100%;line-height:50px;border-bottom:1px #eee solid;}
+.tabcity .ht .rt {float:left;width:75px;text-align:center;color:#898989;}
+.tabcity .ht .hta{float:left;width:640px;}
+.tabcity .ht .hta a{color:#1479d7;margin-left:40px;}
+.tabcity .ht .xz {float:left;width:95px;text-align:center;color:#898989;}
+.tabcity .ht .zma{float:right;width:555px;text-align:right;margin-top:15px;}
+.tabcity .ht .zma a{color:#ccc;margin-left:1px;font-size:14px;font-family: 'Arial';width:20px;height:20px;text-align:center;line-height:20px;float:left;cursor:default}
+.tabcity .ht .zma a.cur{color:#555;cursor:pointer;}
+.tabcity .ht .zma a.active{background:#2f8adf;color:#fff;}
+.tabcity .adrbox{padding:5px 0;}
+.tabcity .spbox{display: none}
+.tabcity .spbox.active{display: block;}
+.tabcity .spbox span{float:left;width:62px;padding-left:15px;margin:5px 0;}
+/*行业中心*/
+.hychannel { float:right; width:86px; height:30px;border-right:1px solid #ebebeb; position:relative; z-index:9999}
+.hychannel p{width:86px;height:31px;line-height:30px;text-indent:14px;background:url(http://img.jia360.com/index/txyt_v1.png) right -105px no-repeat;color:#787878;cursor:pointer; position:absolute; z-index:99999; left:0; top:0;}
+.hychannel p.up{background:#fff url(http://img.jia360.com/index/txyt_v1.png) right -80px no-repeat;}
+.hychannel ul {display:none; width:310px;padding:5px 10px;background:#fff;border:1px solid #ebebeb; position:absolute; z-index:999; overflow:hidden;right:-1px;top:30px;}
+.hychannel ul a{display:inline-block; height:22px; line-height:22px; padding:0 7px;}
 
 /*网页头部*/
 .header{padding-bottom: 15px;}

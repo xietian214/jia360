@@ -34,6 +34,13 @@ $(function(){
             $('.finishBox .arrow-left,.finishBox .arrow-right').hide();
         };
     })();
+    /*tab标签切换*/
+    $('.tab_ul li').on('mouseover',function(ev){
+        var _thisIndex = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.tab_box .tab_div').eq(_thisIndex).show().siblings().hide();
+        ev.stopPropagation();
+    });
 })
 
 
