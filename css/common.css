@@ -241,7 +241,7 @@ a:hover{color:#1479d7}
 /* 底部广告 */
 .advertise_bottom{width:100%;height:80px;overflow: hidden;position:fixed;left:0;bottom:0;z-index:302;display: none;}
 .advertise_bottom .adver_bbox{width:1200px;height:80px;position: relative;margin:0 auto;overflow:hidden;}
-.advertise_bottom a{display: block;width:100%;height:80px;overflow:hidden;}
+.advertise_bottom a{display: block;width:1200px;height:80px;overflow:hidden;position:absolute;left:50%;margin-left:-600px;bottom:0;}
 .advertise_bottom .bot_img{}
 .advertise_bclose{width: 18px;height:18px;border:0;position: absolute;right:0;top:0;z-index: 304;cursor: pointer;}
 /* 全屏广告 */
@@ -372,3 +372,5 @@ a:hover{color:#1479d7}
 #goUp{width:80px;height:80px;position: fixed;right:45px;bottom:90px;z-index:306;}
 #goUp a{display: block;width:100%;height:100%;background: url('../images/goUp.png') left top no-repeat;}
 #goUp a:hover{background-position: left bottom;}
+
+.box_hov{-webkit-box-shadow: 0px 0 15px #e5e5e5;-moz-box-shadow: 0px 0 15px #e5e5e5;-ms-box-shadow: 0px 0 15px #e5e5e5;-o-box-shadow: 0px 0 15px #e5e5e5;box-shadow: 0px 0 15px #e5e5e5;}

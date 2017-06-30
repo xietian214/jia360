@@ -1,5 +1,4 @@
 /* common01 */
-.productHome{padding-bottom:40px;}
 .productHome .common01{width:1200px;margin-top:27px;overflow:hidden;}
 .productHome .common01 .playbox{width:750px;height:500px;position: relative;overflow:hidden;}
 .productHome .common01 .playbox .swi_box{width:100%;height:100%;position: relative;}
@@ -18,7 +17,7 @@
 .productHome .common01 .a_box p{border-top:1px #eee solid;padding:13px 0;line-height: 30px;}
 .productHome .common01 .a_box a:hover{color:#1479d7;}
 .productHome .common01 .a_box .font_l{font-size:18px;color:#555;}
-.productHome .common01 .a_box .font_s{font-size:14px;color:#686868;}
+.productHome .common01 .a_box .font_s{font-size:14px;color:#686868;display: inline-block;width:120px;}
 /* common02 */
 .productHome .common02{margin-top:27px;margin-bottom:30px;}
 .productHome .common02 .titlelist{width:100%;margin-top:20px;}
@@ -63,13 +62,14 @@
 .productHome .common04 .combox{margin-top:20px;width:100%;overflow: hidden;}
 .productHome .common04 .combox ul{margin-left:-26px;}
 .productHome .common04 .combox ul li{width:280px;height:280px;margin-bottom:10px;margin-left:26px;float: left;}
-.productHome .common04 .combox ul li .pic{display:block;width:280px;height:230px;overflow:hidden;}
-.productHome .common04 .combox ul li .tit{display:block;height:50px;line-height: 50px;font-size: 16px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.productHome .common04 .combox ul li .pic{display:block;width:280px;height:230px;overflow:hidden;text-align: center;}
+.productHome .common04 .combox ul li .tit{display:block;height:50px;line-height: 50px;font-size: 16px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;text-align: center;}
 /* common05 */
 .productHome .common05{margin:35px 0 30px 0;}
 .productHome .common05 .comleft .tit{text-align: center;height:28px;color:#898989;font-size: 16px;}
 .productHome .common05 .comleft .titlediv{margin-bottom:20px;}
 .productHome .common05 .combox{width:850px;margin-bottom:36px;}
+.productHome .common05 .comleft4 .combox{margin-bottom:20px;}
 .productHome .common05 .combox li{width: 212px;height:106px;float: left;position:relative;text-align:center;font-size:14px;}
 .productHome .common05 .combox li a img{width:120px;height:60px;margin-bottom: 10px;}
 .productHome .common05 .combox li a{display:block;width:100%;height:100%;padding-top:10px;}
@@ -104,8 +104,9 @@
 .productHome .common06 .tab_box ul li .font .des{font-size:12px;color:#898989;line-height: 25px;height:50px;text-indent: 2em;overflow: hidden;margin-top:10px;}
 .productHome .common06 .tab_box ul li .font .tim{font-size:12px;color:#898989;text-align:right;line-height: 25px;}
 .productHome .common06 .combox{padding-top:20px;}
+.productHome .common06 .combox .pf{width:100%;height:25px;overflow:hidden;}
 .productHome .common06 .comright .clearfl img{width:176px;height:94px;margin-bottom:5px;}
-.productHome .common06 .comright .clearfl div{width: 115px;line-height: 25px;font-size:14px;}
+.productHome .common06 .comright .clearfl div{width: 115px;line-height: 25px;font-size:14px;height:100px;overflow:hidden;}
 .productHome .common06 .comright .clearfl i{font-style:normal}
 .productHome .common06 .comright .clearfl span{line-height: 25px;font-size:12px;}
 .productHome .common06 .comright .div1{height:100px;overflow:hidden;}
@@ -151,6 +152,7 @@
 .addfontlist{width:419px;height:498px;border:1px #eee solid;border-left:0;}
 .addfontlist h6{color:#2f8adf;font-size:26px;width:380px;margin:0 auto;margin-top:15px;}
 .addfontlist a{width:370px;margin:0 auto;border-bottom:1px #eee solid;display: block;padding:20px 5px;}
+.addfontlist a.jrjj_aimg{width:auto;height:30px;display:inline;margin:0;}
 .addfontlist a:last-child{border:none;}
 .addfontlist a:hover .p1{color:#1479d7;}
 .addfontlist a:hover .p2{color:#549fe4;}
@@ -175,5 +177,5 @@
 .productHome .common03 .comcenter .hec_center{margin-top:20px;}
 .productHome .common03 .comcenter .hec_center a{display: block;width:190px;float:left;margin-left:10px;}
 .productHome .common03 .comcenter .hec_center a span{width:100%;margin-top:10px;display: block;overflow:hidden;height:14px;}
-.productHome .common03 .comright .hectit{background:url('../images/product_icon01.png') left 0px no-repeat;color:#fff;padding-left:15px;font-size:12px;height:25px;line-height:20px;}
+.productHome .common03 .comright .hectit{background:url('../images/gzn/product_icon01.png') left 0px no-repeat;color:#fff;padding-left:15px;font-size:12px;height:25px;line-height:20px;}
 .productHome .common03 .comright .line2{border-top: 1px #eee dashed;margin:15px 0;}

@@ -15,16 +15,45 @@
 .brandBox .playbox .arrow-left {  width:50px;height:90px;background:url('../images/brand_indexleft_swip.png') center center no-repeat;background-size:100%;left:0;position: absolute;top: 50%;margin-top: -45px;z-index: 101;}
 .brandBox .playbox .arrow-right {width:50px;height:90px;background:url('../images/brand_indexright_swip.png') center center no-repeat;background-size:100%;left:0;  position: absolute;left:auto;right: 0;top: 50%;margin-top: -45px;z-index: 101;}
 
-.floor1_title{width:155px;height:30px;line-height:30px;position: relative;margin:40px auto 30px auto;font-size:30px;}
+.floor1_title{width:100%;text-align:center;height:30px;line-height:30px;margin:40px auto 30px auto;font-size:30px;}
+.floor1_title a.more{display: inline-block;height:30px;line-height:30px;vertical-align: bottom;margin-left:10px;}
+.floor1_title a.more img{vertical-align: bottom;}
 .floor2_title{width:120px;height:30px;line-height:30px;position: relative;margin:40px auto 30px auto;font-size:30px;}
-.floor1_title img{position: absolute;bottom:0;right:0;}
-.floor1_box{position: relative;width:100%;height:360px;overflow:hidden;}
+.flo1{position: relative;width:100%;height:360px;overflow:hidden;}
 .floor1_box .tab_ul{width:100%;height:50px;line-height:50px;border-bottom:1px #eee solid;}
 .floor1_box .tab_ul li{width:70px;text-align:center;font-size:18px;color:#555;margin:0 15px;float: left;cursor: pointer;}
 .floor1_box .tab_ul li.active{color:#1f7bd4;}
 .floor1_box .line{width:70px;height:4px;position:absolute;top:46px;left:15px;background:#2f8adf;}
-.floor1_box .tab_box ul{height:310px;display:none;}
+.flo1 .tab_box ul{height:290px;padding-top:20px;display:none;}
 .floor1_box .tab_box ul.active{display: block;}
-.floor1_box .tab_box ul li{width:200px;height:110px;float: left;margin-top:45px;text-align:center;position: relative;}
-.floor1_box .tab_box ul li .brandLogo{max-width: 160px;min-width:120px;}
-.floor1_box .tab_box ul li .sp{position: absolute;left:0;bottom:0;width:100%;text-align:center;font-size: 16px;}
+.flo1 .tab_box ul li{width:240px;height:150px;float: left;text-align:center;position: relative;}
+.flo1 .tab_box ul li:after{content: '';position:absolute;right:0;top:20px;width:1px;height:60px;background:#eee;}
+.flo1 .tab_box ul li:nth-child(5n):after{background:#fff;;}
+.flo1 .tab_box ul li a{width:188px;height:110px;padding-top:20px;display:block;margin:0 auto;}
+.flo1 .tab_box ul li a:hover{box-shadow:0 0 10px 5px #f2f2f2;}
+.flo1 .tab_box ul li .brandLogo{max-width: 160px;min-width:120px;}
+.flo1 .tab_box ul li .sp{position: absolute;left:0;top:100px;width:100%;text-align:center;font-size: 16px;}
+
+.exhibition_hall {text-align:center;position: relative;overflow:hidden;}
+.roundabout_box img {width:100%;}
+/**********roundabout**********/
+.roundabout_box {height:320px;width:1200px;margin:0 auto}
+.roundabout-holder{list-style:none;height:320px;width:1200px;margin:0px auto;}
+.roundabout-moveable-item{font-size:12px!important;height:320px;width:800px;cursor:pointer;background:#f9f9f9;}
+.roundabout-moveable-item img{height:100%;width:100%;background-color:#FFFFFF;margin:0;}
+.roundabout a:active, .roundabout a:focus, .roundabout a:visited{outline:none;text-decoration:none;}
+.roundabout li{margin:0}
+#next{color:#fff;position:absolute;left:20px;;top:130px;font-size:50px;font-family: '宋体';z-index:999;}
+#previous{color:#fff;position:absolute;right:20px;;top:130px;font-size:50px;font-family: '宋体';z-index:999;}
+
+.pro_list{width:100%;padding-top:30px;padding-bottom:20px;}
+.pro_list li{width:300px;float:left;margin-bottom:10px;}
+.pro_list li a.pic{display: block;width:240px;height: 200px;padding-top:40px;text-align:center;margin:0 auto;}
+.pro_list li a.pic:hover{-webkit-box-shadow: 0px 0 15px #e5e5e5;-moz-box-shadow: 0px 0 15px #e5e5e5;-ms-box-shadow: 0px 0 15px #e5e5e5;-o-box-shadow: 0px 0 15px #e5e5e5;box-shadow: 0px 0 15px #e5e5e5;}
+.pro_list li a.pic img{width:160px;height:160px;}
+.pro_list li a.name{display:block;width:240px;height:20px;line-height:20px;overflow:hidden;color:#555;font-size:16px;text-align:center;margin:15px auto 10px;}
+.pro_list li p.money{font-size:12px;color:#898989;text-align:center;width:240px;margin:0 auto;}
+
+.gray20{height:20px;background:#f7f7f7;width:100%;}
+.flo2{position: relative;width:100%;height:1340px;overflow:hidden;}
+.flo2 .tab_box ul{height:1240px;display: none}

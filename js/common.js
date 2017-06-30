@@ -1,6 +1,13 @@
 $(function() {
     //静态页面添加头部，后台不用加去掉。
     $('#loadtop').load('./loadtop.html');
+    /*playbox({ 
+        className: 'sw01',
+        hovbtn:true //悬浮展示左右按钮
+    }, {
+        className: 'sw02',
+        arrow: true //是否展示悬浮按钮
+    });*/
     // 返回顶部
     $("#goUp").hide();
     $(window).scroll(function() {

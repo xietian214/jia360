@@ -6,12 +6,12 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="icon" href="">
-    <link href="min/common.min.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
     <!-- <link href="min/home.min.css" rel="stylesheet"/> -->
     <link href="css/home.css" rel="stylesheet"/>
     <script src="js/lib/jquery-1.8.3.min.js"></script>
     <script src="js/lib/idangerous.swiper.min.js"></script>
-    <script src="min/common.min.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/home.js"></script>
     <title>腾讯家居_家居装修装饰时尚门户</title>
 </head>
@@ -2415,27 +2415,102 @@
         <!--友情链接 end-->
     </div>
     <!--全屏广告-->
-    <div class="advertise_all">
+    <!-- <div class="advertise_all">
         <a href="" target="_blank"><img src="images/home/adver01.jpeg"></a>
+        <div class="advertise_allclose" style=""><img src="images/adv_close.png" /></div>
+    </div> -->
+    <style>
+    .advertise_all{width:100%;height:100%;background:url('flash/rgba70.png') left top repeat;position:fixed;left:0;top:0;margin:0;padding:0;z-index:999;}
+    .adverright,.adverleft{width:100px;height:250px;display:none;}
+    .adverright .imga,.adverleft .imga{position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;}
+    </style>
+    <div class="advertise_all">
+        <object id="FlashID1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
+            <param name="movie" value="flash/hec_all.swf" />
+            <param name="quality" value="high" />
+            <param name="swfversion" value="6.0.65.0" />
+            <param name="wmode" value="transparent" />
+            <!--[if !IE]> Firefox -->
+            <object id="FlashID1" data="flash/hec_all.swf" width="100%" height="100%">
+                <param name="quality" value="high" />
+                <param name="pluginurl" value="http://www.adobe.com/go/getflashplayer" />
+                <param name="wmode" value="transparent" />
+            </object>
+            <!-- <![endif]-->
+        </object>
         <div class="advertise_allclose" style=""><img src="images/adv_close.png" /></div>
     </div>
     <!--底部广告-->
-    <div class="advertise_bottom">
+    <!--<div class="advertise_bottom">
         <div class="adver_bbox">
             <img src="images/home/advertise_tops.jpg" class="bot_img">
             <img src="images/advertise_tclose.png" class="advertise_bclose" />
         </div>
         <a href="" target="_blank"></a>
+    </div>-->
+    <div class="advertise_bottom">
+        <div class="adver_bbox">
+            <object id="FlashID4" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
+                <param name="movie" value="flash/bottom.swf" />
+                <param name="quality" value="high" />
+                <param name="wmode" value="opaque" />
+                <param name="swfversion" value="6.0.65.0" />
+                <!--[if !IE]> Firefox -->
+                <object id="FlashID2" data="flash/bottom.swf" width="100%" height="100%">
+                    <param name="quality" value="high" />
+                    <param name="pluginurl" value="http://www.adobe.com/go/getflashplayer" />
+                    <param name="wmode" value="transparent" />
+                </object>
+                <!-- <![endif]-->
+            </object>
+            <img src="images/advertise_tclose.png" class="advertise_bclose" />
+        </div>
+        <a href="" target="_blank"></a>
     </div>
     <!-- 双侧广告 -->
-    <div class="adverleft">
+    <!--<div class="adverleft">
         <a class="coupletclose" href="javascript:;"></a>
         <a href="" target="_blank"><img src="images/home/couplet_img.jpg"></a>
     </div>
     <div class="adverright">
         <a class="coupletclose" href="javascript:;"></a>
         <a href="" target="_blank"><img src="images/home/couplet_img.jpg"></a>
+    </div>-->
+    <div class="adverleft">
+        <a href="" target="_blank" class="imga"></a>
+        <a class="coupletclose" href="javascript:;"></a>
+        <object id="FlashID2" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
+            <param name="movie" value="flash/left.swf" />
+            <param name="quality" value="high" />
+            <param name="wmode" value="opaque" />
+            <param name="swfversion" value="6.0.65.0" />
+            <!--[if !IE]> Firefox -->
+            <object id="FlashID2" data="flash/left.swf" width="100%" height="100%">
+                <param name="quality" value="high" />
+                <param name="pluginurl" value="http://www.adobe.com/go/getflashplayer" />
+                <param name="wmode" value="transparent" />
+            </object>
+            <!-- <![endif]-->
+        </object>
     </div>
+    <div class="adverright">
+        <a href="" target="_blank" class="imga"></a>
+        <a class="coupletclose" href="javascript:;"></a>
+        <object id="FlashID3" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
+            <param name="movie" value="flash/right.swf" />
+            <param name="quality" value="high" />
+            <param name="wmode" value="opaque" />
+            <param name="swfversion" value="6.0.65.0" />
+            <!--[if !IE]> Firefox -->
+            <object id="FlashID3" data="flash/right.swf" width="100%" height="100%">
+                <param name="quality" value="high" />
+                <param name="pluginurl" value="http://www.adobe.com/go/getflashplayer" />
+                <param name="wmode" value="transparent" />
+            </object>
+            <!-- <![endif]-->
+        </object>
+    </div>
+
     <div id="goUp"><a href="javascript:;" title="返回顶部" target="_self"></a></div>
 </div>
 <!--页脚开始-->

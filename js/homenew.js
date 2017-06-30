@@ -77,14 +77,13 @@ $(function(){
         var advAll_close = function(){
             $('.advertise_all').hide();
             $('.advertise_bottom').css('display','block');
-            $('.adverright,.adverleft').css('display','block');
         }
         $('.advertise_allclose').click(function(){
             advAll_close();
         });
         var itimeall = setTimeout(function(){
             advAll_close();
-        },17000);
+        },8000);
         //对联广告
         $('.coupletclose').click(function(){
             $(this).parent('div').hide();
@@ -136,7 +135,7 @@ $(function(){
             $('.header-ad').remove();
             itime = setTimeout(function(){
                 topadvUp();
-            },17000);
+            },5000);
         }else{
             $('.headerAdv').remove();
             $('.adverleft,.adverright,.advertise_all').css({top:"278px"});
