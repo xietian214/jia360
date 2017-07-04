@@ -30,7 +30,7 @@
 .caseScreenbox .list1 .listUl a{float: left;float: left;margin-left:32px;font-size:14px;}
 .caseScreenbox .list1 .listUl a.all{padding:0 7px;position: absolute;left:0;top:0;}
 .caseScreenbox .list1 .listUl a.active img{border-color:#1479d7;}
-.caseScreenbox .list1 .listUl a img{width:60px;height:60px;border:1px #eee solid;}
+.caseScreenbox .list1 .listUl a img{width:100px;height:50px;border:1px #eee solid;}
 .caseScreenbox .listUl a.active{color:#1479d7;}
 .caseScreenbox .list1 .more{width:18px;height:18px;background:url('../images/case_more.jpg') 0 0 no-repeat;position: absolute;right:36px;top:26px;cursor:pointer;}
 .caseScreenbox .list1 .moreUp{background-position:0 -18px;}

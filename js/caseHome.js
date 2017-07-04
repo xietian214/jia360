@@ -91,7 +91,7 @@ $(function(){
                 _num = 10;
             }else{
                 _heig = 70;
-                _num = 11;
+                _num = 7;
             };
             var _listUl_height = _heig*Math.ceil($(this).prev('.listUl').children().length/_num);
             if ($(this).hasClass('moreUp')) {

@@ -139,7 +139,7 @@ $(function(){
             },17000);
         }else{
             $('.headerAdv').remove();
-            $('.adverleft,.adverright,.advertise_all').css({top:"278px"});
+            $('.adverleft,.adverright').css({top:"278px"});
         }
         /*关闭顶部广告*/
         $('.allAdvClose').on('click',function(){
