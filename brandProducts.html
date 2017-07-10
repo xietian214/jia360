@@ -478,14 +478,24 @@
 </html>
 
 <script>
-    // $(document).ready(function () {
-    //     //nav里的链接hover效果
-    //     $(".floor1_box .tab_ul li").hover(function () {
-    //         var _index = $('.active').index();
-    //         var _width = 100 * _index + 15;
-    //         $('.line').stop(true).animate({ left: _width }, 100);
-    //     })
+    $(document).ready(function () {
+        //产品展示
+         $('.roundabout_box ul').roundabout({
+            duration: 1000,//动画速度
+            minScale: 0.6,
+            autoplay: true,
+            autoplayDuration: 5000,
+            minOpacity: 1,
+            maxOpacity: 1,
+            reflect: true,
+            startingChild: 3,
+            autoplayInitialDelay: 5000,
+            autoplayPauseOnHover: true,
+            enableDrag: true,
+            btnNext: '#next',
+            btnPrev: '#previous'
+        });
 
-    // });
+    });
 
 </script>

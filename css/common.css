@@ -192,9 +192,10 @@ a:hover{color:#1479d7}
 
 /*网页底部*/
 .footer{padding-top:40px;padding-bottom:20px;background: #f0f0f0;}
-.footer .footer-list01{width: 164px;height:150px;border-right: 1px solid #dedede}
-.footer .footer-list02{width: 215px;height:150px;padding-left: 60px;border-right: 1px solid #dedede}
-.footer .footer-list03{width: 145px;height:150px;padding-left: 60px;border-right: 1px solid #dedede}
+.footer .footer-list-wrapper{background:url('../images/footLinebg.png') left center no-repeat;}
+.footer .footer-list01{width: 200px;}
+.footer .footer-list02{width: 200px;padding-left: 60px;}
+.footer .footer-list03{width: 200px;padding-left: 60px;}
 .footer .footer-list04{width: 330px;}
 .footer .footer-telphone{font-size:20px;}
 .footer .footer-time{font-size:16px;padding-top:15px;padding-bottom: 30px;}
