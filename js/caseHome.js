@@ -93,7 +93,7 @@ $(function(){
                 _heig = 70;
                 _num = 7;
             };
-            var _listUl_height = _heig*Math.ceil($(this).prev('.listUl').children().length/_num);
+            var _listUl_height = _heig*Math.ceil(($(this).prev('.listUl').children().length-1)/_num);
             if ($(this).hasClass('moreUp')) {
                 $(this).removeClass('moreUp').prev().stop(true,true).animate({height:_heig+'px'}, "300");
             }else{
