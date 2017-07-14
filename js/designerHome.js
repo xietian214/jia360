@@ -34,7 +34,27 @@ $(function(){
     };
     _more($('.caseScreenbox .list1'));
     _more($('.caseScreenbox .list'));
-    
+
+    //设计师首页-设计师视野
+    $('.comm04 .abox a').on('mouseenter',function(){
+        $(this).find('div').stop().animate({top:0}, 500);
+        $(this).find('.p1').stop().animate({marginTop:'100px',fontSize:'18px'}, 500);
+    })
+    $('.comm04 .abox a').on('mouseleave',function(){
+        $(this).find('div').stop().animate({top:'220px'}, 500);
+        $(this).find('.p1').stop().animate({marginTop:0,fontSize:'16px'}, 500);
+    })
+    //设计师首页-设计师约吧设计师
+    $('.comm03 .tabUl li').on('mouseenter',function(){
+        var _index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $(this).parent().siblings('.tabBox').children('.tabDiv').eq(_index).addClass('active').siblings().removeClass('active');
+    })
+    //设计师首页-banner
+    playbox({ 
+        className: 'playbox',
+        hovbtn:true //悬浮展示左右按钮
+    });
     
 })
 //设计师报名
