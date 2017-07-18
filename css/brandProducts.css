@@ -61,10 +61,10 @@
 
 /*品牌产品列表*/
 .produL_content{width:1200px;background:#fff;margin-bottom:60px;}
-.produL_content ul{margin-left: -17px;}
-.produL_content li{width:224px;height:306px;border:1px #fff solid;float:left;margin-left:17px;}
+.produL_content ul{padding:30px 0 0 20px;}
+.produL_content li{width:210px;height:280px;border:1px #fff solid;float:left;margin:0 10px 20px;box-shadow: 0 0 20px #eee;}
 .produL_content li.hov{border-color:#2888e2;}
-.produL_content li .a1{display: block;width:224px;height:224px;}
+.produL_content li .a1{display: block;width:210px;height:210px;}
 .produL_content li .a2{display: block;width:100%;height:30px;line-height:30px;margin-top:10px;text-align:center;overflow:hidden;font-size:16px;color:#555;}
 .produL_content li span{display:block;color:#898989;font-size:12px;text-align:center;width:100%;height:20px;line-height: 20px;overflow: hidden}
 .caseScreenbox{margin-top:0;}
@@ -109,20 +109,23 @@
 .proDet_tabBox .tabdiv .upDown{width:100%;height:45px;position:absolute;bottom:0;left:0;overflow:hidden;background:#fff;}
 .proDet_tabBox .tabdiv .upDown span{display:block;width:100%;height:40px;line-height:40px;border-top:1px #f7f7f7 solid;text-align:center;box-shadow: 0 -2px 5px 0px #f3f3f3;margin-top:5px;font-size: 14px;color:#898989;background:url('../images/pro_down.png') 480px 15px no-repeat;cursor:pointer;}
 .proDet_tabBox .tabdiv .up span{background:url('../images/pro_down.png') 480px -22px no-repeat;cursor:pointer;}
-.pos_information span{margin-right:50px;font-size: 14px;color:#555;}
-.pos_information span i{ font-style:normal;color:#1479d7;;font-size:14px;margin:0 5px;}
-.pos_information a{float: right;}
-.pos_information span i {font-style:normal;font-family: '宋体';font-size:14px;}
+.pos_information span{margin-right:30px;font-size: 14px;color:#555;}
+.pos_information span i{ font-style:normal;color:#1479d7;font-family: '宋体';font-size:14px;margin:0 10px;}
+.pos_information>div.fr{width:410px;line-height:24px;margin-right:100px;}
+.pos_information>div.fr span{margin:0;}
+.pos_information .shop_address{width:270px;}
+.pos_information .shop_address select{width:120px;border:1px #ccc solid;border-radius:5px;height:24px;margin-right:10px;}
+.pos_information #shopSeach{display: block;width:40px;height:24px;line-height: 24px;text-align:center;background:#2888e2;color:#fff;border-radius:5px;font-size:12px;}
 
 .shop_list{width:100%;}
-.shop_list li{height:130px;border-bottom:1px #eee solid;padding:30px 0;position:relative;}
-.shop_list li .imgbox{width:130px;height:130px;position:absolute;left:0;top:30px;}
-.shop_list li .fontbox{margin-left:150px;}
+.shop_list li{height:118px;border-bottom:1px #eee solid;padding:30px 0;position:relative;}
+.shop_list li .imgbox{width:158px;height:118px;position:absolute;left:0;top:30px;}
+.shop_list li .fontbox{margin-left:178px;}
 .shop_list li .fontbox h6{height:45px;line-height: 45px;width:100%;overflow:hidden;font-weight:normal}
 .shop_list li .fontbox h6 a{color:#333;font-size:20px;}
 .shop_list li .fontbox p{background-image:url('../images/pro_icon1.png');background-repeat:no-repeat;padding-left:25px;height:35px;line-height: 35px;overflow: hidden;color:#666666;font-size:16px;}
 .shop_list li .fontbox .p1{background-position:left 10px;}
-.shop_list li .fontbox .p2{background-position:left -22px;}
+.shop_list li .fontbox .p2{background-position:left -40px;}
 
 .proDet_bot .right{width:210px;padding:0 20px 30px;background:#fff;float: right;margin-bottom:30px;}
 .proDet_bot .right dl{width:180px;margin:28px auto 0;}
@@ -130,11 +133,11 @@
 .proDet_bot .right dl dt{width:180px;height:15px;line-height: 15px;margin-top:10px;font-size:12px;}
 
 .proDet_bot .tuijian{background:#fff;margin-top:20px;padding-bottom:20px;}
-.proDet_bot .tuijian .titlediv{width:865px;margin:0 auto;}
-.proDet_bot .tuijian ul{margin-left: -17px;margin-top:20px;}
-.proDet_bot .tuijian li{width:215px;height:300px;border:1px #fff solid;float:left;margin-left:17px;}
+.proDet_bot .tuijian .titlediv{width:860px;margin:0 auto;}
+.proDet_bot .tuijian ul{margin:30px 0 0 20px;}
+.proDet_bot .tuijian li{width:198px;height:270px;border:1px #fff solid;float:left;margin:0 10px 20px;box-shadow: 0 0 20px #eee;}
 .proDet_bot .tuijian li.hov{border-color:#2888e2;}
-.proDet_bot .tuijian li .a1{display: block;width:215px;height:215px;}
+.proDet_bot .tuijian li .a1{display: block;width:198px;height:198px;}
 .proDet_bot .tuijian li .a2{display: block;width:100%;height:30px;line-height:30px;margin-top:10px;text-align:center;overflow:hidden;font-size:16px;color:#555;}
 .proDet_bot .tuijian li span{display:block;color:#898989;font-size:12px;text-align:center;width:100%;height:20px;line-height: 20px;overflow: hidden}
 
@@ -164,22 +167,22 @@
 .brandDet_banner .logobox .icont{color:#898989;font-size:16px;margin:25px 0 15px;display:block;}
 .brandDet_banner .logobox .icon a{margin-left:30px;display: block;width:40px;height:40px;float:left;}
 .brandDet_banner .logobox .icon a:first-child{margin:0;}
-.brandDet_banner .font{float:left;width:770px;margin:20px 0 0 50px;position: relative}
+.brandDet_banner .font{float:left;width:770px;margin:20px 0 0 50px;position: relative;padding-bottom:20px;}
 .brandDet_banner .font h6{font-size: 18px;color:#555;}
-.brandDet_banner .font p{font-size: 14px;color:#898989;margin-top:15px;line-height:25px;}
-.brandDet_banner .font span{position:absolute;right:0;bottom:0;color:#2888e2;font-size: 12px;cursor:pointer;}
+.brandDet_banner .font p{font-size: 14px;color:#898989;margin-top:15px;line-height:25px;height:75px;overflow: hidden;}
+.brandDet_banner .font span{position:absolute;right:0;bottom:25px;color:#2888e2;font-size: 12px;cursor:pointer;background:#fff;}
 .w1140{width:1140px;margin:0 auto;}
 .brandDe_up span{display:block;width:100%;height:40px;line-height:40px;border-top:1px #f7f7f7 solid;text-align:center;box-shadow: 0 -2px 5px 0px #f3f3f3;margin-top:5px;font-size: 14px;color:#898989;background:url('../images/pro_down.png') 620px 15px no-repeat;cursor:pointer;}
 .brandDe_Down span{display:block;width:100%;height:40px;line-height:40px;border-top:1px #f7f7f7 solid;text-align:center;box-shadow: 0 -2px 5px 0px #f3f3f3;margin-top:5px;font-size: 14px;color:#898989;background:url('../images/pro_down.png') 620px -22px no-repeat;cursor:pointer;}
-.brandDe_mar20{padding:20px 0;}
+.brandDe_mar20{padding:20px 0 0;}
 .brandDetshop{background:#fff;margin:-60px auto 60px auto;}
 .brandDetshop_list{width:100%;overflow:hidden;}
-.brandDetshop_list li{width:560px;margin-left:40px;float:left;height:100px;border-bottom:1px #eee solid;padding:30px 0;position:relative;overflow:hidden;}
-.brandDetshop_list li .imgbox{width:100px;height:100px;position:absolute;left:0;top:30px;}
-.brandDetshop_list li .fontbox{margin-left:110px;height:100px;}
-.brandDetshop_list li .fontbox h6{height:45px;line-height: 45px;width:100%;overflow:hidden;font-weight:normal}
-.brandDetshop_list li .fontbox h6 a{color:#333;font-size:20px;}
-.brandDetshop_list li .fontbox p{background-image:url('../images/pro_icon1.png');background-repeat:no-repeat;padding-left:25px;height:30px;line-height: 30px;overflow: hidden;color:#666666;font-size:16px;}
-.brandDetshop_list li .fontbox .p1{background-position:left 8px;}
-.brandDetshop_list li .fontbox .p2{background-position:left -24px;}
-#braD_product{height: 308px;overflow: hidden;margin-top:15px;}
+.brandDetshop_list li{width:560px;margin-left:40px;float:left;height:75px;border-bottom:1px #eee solid;padding:30px 0;position:relative;overflow:hidden;}
+.brandDetshop_list li .imgbox{width:100px;height:75px;position:absolute;left:0;top:30px;}
+.brandDetshop_list li .fontbox{margin-left:120px;height:75px;}
+.brandDetshop_list li .fontbox h6{height:25px;width:100%;overflow:hidden;font-weight:normal}
+.brandDetshop_list li .fontbox h6 a{color:#333;font-size:16px;}
+.brandDetshop_list li .fontbox p{width:300px;background-image:url('../images/pro_icon1.png');background-repeat:no-repeat;padding:3px 0;padding-left:15px;line-height: 15px;color:#666666;font-size:12px;}
+.brandDetshop_list li .fontbox .p1{background-position:left 6px;background-size: 12px;}
+.brandDetshop_list li .fontbox .p2{background-position:left -30px;background-size: 12px;}
+#braD_product{height:290px;overflow: hidden;}

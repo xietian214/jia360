@@ -8,6 +8,7 @@
     <!-- <link rel="icon" href="images/txjj_ico.ico"> -->
     <link href="css/common.css" rel="stylesheet"/>
     <script src="js/lib/jquery-1.8.3.min.js"></script>
+    <script src="js/lib/jquery.cityselect_lk.js"></script>
     <script src="js/common.js"></script>
     <script src="js/brandProducts.js"></script>
     <link href="css/brandProducts.css" rel="stylesheet"/>
@@ -46,7 +47,7 @@
             <span class="line"></span>
             <div class="fenlei">分类：客厅沙发</div>
             <span class="line"></span>
-            <div class="desc">想要了解更多产品信息，体验线下门店的优质服务，欢迎光临<a href="" target="_blank">顾家家居店面</a>。</div>
+            <div class="desc">想要了解更多产品信息，体验线下门店的优质服务，欢迎光临<a href="javascript:;" id="shop_Location" target="_blank">顾家家居店面</a>。</div>
             <span class="xiaoshou">产品销售平台</span>
             <div class="xiaoshoubox clearfix">
                 <a href="" target="_blank"><img src="images/jdLogo.png" /></a>
@@ -70,7 +71,7 @@
                     <p style="text-align: justify; margin-top: 5px; line-height: normal; margin-bottom: 15px;">
                         <span style="font-size: 16px;">商品名称：工业风loft铁艺客厅沙发...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是否定制：是&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风格：现代简约</span>
                     </p>
-                    <p style="text-align: justify; margin-top: 5px; line-height: normal; margin-bottom: 15px;">
+                    <!--<p style="text-align: justify; margin-top: 5px; line-height: normal; margin-bottom: 15px;">
                         <span style="font-size: 16px;">产地：浙江省&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结构工艺：木艺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型号：mk2135组合</span>
                     </p>
                     <p style="text-align: justify; margin-top: 5px; line-height: normal; margin-bottom: 15px;">
@@ -84,13 +85,20 @@
                     </p>
                     <p>
                         <img src="images/brandProducts/pDet01.jpg" />
-                    </p>
+                    </p>-->
                     <div class="upDown"><span>展开</span></div>
                 </div>
                 <div class="tabdiv active" datnum="0">
                     <div class="clearfix pos_information">
                         <span>您当前所在城市<i>北京</i></span><span>共有店铺<i>22</i>家</span>
-                        <a href=""  target="_blank">查看其他城市<i>&gt;&gt;</i></a>
+                        <div class="fr clearfix" style="margin:0;">
+                            <span>查询更多地区：</span>
+                            <a href="javascript:;" class="fr" id="shopSeach">搜索</a>
+                            <div class="fr shop_address">
+                                <select class="prov sel" id="shopProv"></select>
+                                <select class="city sel" id="shopCity"></select>
+                            </div>
+                        </div>
                     </div>
                     <ul class="shop_list">
                         <li>
@@ -172,22 +180,22 @@
                 <div class="titlediv"> <span>热门推荐</span> <a href="" target="_blank">更多<i>&gt;&gt;</i></a></div>
                 <ul class="clearfix prodUL_list">
                     <li>
-                        <a href="" target="_blank" class="a1"><img src="images/brandProducts/plist_01.jpg" /></a>
+                        <a href="" target="_blank" class="a1"><img src="http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170119/h800w800-58806d77b9c82.jpg" /></a>
                         <a href="" target="_blank" class="a2">灰色圆角凳</a>
                         <span>参考价格</span>
                     </li>
                     <li>
-                        <a href="" target="_blank" class="a1"><img src="images/brandProducts/plist_01.jpg" /></a>
+                        <a href="" target="_blank" class="a1"><img src="http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170119/h800w800-58806d77b9c82.jpg" /></a>
                         <a href="" target="_blank" class="a2">灰色圆角凳</a>
                         <span>参考价格</span>
                     </li>
                     <li>
-                        <a href="" target="_blank" class="a1"><img src="images/brandProducts/plist_01.jpg" /></a>
+                        <a href="" target="_blank" class="a1"><img src="http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170119/h800w800-58806d77b9c82.jpg" /></a>
                         <a href="" target="_blank" class="a2">灰色圆角凳</a>
                         <span>参考价格</span>
                     </li>
                     <li>
-                        <a href="" target="_blank" class="a1"><img src="images/brandProducts/plist_01.jpg" /></a>
+                        <a href="" target="_blank" class="a1"><img src="http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170119/h800w800-58806d77b9c82.jpg" /></a>
                         <a href="" target="_blank" class="a2">灰色圆角凳</a>
                         <span>参考价格</span>
                     </li>
@@ -255,3 +263,6 @@
 <!--页脚结束-->
 </body>
 </html>
+<script>
+    shopSeach();
+</script>

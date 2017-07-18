@@ -30,7 +30,21 @@ $(function(){
 
     //产品详情
     var sHeight = $('.proDet_bot .right').outerHeight()-$('.proDet_bot .tuijian').outerHeight()-155;
-    $('.proDet_tabBox .tabdiv').height(sHeight);
+    var rightHeight1 = $('.proDet_bot .right').outerHeight();
+    var outsHeight1 = $('.proDet_bot .left .tabdiv').eq(0).outerHeight()+50+20+388;
+    var outsHeight2 = $('.proDet_bot .left .tabdiv').eq(1).outerHeight()+50+20+388;
+    console.log(outsHeight2);
+    if(outsHeight1<=rightHeight1){
+        $('.proDet_bot .left .tabdiv').eq(0).find('.upDown').css('display','none');
+    }else{
+        $('.proDet_tabBox .tabdiv').eq(0).height(sHeight);
+    };
+    if(outsHeight2<=rightHeight1){
+        $('.proDet_bot .left .tabdiv').eq(1).find('.upDown').css('display','none');
+    }else{
+        $('.proDet_tabBox .tabdiv').eq(1).height(sHeight);
+    }
+    
     $('.proDet_tabBox').on('click','.upDown',function(e){
         if($(e.target).parents('.tabdiv').attr('datnum')==0){//展开
             $(e.target).parents('.tabdiv').attr('datnum','1').height('auto');
@@ -51,7 +65,7 @@ $(function(){
         _this.addClass("active").siblings().removeClass("active");
         var left = _this.position().left + 15;
         $(this).parent().siblings(".line").stop().animate({left:left},150)
-        $(this).parent().siblings(".tabBox").find('.tabdiv').eq(index).fadeIn().siblings().fadeOut();
+        $(this).parent().siblings(".tabBox").find('.tabdiv').eq(index).css('display','block').siblings().css('display','none');
         ev.stopPropagation();
     }).eq(0).trigger("click");
     //品牌十大排行
@@ -61,18 +75,22 @@ $(function(){
     if(braD_productlist>5){
         $('#braD_moreproduct').on('click',function(){
             var _thisH = $(this).prev('ul').height();
-            if(_thisH == 308){
+            if(_thisH == 290){
                 $(this).prev('ul').height('auto');
                 $(this).attr('class','brandDe_Down').find('span').text('收起');
             }else{
-                $(this).prev('ul').height('308px');
+                $(this).prev('ul').height('290px');
                 $(this).attr('class','brandDe_up').find('span').text('展开');
             }
         })
     }else{
         $('#braD_moreproduct').css('display','none');
     }
-    //
+    //品牌详情-更多品牌描述
+    $('#brandDet_fontmore').on('click',function(){
+        $(this).prev('p').height('auto');
+    })
+    //品牌详情-公司店面
     var braD_shoplist = $('.brandDetshop_list li').length;
     if(braD_shoplist%2 == 1){
         $('.brandDetshop_list li').eq(braD_shoplist-1).css('border','none');
@@ -80,21 +98,42 @@ $(function(){
         $('.brandDetshop_list li').eq(braD_shoplist-1).css('border','none').prev('li').css('border','none');
     }
     if(braD_shoplist>4){
-        $('.brandDetshop_list').height('320px');
+        $('.brandDetshop_list').height('270px');
         $('#braD_moreshop').on('click',function(){
             var _thisH = $(this).prev('ul').height();
-            if(_thisH == 320){
+            if(_thisH == 270){
                 $(this).prev('ul').height('auto');
                 $(this).attr('class','brandDe_Down').find('span').text('收起');
             }else{
-                $(this).prev('ul').height('320px');
+                $(this).prev('ul').height('270px');
                 $(this).attr('class','brandDe_up').find('span').text('展开');
             }
         })
     }else{
         $('#braD_moreshop').css('display','none');
     }
+    
+    //品牌详情-品牌专卖店锚链接
+    $('#shop_Location').on('click',function(){
+        var _scroltop = $('.proDet_bot').offset().top;
+        $(window).scrollTop(_scroltop);
+        $('.proDet_tabUl li').eq(1).trigger('click');
+    })
 })
 
 
-
+//品牌详情-店面搜索
+var shopSeach = function(){
+    var nowProvince = "北京";
+    var nowCity = "东城区";
+    $(".shop_address").citySelect({
+        url:"js/lib/city.min_lk.js",
+        prov:nowProvince,
+        city:nowCity,
+        required:true,
+        nodata:"none"
+    })
+    $('#shopSeach').on('click',function(){
+        //调用ajax还木有写
+    })
+}
