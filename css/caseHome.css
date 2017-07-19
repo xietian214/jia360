@@ -83,3 +83,30 @@
 
 .caseLeft{width:830px;background:#fff;margin-top:20px;margin-bottom:40px;}
 .caseRight{width:340px;background:#fff;margin-top:20px;margin-bottom:40px;}
+
+
+/*筛选添加*/
+.allBrandlist{width: 950px;float: left;margin-left:30px;overflow: hidden;}
+.allBrandlist .listTabUl{width:100%;}
+.allBrandlist .listTabUl li{height:24px;line-height:24px;float: left;padding:0 8px;margin:15px 2px 0;cursor:pointer;}
+.allBrandlist .listTabUl li.active{background:#2888e2;border-radius:5px;color:#fff;}
+.allBrandlist .listTabBox {margin-top:15px;border-top:1px #efefef dashed;}
+.allBrandlist .listTabBox div{width:100%;line-height:25px;margin:10px 0;display: none;}
+.allBrandlist .listTabBox div.overfl{height:75px;overflow:hidden;overflow-y:auto;}
+.allBrandlist .listTabBox div a{margin:0 15px;font-size:14px;color:#555;float: left}
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+.allBrandlist .listTabBox div::-webkit-scrollbar{
+    width: 3px;
+}
+/*定义滚动条的轨道，内阴影及圆角*/
+.allBrandlist .listTabBox div::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #fff
+}
+/*定义滑块，内阴影及圆角*/
+.allBrandlist .listTabBox div::-webkit-scrollbar-thumb{
+    /*width: 10px;*/
+    height: 10px;
+    background-color: #b8b8b8;
+}
+.allBrandlist .listTabBox div.active{display: block;}

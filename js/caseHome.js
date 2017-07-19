@@ -85,20 +85,42 @@ $(function(){
     });
     var _more = function(_list){
         _list.children('.more').click(function(){
+            var _thisId = $(this).attr('id');
             var _heig = 0 , _num = 0;
-            if (_list.attr('class')=='clearfl list') {
-                _heig = 54;
-                _num = 10;
+            if(_thisId == 'brandChoice'){
+                if ($(this).hasClass('moreUp')) {
+                    $(this).removeClass('moreUp');
+                    $('#recommend').css('display','block');
+                    $('#recommend1').css('display','none');
+                }else{
+                    $(this).addClass('moreUp');
+                    $('#recommend').css('display','none');
+                    $('#recommend1').css('display','block');
+                    $('#recommend1 .listTabBox div').each(function(){
+                        $(this).height()>75 && $(this).addClass('overfl');
+                    })
+                };
             }else{
-                _heig = 70;
-                _num = 7;
-            };
-            var _listUl_height = _heig*Math.ceil(($(this).prev('.listUl').children().length-1)/_num);
-            if ($(this).hasClass('moreUp')) {
-                $(this).removeClass('moreUp').prev().stop(true,true).animate({height:_heig+'px'}, "300");
-            }else{
-                $(this).addClass('moreUp').prev().stop(true,true).animate({height:_listUl_height}, "300");
-            };
+                if (_list.attr('class')=='clearfl list') {
+                    _heig = 54;
+                    _num = 10;
+                }else{
+                    _heig = 70;
+                    _num = 7;
+                };
+                var _listUl_height = _heig*Math.ceil(($(this).prev('.listUl').children().length-1)/_num);
+                if ($(this).hasClass('moreUp')) {
+                    $(this).removeClass('moreUp').prev().stop(true,true).animate({height:_heig+'px'}, "300");
+                }else{
+                    $(this).addClass('moreUp').prev().stop(true,true).animate({height:_listUl_height}, "300");
+                };
+            }
+            
+        });
+        _list.children('#recommend1').on('mouseover','.listTabUl li',function(){
+            var _index = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+            $(this).parent().next('.listTabBox').children('div').eq(_index).addClass('active').siblings().removeClass('active');
         })
     };
     _more($('.caseScreenbox .list1'));

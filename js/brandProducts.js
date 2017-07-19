@@ -33,7 +33,6 @@ $(function(){
     var rightHeight1 = $('.proDet_bot .right').outerHeight();
     var outsHeight1 = $('.proDet_bot .left .tabdiv').eq(0).outerHeight()+50+20+388;
     var outsHeight2 = $('.proDet_bot .left .tabdiv').eq(1).outerHeight()+50+20+388;
-    console.log(outsHeight2);
     if(outsHeight1<=rightHeight1){
         $('.proDet_bot .left .tabdiv').eq(0).find('.upDown').css('display','none');
     }else{
