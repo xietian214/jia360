@@ -86,8 +86,15 @@ $(function(){
         $('#braD_moreproduct').css('display','none');
     }
     //品牌详情-更多品牌描述
+    if($('#brandDet_fontmore').prev('div.fontdiv').height()<75){
+        $('#brandDet_fontmore').hide();
+    }else{
+        $('#brandDet_fontmore').prev('div.fontdiv').height('75px');
+        $('#brandDet_fontmore').show();
+    };
     $('#brandDet_fontmore').on('click',function(){
-        $(this).prev('p').height('auto');
+        $(this).prev('div.fontdiv').height('auto');
+        $('#brandDet_fontmore').hide();
     })
     //品牌详情-公司店面
     var braD_shoplist = $('.brandDetshop_list li').length;
