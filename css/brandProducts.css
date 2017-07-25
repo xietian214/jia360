@@ -115,7 +115,7 @@
 .pos_information>div.fr span{margin:0;}
 .pos_information .shop_address{width:270px;}
 .pos_information .shop_address select{width:120px;border:1px #ccc solid;border-radius:5px;height:24px;margin-right:10px;}
-.pos_information #shopSeach{display: block;width:40px;height:24px;line-height: 24px;text-align:center;background:#2888e2;color:#fff;border-radius:5px;font-size:12px;}
+.pos_information #shopSeach{display: block;width:40px;height:24px;line-height: 24px;text-align:center;margin-top:2px;background:#2888e2;color:#fff;border-radius:5px;font-size:12px;}
 
 .shop_list{width:100%;}
 .shop_list li{height:118px;border-bottom:1px #eee solid;padding:30px 0;position:relative;}
@@ -130,7 +130,7 @@
 .proDet_bot .right{width:210px;padding:0 20px 30px;background:#fff;float: right;margin-bottom:30px;}
 .proDet_bot .right dl{width:180px;margin:28px auto 0;}
 .proDet_bot .right dl dd{width:180px;height: 180px;}
-.proDet_bot .right dl dt{width:180px;height:15px;line-height: 15px;margin-top:10px;font-size:12px;}
+.proDet_bot .right dl dt{width:180px;height:15px;line-height: 15px;margin-top:10px;font-size:12px;text-align: center}
 
 .proDet_bot .tuijian{background:#fff;margin-top:20px;padding-bottom:20px;}
 .proDet_bot .tuijian .titlediv{width:860px;margin:0 auto;}
