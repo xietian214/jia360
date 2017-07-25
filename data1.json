@@ -1,26 +1,43 @@
 [
     {
-        "id": 111,
-        "name": "liubin",
-        "avatar": "头像地址",
-        "address": "地址",
-        "tag": "爱空间,hadjg",
-        "case_count": "案例个数",
-        "recommcase": {
-            "id": "11",
-            "pic_url": "案例封面图地址"
-        }
-    },
-    {
-        "id": 111,
-        "name": "liubin",
-        "avatar": "头像地址",
-        "address": "地址",
-        "tag": "爱空间,hadjg",
-        "case_count": "案例个数",
-        "recommcase": {
-            "id": "11",
-            "pic_url": "案例封面图地址"
-        }
+        "id": 175,
+        "name": "梦也",
+        "avatar": "http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170712/h1000w1097-5965f239a6704.jpg",
+        "address": "北京",
+        "tag": "擅长：现代简约、北欧、地中海...",
+        "case_count": "100套",
+        "detail": "梁景华 (Patrick Leung)，1956年出生，加拿大藉华人，1978年毕业于香港理工大学设计系，主修室内设计，获得 A 级优异生大学文凭，1979年成为英国设计师协会会员。",
+        "recommcase": [
+            {
+                "id": "11",
+                "pic_url": "http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170712/h1000w666-5965f3cdc87ad.jpg",
+                "title": "北京燕莎公寓"
+            },
+            {
+                "id": "22",
+                "pic_url": "http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170712/h1000w710-5965f3d8b15db.jpg",
+                "title": "北京燕莎公寓"
+            }
+        ]
+    },{
+        "id": 175,
+        "name": "梦也",
+        "avatar": "http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170712/h1000w1097-5965f239a6704.jpg",
+        "address": "北京",
+        "tag": "擅长：现代简约、北欧、地中海...",
+        "case_count": "100套",
+        "detail": "梁景华 (Patrick Leung)，1956年出生，加拿大藉华人，1978年毕业于香港理工大学设计系，主修室内设计，获得 A 级优异生大学文凭，1979年成为英国设计师协会会员。",
+        "recommcase": [
+            {
+                "id": "11",
+                "pic_url": "http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170712/h1000w666-5965f3cdc87ad.jpg",
+                "title": "北京燕莎公寓"
+            },
+            {
+                "id": "22",
+                "pic_url": "http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170712/h1000w710-5965f3d8b15db.jpg",
+                "title": "北京燕莎公寓"
+            }
+        ]
     }
 ]

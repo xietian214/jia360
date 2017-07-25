@@ -56,50 +56,84 @@ $(function(){
         hovbtn:true //悬浮展示左右按钮
     });
     //设计师列表-查看更多设计师
-    $('.moredesigner').on('click',function(){
-        alert("123");
-        function ajax(page){
-            var _url = window.location.href;
-            _url = _url.replace(/x\/index/,'x\/ajaxlist');
-            ajaxLock = true;
-            $.ajax({
-                url:'data.json',
-                type:"get",
-                dataType:"json",
-                data:{
-                    p : page
-                },
-                success:function(res){
-                    if(res){
-                        var dataList = res.list;
-                        if(dataList.length != 0){
-                            $.each(dataList, function( index, value ){
-                                var _url = 'http://m.jia360.com/cases/index/detail/id/'+value.id+'.html';
-                                var html = '';
-                                html += '<div class="case_box_list"><a href="';
-                                html += _url
-                                html += '"><p class="case_box_list_img"><img src="';
-                                html += value.pic_url
-                                html += '" /></p><p class="case_box_list_text">';
-                                html += value.title
-                                html += '</p></a></div>';
-                                $(html).appendTo($('#waterfall'));
-                            });
-                            $('#waterfall').waterfall();
-                            ajaxLock = false;
-                        }else{
-                            //加载到底
-                            ajaxLock = true;
-                            $('#prompt').css('display','block');
+    (function(){
+        var page = 2;
+        $('.moredesigner').on('click',function(){
+            //function ajax(page){
+                var _url = window.location.href;
+                _url = _url.replace(/x\/index/,'x\/ajaxlist');
+                ajaxLock = true;
+                $.ajax({
+                    url:'data1.json',
+                    type:"get",
+                    dataType:"json",
+                    data:{
+                        p : page,
+                        designer_place :$('#designer_place .active').attr('name'),
+                        design_style:$('#design_style .active').attr('name'),
+                        designer_price:$('#designer_price .active').attr('name')
+                    },
+                    success:function(res){
+                        if(res){
+                            console.log(res);
+                            var dataList = res;
+                            if(dataList.length != 0){
+                                $.each(dataList, function( index, value ){
+                                    var _url = 'http://www.jia360.com/designer/index/designer_detail/id/'+value.id+'.html';
+                                    var an_url = 'http://www.jia360.com/anli/'+value.id+'.html';
+                                    var html = '';
+                                    html += '<li class="clearfix"><a href="';
+                                    html += _url;
+                                    html += '" target="_blank" title="';
+                                    html += value.name;
+                                    html += '" class="imgbox"><img src="';
+                                    html += value.avatar;
+                                    html += '" /></a><div class="fontbox"><a href="';
+                                    html += _url;
+                                    html += '" target="_blank" class="name">';
+                                    html += value.name;
+                                    html += '<i class="rz">腾讯家居认证</i></a><div class="label">';
+                                    html += value.address;
+                                    html +='  |  ';
+                                    html += value.case_count;
+                                    html +='  ｜ ';
+                                    html += value.tag;
+                                    html += '</div><p class="describe">';
+                                    html += value.detail;
+                                    html += '</p><a href="javascript:;" class="yysjbtn" designerId="'
+                                    html += value.id;
+                                    html +='" >预约设计</a></div><a href="';
+                                    html += an_url;
+                                    html += '" target="_blank" title="';
+                                    html += value.recommcase[0].title;
+                                    html += '" class="imga"><img src="';
+                                    html += value.recommcase[0].pic_url;
+                                    html += '" /></a><a href="';
+                                    html += an_url;
+                                    html += '" target="_blank" title="';
+                                    html += value.recommcase[1].title;
+                                    html += '" class="imga"><img src="';
+                                    html += value.recommcase[1].pic_url;
+                                    html += '" /></a></li>';
+                                    $(html).appendTo($('.designerListli'));
+                                });
+                                page++;
+                                ajaxLock = false;
+                            }else{
+                                //加载到底
+                                ajaxLock = true;
+                                $('#prompt').css('display','block');
+                            }
                         }
+                    },
+                    error: function(e){
+                        console.warn("ajax error")
                     }
-                },
-                error: function(e){
-                    console.warn("ajax error")
-                }
-            })
-        }
-    })
+                })
+            //}
+        })
+    })()
+    
     
 })
 //设计师报名
