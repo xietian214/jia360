@@ -1,0 +1,26 @@
+[
+    {
+        "id": 111,
+        "name": "liubin",
+        "avatar": "头像地址",
+        "address": "地址",
+        "tag": "爱空间,hadjg",
+        "case_count": "案例个数",
+        "recommcase": {
+            "id": "11",
+            "pic_url": "案例封面图地址"
+        }
+    },
+    {
+        "id": 111,
+        "name": "liubin",
+        "avatar": "头像地址",
+        "address": "地址",
+        "tag": "爱空间,hadjg",
+        "case_count": "案例个数",
+        "recommcase": {
+            "id": "11",
+            "pic_url": "案例封面图地址"
+        }
+    }
+]

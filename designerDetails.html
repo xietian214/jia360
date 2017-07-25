@@ -11,6 +11,7 @@
     <link href="css/designerHome.css" rel="stylesheet"/>
     <script src="js/lib/jquery-1.8.3.min.js"></script>
     <script src="js/lib/jquery.cityselect_lk.js"></script>
+    <script src="js/lib/waterfall.js"></script>
     <script src="js/common.js"></script>
     <script src="js/caseHome.js"></script>
     <script src="js/designerHome.js"></script>
@@ -315,11 +316,11 @@ $(function(){
         html += '</p></a></div>';
         $(html).appendTo($('#waterfall'));
     });
-//_httpAjax();
+    _httpAjax();
 })
 window.onload=function(){ $('#waterfall').waterfall();}
 
 
 //报名
-designerSignUp();
+//designerSignUp();
 </script>
