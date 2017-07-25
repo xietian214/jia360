@@ -167,7 +167,7 @@
 .brandDet_banner .logobox .icont{color:#898989;font-size:16px;margin:25px 0 15px;display:block;}
 .brandDet_banner .logobox .icon a{margin-left:30px;display: block;width:40px;height:40px;float:left;}
 .brandDet_banner .logobox .icon a:first-child{margin:0;}
-.brandDet_banner .font{float:left;width:770px;margin:20px 0 0 50px;position: relative;padding-bottom:20px;}
+.brandDet_banner .font{float:left;width:770px;margin:20px 0 20px 50px;position: relative;padding-bottom:20px;}
 .brandDet_banner .font h6{font-size: 18px;color:#555;}
 .brandDet_banner .font div.fontdiv{font-size: 14px;color:#898989;margin-top:15px;line-height:25px;overflow: hidden;}
 .brandDet_banner .font span{position:absolute;right:0;bottom:0;color:#2888e2;font-size: 12px;cursor:pointer;background:#fff;}
