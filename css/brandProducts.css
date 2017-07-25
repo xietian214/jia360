@@ -154,10 +154,11 @@
 .brandList_content li .font{width:490px;position: absolute;left:350px;top:27px;}
 .brandList_content li .font a{font-size:18px;}
 .brandList_content li .font p{color:#898989;font-size:14px;line-height:20px;margin-top:10px;}
-.brandList_content li .more{width:200px;position: absolute;right: 0;top:35px;}
+.brandList_content li .more{width:200px;position: absolute;right: 0;top:35px;margin-right:50px;text-align:right;}
 .brandList_content li .more p{color:#f79f23;font-size:16px;padding-left:20px;background:url('../images/follow_icon.png') left center no-repeat;}
 .brandList_content li .more a{margin:20px 0 0 65px;font-size:12px;color:#acacac;display: block}
-.brandList_content li .more a i{font-family: '宋体';font-style: normal}
+.brandList_content li .more a:hover{color:#1479d7;}
+.brandList_content li .more a i{font-family: '宋体';font-style: normal;margin-left:3px;}
 
 /*brandDetail*/
 .brandDet_banner{background:#fff;width:100%;margin-bottom:30px;}

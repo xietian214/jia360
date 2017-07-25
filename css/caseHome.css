@@ -95,6 +95,8 @@
 .allBrandlist .listTabBox div{width:100%;line-height:25px;margin:10px 0;display: none;}
 .allBrandlist .listTabBox div.overfl{height:75px;overflow:hidden;overflow-y:auto;}
 .allBrandlist .listTabBox div a{margin:0 15px;font-size:14px;color:#555;float: left}
+.allBrandlist .listTabBox div a:hover{color:#1479d7;}
+
 /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
 .allBrandlist .listTabBox div::-webkit-scrollbar{
     width: 3px;
