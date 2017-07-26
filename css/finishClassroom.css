@@ -40,6 +40,7 @@
 
 .finish_ul{margin-left:-40px;margin-bottom:40px;}
 .finish_ul .f_li{width:580px;float: left;margin-left:40px;margin-top:20px;}
+.finish_ul .f_adv{width:1200px;float: left;margin-left:40px;margin-top:20px;}
 .finish_ul .f_li .liBox{width: 100%;}
 .finish_ul .f_li .liBox .pic{width:240px;height:182px;float: left;display: block;margin-top:20px;}
 .finish_ul .f_li .liBox ul{width:320px;height:170px;overflow:hidden;margin-top:20px;float: right;}
