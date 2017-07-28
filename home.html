@@ -1096,7 +1096,7 @@
             <!--设计师 start-->
             <div class="design">
                 <div class="tit">设计师<a href="#" class="more">more>></a></div>
-                <div class="wrapper02 clearfl">
+                <div class="wrapper02 clearfl" style="padding-top:18px;">
                     <div class="w850 fl">
                         <!-- 设计有态度 start-->
                         <div class="common-box01 sjytd fl">
@@ -1224,7 +1224,7 @@
             <!--装修公司 start-->
             <div class="zxgs">
                 <div class="tit">装修公司<a href="#" class="more">more>></a></div>
-                <div class="wrapper02" style="padding-top:30px;">
+                <div class="wrapper02" style="padding-top:18px;">
                     <div class="common-box01 zxhd">
                         <div class="common-tit"><span>装修活动</span><a href="#" class="more">更多</a></div>
                         <div class="common-cont">
@@ -1350,7 +1350,7 @@
             <!--找产品 start-->
             <div class="product">
                 <div class="tit">找产品<a href="#" class="more">more&gt;&gt;</a></div>
-                <div class="wrapper01">
+                <div class="wrapper01" style="padding-top:10px;">
                     <div class="product-nav">
                         <ul class="clearfl">
                             <li class="cur">家具</li>
@@ -2104,7 +2104,7 @@
                     </div>
                 </div>
                 <div class="wrapper01 clearfl">
-                    <div class="w810 fl">
+                    <div class="w850 fl">
                         <!--精选产品 start-->
                         <div class="common-box01 jxcp">
                             <div class="common-tit"><span>精选产品</span><a href="#" class="more">更多</a></div>
@@ -2183,192 +2183,98 @@
                             <!-- 评测导购 end-->
                         </div>
                     </div>
-                    <div class="w350 fr">
-                        <div class="sidebar-nav clearfl">
-                            <div class="sidebar-nav-left fl" id="sidebar_nav">
-                                <div class="cur">
-                                    <img src="images/sidebar_nav_icon01.png"/>
-
-                                    <p>建材</p>
+                    <script>
+                        $(function(){
+                            $('.sidebar-nav .tabNav span').on('mouseover',function(){
+                                var _index = $(this).index();
+                                $(this).addClass('hover').siblings().removeClass('hover');
+                                $('.sidebar-nav .txt .mainTxt').eq(_index).show().siblings().hide();
+                            })
+                        })
+                    </script>
+                     <div class="w300 fr">
+                            <div class="sidebar-nav">
+                                <div class="tabNav">
+                                    <p class="clearfix">
+                                        <span class="hover">建材</span>
+                                        <span>家具</span>
+                                    </p>
                                 </div>
-                                <div>
-                                    <img src="images/sidebar_nav_icon02.png"/>
-
-                                    <p>沙发</p>
-                                </div>
-                                <div>
-                                    <img src="images/sidebar_nav_icon03.png"/>
-
-                                    <p>软装</p>
-                                </div>
-                                <div>
-                                    <img src="images/sidebar_nav_icon04.png"/>
-
-                                    <p>家电</p>
-                                </div>
-                            </div>
-                            <div class="sidebar-nav-right fl">
-                                <div class="sidebar-nav-list">
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
+                                <div class="txt">
+                                    <div class="mainTxt" style="display: block;">
+                                        <div class="mainList">
+                                            <h5>卫浴</h5>
+                                            <ul class="clearfix">
+                                                <li>马桶</li>
+                                                <li>浴室柜</li>
+                                                <li>水龙头</li>
+                                                <li>浴缸</li>
+                                                <li>沐浴房</li>
+                                                <li>地漏</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mainList">
+                                            <h5>涂料</h5>
+                                            <ul class="clearfix">
+                                                <li>墙面漆</li>
+                                                <li>木器漆</li>
+                                                <li>金属漆</li>
+                                                <li>底漆</li>
+                                                <li>乳胶漆</li>
+                                                <li>水性漆</li>
+                                            </ul>
+                                        </div>
+                                        
                                     </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sidebar-nav-list">
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sidebar-nav-list">
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sidebar-nav-list">
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-nav-option">
-                                        <div>卫浴</div>
-                                        <ul class="clearfl">
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                            <li><a href="#">马桶</a></li>
-                                        </ul>
+                                    <div class="mainTxt">
+                                        <div class="mainList">
+                                            <h5>床</h5>
+                                            <ul class="clearfix">
+                                                <li>布艺床</li>
+                                                <li>皮艺床</li>
+                                                <li>铁艺床</li>
+                                                <li>实木床</li>
+                                                <li>折叠床</li>
+                                                <li>双层床</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mainList">
+                                            <h5>沙发</h5>
+                                            <ul class="clearfix">
+                                                <li>布艺沙发</li>
+                                                <li>皮质沙发</li>
+                                                <li>木质沙发</li>
+                                                <li>藤编沙发</li>
+                                                <li>懒人沙发</li>
+                                                <li>皮沙发</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mainList">
+                                            <h5>柜子</h5>
+                                            <ul class="clearfix">
+                                                <li>衣柜</li>
+                                                <li>展示柜</li>
+                                                <li>收纳柜</li>
+                                                <li>电视柜</li>
+                                                <li>书柜</li>
+                                                <li>酒柜</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mainList">
+                                            <h5>桌几</h5>
+                                            <ul class="clearfix">
+                                                <li>书桌</li>
+                                                <li>电脑桌</li>
+                                                <li>梳妆台</li>
+                                                <li>餐桌</li>
+                                                <li>茶几</li>
+                                                <li>玄关台</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
             <!--找产品 end-->
@@ -2424,22 +2330,20 @@
     .adverright,.adverleft{width:100px;height:250px;display:none;}
     .adverright .imga,.adverleft .imga{position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;}
     </style>
-    <div class="advertise_all">
+    <!--<div class="advertise_all">
         <object id="FlashID1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
             <param name="movie" value="flash/hec_all.swf" />
             <param name="quality" value="high" />
             <param name="swfversion" value="6.0.65.0" />
             <param name="wmode" value="transparent" />
-            <!--[if !IE]> Firefox -->
             <object id="FlashID1" data="flash/hec_all.swf" width="100%" height="100%">
                 <param name="quality" value="high" />
                 <param name="pluginurl" value="http://www.adobe.com/go/getflashplayer" />
                 <param name="wmode" value="transparent" />
             </object>
-            <!-- <![endif]-->
         </object>
         <div class="advertise_allclose" style=""><img src="images/adv_close.png" /></div>
-    </div>
+    </div>-->
     <!--底部广告-->
     <!--<div class="advertise_bottom">
         <div class="adver_bbox">

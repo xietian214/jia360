@@ -20,9 +20,10 @@
 .newsBox .tab_div{display: none;}
 .newsBox .tab_div.active{display: block;}
 .newsBox .tab_div li:hover{-webkit-box-shadow: 0px 0 15px #e5e5e5;-moz-box-shadow: 0px 0 15px #e5e5e5;-ms-box-shadow: 0px 0 15px #e5e5e5;-o-box-shadow: 0px 0 15px #e5e5e5;box-shadow: 0px 0 15px #e5e5e5;}
-.newsBox .tab_div li.li1{width:808px;height:122px;padding:20px;border:1px #f2f2f2 solid;margin-top:20px;display: block;}
-.newsBox .tab_div li.li1 a.fl{border:1px #f2f2f2 solid;width:160px;height:120px;}
-.newsBox .tab_div li.li1 .font{width:630px;float:right;padding-top:10px;}
+.newsBox .tab_div li.li1{width:808px;height:108px;padding:20px;border:1px #f2f2f2 solid;margin-top:20px;display: block;}
+.newsBox .tab_div li.li1 a.fl{border:1px #f2f2f2 solid;width:160px;height:106px;}
+.newsBox .tab_div li.li1 a.fl img{width:100%;height:100%;}
+.newsBox .tab_div li.li1 .font{width:630px;float:right;}
 .newsBox .tab_div li.li1 .font h6,.newsBox .tab_div li.li3 h6{font-size:18px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;margin:0;font-weight: normal;}
 .newsBox .tab_div li.li1 .font p,.newsBox .tab_div li.li3 p{color:#898989;font-size:12px;line-height: 24px;height:48px;overflow:hidden;text-indent: 2rem;margin-top:10px;}
 .newsBox .tab_div li.li1 .font span,.newsBox .tab_div li.li3 span{display: block;text-align: right;margin-top:10px;color:#898989;}
@@ -58,22 +59,23 @@
 .newsD_right{width:300px;padding:30px 20px;background:#fff;margin-top:30px;}
 .advBox{width:300px;height:188px;}
 .newsD_list{padding-bottom:30px;}
-.newsD_list dl{height:120px;margin-top:20px;}
-.newsD_list dl dd{width:150px;height: 120px;float: left;}
-.newsD_list dl dt{width:130px;height:120px;float: right;}
-.newsD_list dl dt a{display: block;width:100%;height:90px;overflow: hidden;line-height: 30px;font-size:16px;}
-.newsD_list dl dt .see{background: url('../images/see_ico.png') left 12px no-repeat;padding-left:25px;padding-top:10px;}
+.newsD_list dl{margin-top:20px;}
+.newsD_list dl dd{width:150px;height: 100px;float: left;}
+.newsD_list dl dd img{width:100%;height:100%;}
+.newsD_list dl dt{width:130px;float: right;}
+.newsD_list dl dt a{display: block;width:100%;height:66px;overflow: hidden;line-height: 22px;font-size:14px;}
+.newsD_list dl dt .see{background: url('../images/see_ico.png') left 16px no-repeat;padding-left:20px;padding-top:12px;background-size:14px;}
 .newsD_botadver{padding:49px 0 40px 0;}
 
 /* newsList */
 .newsLleft{width:830px;margin-top:30px;}
-.newsListli{width:770px;background:#fff;padding:0 30px;}
-.newsListli li{width:100%;height:120px;padding:20px 0;display: block;border-top:1px #eee solid;}
+.newsListli{width:790px;background:#fff;padding:10px 20px;}
+.newsListli li{width:100%;height:130px;padding:19px 0;display: block;border-top:1px #eee solid;}
 .newsListli li:first-child{border:none;}
-.newsListli li a.fl{width:160px;height:120px;overflow:hidden;}
-.newsListli li a.fl img{max-width:100%;height:100%;}
-.newsListli li .font{width:585px;float:right;padding-top:10px;}
+.newsListli li a.fl{width:196px;height:130px;overflow:hidden;}
+.newsListli li a.fl img{width:100%;height:100%;}
+.newsListli li .font{width:574px;float:right;padding-top:10px;}
 .newsListli li .font h6,.newsBox .tab_div li.li3 h6{font-size:18px;white-space:nowrap; overflow:hidden;text-overflow:ellipsis;margin:0;font-weight: normal;}
 .newsListli li .font p,.newsBox .tab_div li.li3 p{color:#898989;font-size:14px;line-height: 24px;height:48px;overflow:hidden;margin-top:10px;}
 .newsListli li .font span,.newsBox .tab_div li.li3 span{display: block;text-align: right;margin-top:20px;color:#898989;}
-.newsloadMore{height:30px;line-height: 30px;width:100%;background:#fff;font-size:14px;color:#898989;text-align:center;margin-top:20px;cursor:pointer;}
+.newsloadMore{height:30px;line-height: 30px;width:100%;background:#fff;font-size:14px;color:#898989;text-align:center;border-top:1px #eee solid;cursor:pointer;}
