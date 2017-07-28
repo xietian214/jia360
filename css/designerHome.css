@@ -8,7 +8,7 @@
 .columnListbox ul{display: none;}
 .columnListbox ul.active{display: block}
 .columnListbox ul li{width:540px;position:relative;float:left;margin:0 0 20px 40px;}
-.columnListbox ul li .imgbox{width:540px;height:304px;}
+.columnListbox ul li .imgbox img{width:540px;height:302px;}
 .columnListbox ul li .fontbox{width:500px;height:65px;line-height: 65px;padding:0 20px;background:#fff;display: block;font-size:18px;color:#555;overflow:hidden;}
 .columnListbox ul li.cur .fontbox{box-shadow:0px 0px 10px #f2f2f2;}
 .columnListbox ul li .tuijianimg{position:absolute;left:0;top:0;z-index:1;}

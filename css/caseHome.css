@@ -73,7 +73,7 @@
 .caseDetBox .caseRight .shejishi{width:100%;}
 .caseDetBox .caseRight .shejishi dd{width:100%;height:120px;position: relative;border-bottom:1px #eee solid;}
 .caseDetBox .caseRight .shejishi dt{margin:20px;}
-.caseDetBox .caseRight .tx{width:80px;height:80px;border-radius: 80px;float: left;margin:20px 0 0 20px;}
+.caseDetBox .caseRight .tx{width:80px;height:80px;border-radius: 80px;overflow:hidden;float: left;margin:20px 0 0 20px;}
 .caseDetBox .caseRight .tx1{width:80px;height:40px;float: left;margin:40px 0 0 20px;}
 .caseDetBox .caseRight .name{float: left;margin-top:35px;}
 .caseDetBox .caseRight .namep{margin-left:20px;line-height: 25px;font-size:20px;}
