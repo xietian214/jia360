@@ -87,7 +87,7 @@
 .designerHome .comm02 ul li.li2{margin:0 27px;border-top:4px #ffc849 solid;}
 .designerHome .comm02 ul li.li3{border-top:4px #7bb8f1 solid;}
 .designerHome .comm02 ul li h3{width:315px;margin:20px auto 10px;line-height:35px;font-size:18px;font-weight:normal}
-.designerHome .comm02 ul li p{width:315px;margin:0 auto 10px;line-height:25px;color:#898989;font-size:14px;}
+.designerHome .comm02 ul li p{width:315px;margin:0 auto 10px;height:75px;overflow:hidden;line-height:25px;color:#898989;font-size:14px;}
 .designerHome .comm02 ul li .more{font-size:14px;color:#898989;margin-left:300px;}
 .designerHome .comm02 ul li .more i{font-style: normal;font-family: '宋体';}
 .designerHome .comm03{width:100%;margin-top:30px;position:relative;}
@@ -99,7 +99,7 @@
 .designerHome .comm03 .tabDiv{padding-top:25px;display: none;}
 .designerHome .comm03 .tabDiv.active{display: block;}
 .designerHome .comm03 .tabDiv a{width:300px;display:block;float:left;text-align:center;}
-.designerHome .comm03 .tabDiv a .tx{width:294px;height:238px;padding:3px 3px 1px;border-bottom:2px #b5b4b4 solid;}
+.designerHome .comm03 .tabDiv a .tx{width:294px;height:238px;padding:3px;}
 .designerHome .comm03 .tabDiv a:hover .tx{border:3px #2888e2 solid;padding:0;}
 .designerHome .comm03 .tabDiv a div{background:#fff;height:89px;width:100%;font-size:14px;color:#898989;}
 .designerHome .comm03 .tabDiv a:hover div{background:#2888e2;color:#fff;text-align:center;}
