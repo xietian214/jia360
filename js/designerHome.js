@@ -35,6 +35,13 @@ $(function(){
     _more($('.caseScreenbox .list1'));
     _more($('.caseScreenbox .list'));
 
+    //设计师列表，详情样式清除
+    (function(){
+        $('.designerListli p').each(function(){
+            $(this).attr('style','');
+        })
+    })()
+
     //设计师首页-设计师视野
     $('.comm04 .abox a').on('mouseenter',function(){
         $(this).find('div').stop().animate({top:0}, 500);
@@ -132,7 +139,32 @@ $(function(){
                 })
             //}
         })
-    })()
+        $('.designerListli p').each(function(){
+            $(this).attr('style','');
+        })
+    })();
+    //设计师详情页
+    (function(){
+        var desDHeight = $('.designerDmore').siblings('.describe').height();
+        var _flag = 0;
+        if(desDHeight >=75){
+            $('.designerDmore').siblings('.describe').css('height','75px');
+            $('.designerDmore span').on('click',function(){
+                if(_flag == 0){
+                    $('.designerDmore').siblings('.describe').css('height','auto');
+                    $('.designerDmore span').html('收起');
+                    _flag = 1;
+                }else{
+                    $('.designerDmore').siblings('.describe').css('height','75px');
+                    $('.designerDmore span').html('查看更多<i>&gt;&gt;</i>');
+                    _flag = 0;
+                }
+            })
+        }else{
+            $('.designerDmore').hide();
+        }
+       
+    })();
     
     
 })

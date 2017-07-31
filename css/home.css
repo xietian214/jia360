@@ -174,7 +174,7 @@
 .common-box01 .common-left03{float: left;width: 175px;height:95px;position: relative}
 .common-box01 .common-left03 img{width: 175px;height:95px; }
 .common-box01 .common-right03{float:left;margin-left:10px;width: 115px;color:#555555}
-.common-box01 .common-right03 a{font-size: 14px;line-height: 26px;}
+.common-box01 .common-right03 a{font-size: 12px;line-height: 26px;}
 .common-box01 .common-list03{}
 .common-box01 .common-list03 dd{overflow:hidden;white-space:nowrap;text-overflow: ellipsis;text-indent: 5px;
     background: url("../images/point_icon01.png") left center no-repeat}
