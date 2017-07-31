@@ -82,8 +82,8 @@
 .designerHome .comm01 .dv ul li{float: left;width:100px;}
 .designerHome .comm01 .dv a{float: left;}
 .designerHome .comm01 .dv a i{font-style: normal;font-family: '宋体';}
-.designerHome .comm02{width:100%;margin-top:30px;}
-.designerHome .comm02 .comm02-title{font-size:24px;color:#333;text-align:center;width:100%;height:80px;line-height:80px;margin-bottom:10px;font-weight: normal;}
+.designerHome .comm02{width:100%;margin-top:40px;}
+.designerHome .comm02 .comm02-title{font-size:24px;color:#333;text-align:center;width:100%;height:65px;line-height:65px;font-weight: normal;}
 .designerHome .comm02 ul li{width:380px;height:235px;float: left;border-radius:5px;border:1px #eee solid;border-top:4px #2888e2 solid;}
 .designerHome .comm02 ul li.li2{margin:0 27px;border-top:4px #ffc849 solid;}
 .designerHome .comm02 ul li.li3{border-top:4px #7bb8f1 solid;}
@@ -108,8 +108,10 @@
 .designerHome .comm03 .tabDiv a:hover div h6{color:#fff;}
 .designerHome .comm03 .tabDiv a.activ{width:590px;height:330px;}
 .designerHome .comm03 .tabDiv a.activ:first-child{margin-right:20px;}
-.designerHome .comm04{width:100%;margin-top:30px;position: relative;}
-.designerHome .comm04 h6{height:80px;line-height: 80px;text-align:center;width:100%;font-size:24px;color:#333;font-weight: normal;}
+.designerHome .comm04{width:100%;margin-top:40px;position: relative;}
+.designerHome .comm04 h6{width:100%;height:65px;line-height: 65px;text-align:center;width:100%;font-size:24px;color:#333;font-weight: normal;position: relative}
+.designerHome .comm04 h6 a{position: absolute;right: 0;top:0px;font-size: 16px;color: #898989;}
+.designerHome .comm04 h6 a i{font-style: normal;font-family: '宋体';}
 .designerHome .comm04 .abox{width:100%;}
 .designerHome .comm04 .abox .fl{width:480px;}
 .designerHome .comm04 .abox .fl a{display: block;width:480px;height:260px;position: relative;overflow:hidden;margin-bottom:20px;}
