@@ -25,7 +25,7 @@
 .designerListli li .fontbox .name{display: block;width:100%;height:30px;font-size:26px;color:#168eff;}
 .designerListli li .fontbox .name i{font-style: normal;padding-left:20px;margin-left:20px;background:url('../images/rz_icon.png') left center no-repeat;font-size:12px;}
 .designerListli li .fontbox .label{width:100%;height:30px;margin-top:10px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;color:#555;font-size:16px;}
-.designerListli li .fontbox .describe{width:100%;line-height:25px;color:#898989;height:75px;overflow:hidden;font-size:16px;}
+.designerListli li .fontbox .describe{width:100%;display:block;line-height:25px;color:#898989;height:75px;overflow:hidden;font-size:16px;}
 .designerListli li .fontbox .yysjbtn{display: none;margin-top:15px;font-size:16px;width:135px;height:35px;line-height:35px;text-align:center;color:#168eff;border:1px #168eff solid;border-radius:35px;}
 .moredesigner{width:1200px;margin:0 auto;height:60px;line-height:60px;cursor:pointer;background:#fff;color:#898989;font-size:16px;text-align: center;}
 .moredesigner i{font-style:normal;margin-left:10px;}
