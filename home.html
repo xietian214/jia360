@@ -141,7 +141,7 @@
 </div>
 <!--网页头部-->
 <div class="header home_header">
-    <div class="headerAdv" data-visible="1">
+    <!-- <div class="headerAdv" data-visible="1">
         <div class="headerbg advDown" style="background:url('images/home/advDown.jpg') center top no-repeat;"></div>
         <div class="headerbg advUp" style="background:url('images/home/advUp.jpg') center top no-repeat;"></div>
         <div class="headA"><a href=""></a></div>
@@ -151,7 +151,35 @@
         <div class="header-ad">
             <img src="images/home/guanggao01.png"/>
         </div>
+    </div> -->
+    <style>
+    /*首页华耐家居广告  */
+    .headerAdv0805{width:100%;height:480px;position: relative}
+    .headerAdv0805 a{width:220px;height:60px;display: block;position: absolute;left: 50%;margin-left:-110px;top:384px;}
+    .leftadv0805,.rightadv0805{width:60px;height:100%;position: fixed;left:0;top:0;background:#ead74d;z-index:999;}
+    .leftadv0805 span,.rightadv0805 span{display: block;width:100%;height:100%;}
+    .rightadv0805{left:auto;right:0;}
+    .sp0805,.sp08051{display: block;width:60px;height:30px;border-bottom:1px solid #ececec;background:#f7f7f7;position:absolute;left:0;top:-31px;z-index:1000;}
+    .sp08051{left:auto;right:0;}
+    .huanaiclose{width:1200px;margin:0 auto;position: relative;}
+    .huanaiclose .advertise_updown{right:-40px;bottom:-18px;}
+    .huanaiclose .allAdvClose{right:-59px;bottom:-18px;z-index:2;}
+    </style>
+    <div class="huanaiadv">
+        <div class="huanaiclose"><div class="advertise_updown">关闭</div><img src="images/advertise_tclose.png" class="allAdvClose" /></div>
+        <span class="sp0805"></span>
+        <span class="sp08051"></span>
+        <div class="headerAdv0805" style="background:url('images/home/huanaiadv.jpg') center top no-repeat;">
+            <a href="" target="_blank"></a>
+        </div>
+        <div class="leftadv0805"><span style="background:url('images/home/huanaiadvs.jpg') center bottom no-repeat;"></span></div>
+        <div class="rightadv0805"><span style="background:url('images/home/huanaiadvs.jpg') center bottom no-repeat;"></span></div>
     </div>
+    <script>
+        $('.huanaiadv .advertise_updown,.huanaiadv .allAdvClose').click(function(){
+            $('.huanaiadv').remove();
+        })
+    </script>
     <div class="w1200 clearfl">
         <div class="clearfl">
             <a href="http://www.jia360.com/"><img src="images/logo.png" class="logo"/></a>
@@ -2325,12 +2353,12 @@
         <a href="" target="_blank"><img src="images/home/adver01.jpeg"></a>
         <div class="advertise_allclose" style=""><img src="images/adv_close.png" /></div>
     </div> -->
-    <style>
+    <!--<style>
     .advertise_all{width:100%;height:100%;background:url('flash/rgba70.png') left top repeat;position:fixed;left:0;top:0;margin:0;padding:0;z-index:9999;}
     .adverright,.adverleft{width:100px;height:250px;display:none;}
     .adverright .imga,.adverleft .imga{position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;}
     </style>
-    <!--<div class="advertise_all">
+    <div class="advertise_all">
         <object id="FlashID1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
             <param name="movie" value="flash/hec_all.swf" />
             <param name="quality" value="high" />
@@ -2380,7 +2408,7 @@
         <a class="coupletclose" href="javascript:;"></a>
         <a href="" target="_blank"><img src="images/home/couplet_img.jpg"></a>
     </div>-->
-    <div class="adverleft">
+    <!--<div class="adverleft">
         <a href="" target="_blank" class="imga"></a>
         <a class="coupletclose" href="javascript:;"></a>
         <object id="FlashID2" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
@@ -2388,16 +2416,16 @@
             <param name="quality" value="high" />
             <param name="wmode" value="opaque" />
             <param name="swfversion" value="6.0.65.0" />
-            <!--[if !IE]> Firefox -->
+            [if !IE]> Firefox
             <object id="FlashID2" data="flash/left.swf" width="100%" height="100%">
                 <param name="quality" value="high" />
                 <param name="pluginurl" value="http://www.adobe.com/go/getflashplayer" />
                 <param name="wmode" value="transparent" />
             </object>
-            <!-- <![endif]-->
+            <![endif]
         </object>
-    </div>
-    <div class="adverright">
+    </div> -->
+    <!--<div class="adverright">
         <a href="" target="_blank" class="imga"></a>
         <a class="coupletclose" href="javascript:;"></a>
         <object id="FlashID3" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
@@ -2405,15 +2433,15 @@
             <param name="quality" value="high" />
             <param name="wmode" value="opaque" />
             <param name="swfversion" value="6.0.65.0" />
-            <!--[if !IE]> Firefox -->
+            [if !IE]> Firefox
             <object id="FlashID3" data="flash/right.swf" width="100%" height="100%">
                 <param name="quality" value="high" />
                 <param name="pluginurl" value="http://www.adobe.com/go/getflashplayer" />
                 <param name="wmode" value="transparent" />
             </object>
-            <!-- <![endif]-->
+            <![endif]
         </object>
-    </div>
+    </div> -->
 
     <div id="goUp"><a href="javascript:;" title="返回顶部" target="_self"></a></div>
 </div>
