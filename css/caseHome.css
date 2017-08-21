@@ -71,14 +71,16 @@
 .caseDetBox .deta_tit{width:790px;height:25px;line-height: 25px;position: absolute;left:20px;top:583px;z-index:9;font-size:18px;color:#555555;}
 
 .caseDetBox .caseRight .shejishi{width:100%;}
-.caseDetBox .caseRight .shejishi dd{width:100%;height:120px;position: relative;border-bottom:1px #eee solid;}
+.caseDetBox .caseRight .shejishi dd{width:100%;position: relative;border-bottom:1px #eee solid;}
 .caseDetBox .caseRight .shejishi dt{margin:20px;}
-.caseDetBox .caseRight .tx{width:80px;height:80px;border-radius: 80px;overflow:hidden;float: left;margin:20px 0 0 20px;}
-.caseDetBox .caseRight .tx1{width:80px;height:40px;float: left;margin:40px 0 0 20px;}
-.caseDetBox .caseRight .name{float: left;margin-top:35px;}
-.caseDetBox .caseRight .namep{margin-left:20px;line-height: 25px;font-size:20px;}
-.caseDetBox .caseRight .position{margin-left:16px;line-height: 25px;font-size:16px;}
-.caseDetBox .caseRight .position img{margin-left:10px;}
+.caseDetBox .caseRight .tx{width:100px;height:100px;border-radius: 80px;overflow:hidden;margin:26px auto 0;}
+.caseDetBox .caseRight .tx img{width:100px;height:100px;}
+.caseDetBox .caseRight .tx1{width:180px;height:90px;margin:26px auto 0;box-shadow:0 0 10px 3px #f5f5f5}
+.caseDetBox .caseRight .name{margin-top:19px;margin-bottom:25px;}
+.caseDetBox .caseRight .namep{line-height: 25px;font-size:20px;text-align: center;color:#565656;}
+.caseDetBox .caseRight .namep a{color:#565656;}
+.caseDetBox .caseRight .position{line-height: 25px;font-size:14px;text-align: center;color:#868686;}
+.caseDetBox .caseRight .position img{margin-left:10px;width:15px;}
 .caseDetBox .caseRight .shejishi dt p:first-child{color:#6f6f6f;font-size:16px;line-height: 30px;}
 .caseDetBox .caseRight .shejishi dt p{color:#8a8a8a;font-size:14px;line-height: 25px;overflow: hidden;}
 
