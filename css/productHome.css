@@ -157,7 +157,7 @@
 .addfontlist a:hover .p1{color:#1479d7;}
 .addfontlist a:hover .p2{color:#549fe4;}
 .addfontlist a .p1{font-size: 16px;color:#555;line-height: 30px;height:30px;overflow:hidden;}
-.addfontlist a .p2{font-size:14px;color:#ccc;line-height:20px;height:40px;overflow:hidden;}
+.addfontlist a .p2{font-size:14px;color:#999;line-height:20px;height:40px;overflow:hidden;}
 .addcommon02{margin-top:26px;}
 .productHome .common02 .titlelist .imgbox1{width:320px;height: 188px;float:left;overflow:hidden;}
 .productHome .common02 .titlelist .fontbox p.p1{height:33px;line-height: 33px;}

@@ -40,24 +40,47 @@ function playbox(){
                 obj.arrowRight.hide();
             };
             if (_obj.pagination) {
-                var mySwiper = new Swiper("."+_obj.className+" .swiper-container",{
-                    pagination: "."+_obj.className+" .pagination",
-                    paginationClickable: true,
-                    autoplay : 3000,
-                    speed:300,
-                    autoplayDisableOnInteraction: false , /*操作之后是否自动播放*/
-                    loop: true,
-                    noSwiping : true
-                });
+                if(!_obj.autoplay){
+                    var mySwiper = new Swiper("."+_obj.className+" .swiper-container",{
+                        pagination: "."+_obj.className+" .pagination",
+                        paginationClickable: true,
+                        autoplay : 3000,
+                        speed:300,
+                        autoplayDisableOnInteraction: false , /*操作之后是否自动播放*/
+                        loop: true,
+                        noSwiping : true
+                    });
+                }else{
+                    var mySwiper = new Swiper("."+_obj.className+" .swiper-container",{
+                        pagination: "."+_obj.className+" .pagination",
+                        paginationClickable: true,
+                        speed:300,
+                        autoplayDisableOnInteraction: false , /*操作之后是否自动播放*/
+                        loop: true,
+                        noSwiping : true
+                    });
+                }
+                
             }else{
-                var mySwiper = new Swiper("."+_obj.className+" .swiper-container",{
-                    paginationClickable: true,
-                    autoplay : 3000,
-                    speed:300,
-                    autoplayDisableOnInteraction: false , /*操作之后是否自动播放*/
-                    loop: true,
-                    noSwiping : true
-                });
+                if (!_obj.autoplay) {
+                    var mySwiper = new Swiper("."+_obj.className+" .swiper-container",{
+                        paginationClickable: true,
+                        autoplay : 3000,
+                        speed:300,
+                        autoplayDisableOnInteraction: false , /*操作之后是否自动播放*/
+                        loop: true,
+                        noSwiping : true
+                    });
+                }else{
+                    var mySwiper = new Swiper("."+_obj.className+" .swiper-container",{
+                        paginationClickable: true,
+                        speed:300,
+                        autoplayDisableOnInteraction: false , /*操作之后是否自动播放*/
+                        loop: true,
+                        noSwiping : true
+                    });
+                };
+                
             };
             obj.arrowLeft.on('click', function(e){
                 e.preventDefault()
