@@ -96,9 +96,9 @@
 .productHome .common06 .tab_box{height:617px;overflow: hidden;}
 .productHome .common06 .tab_box ul{display: none;overflow:hidden;padding-top:5px;}
 .productHome .common06 .tab_box ul.active{display: block;}
-.productHome .common06 .tab_box ul li{width:848px;height:116px;padding:10px 0;border:1px #eee solid;margin-top:15px;overflow:hidden;}
-.productHome .common06 .tab_box ul li .pic{width:160px;height:116px;line-height:116px;margin:0 10px;border:1px #f2f2f2 solid;text-align: center;vertical-align: middle;}
-.productHome .common06 .tab_box ul li .pic img{vertical-align: middle;}
+.productHome .common06 .tab_box ul li{width:848px;height:106px;padding:10px 0;border:1px #eee solid;margin-top:15px;overflow:hidden;}
+.productHome .common06 .tab_box ul li .pic{width:160px;height:106px;margin:0 10px;border:1px #f2f2f2 solid;text-align: center;vertical-align: middle;}
+.productHome .common06 .tab_box ul li .pic img{vertical-align: middle;width:160px;height:106px;}
 .productHome .common06 .tab_box ul li .font{width:655px;margin-right:10px;}
 .productHome .common06 .tab_box ul li .font .tit{font-size:18px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .productHome .common06 .tab_box ul li .font .des{font-size:12px;color:#898989;line-height: 25px;height:50px;text-indent: 2em;overflow: hidden;margin-top:10px;}
