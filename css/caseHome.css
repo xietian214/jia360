@@ -22,7 +22,8 @@
 .caseH_imgbox div{position: absolute;left:0;top:0;width:100%;height:100%;color:#fff;text-align:center;background:rgba(0,0,0,0.40);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);}
 .caseH_imgbox h6{font-size:30px;margin-top:60px;font-weight:normal;}
 .caseH_imgbox p{font-size:18px;margin-top:10px;}
-.caseScreenbox{width:100%;border:1px #ccc solid;margin:30px 0 20px;background:#fff;}
+.caseScreenbox{width:100%;border:1px #ececec solid;margin:30px 0 20px;background:#fff;}
+.caseScreenbox .list1:first-child,.caseScreenbox .list:first-child{border-top:none;}
 .caseScreenbox .list1,.caseScreenbox .list{border-top: 1px #eee solid;position: relative;background:url('../images/caseScreenboxbg.jpg') left top repeat-y;}
 .caseScreenbox .list1 .classify{display:block;width:95px;height:70px;line-height:70px;text-align:center;font-size: 14px;color:#898989;float: left;}
 .caseScreenbox .list1 .listUl{width:970px;padding-left:80px;float: left;height:70px;line-height:70px;overflow: hidden;position: relative;}
