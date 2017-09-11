@@ -6,7 +6,12 @@
             <a href="javascript:void(0)" class="top-location">全国［切换］</a>
             <div class="tabcity" id="tabcity">
                 <div class="ht clearfix">
-                    <span class="rt">热门城市</span>
+                    <span class="xz">按首字母选择</span>
+                    <div class="zma"></div>
+                </div>
+                <div class="adrbox"></div>
+                <div class="ht clearfix">
+                    <span class="rt">全国地方站</span>
                     <div class="hta">
                         <a href="" target="_blank">全国</a>
                         <a href="" target="_blank">北京</a>
@@ -17,60 +22,36 @@
                         <a href="" target="_blank">成都</a>
                     </div>
                 </div>
-                <div class="ht clearfix">
-                    <span class="xz">按首字母选择</span>
-                    <div class="zma">
-                        <a href="">A</a>
-                        <a href="">B</a>
-                        <a href="" class="cur active">C</a>
-                        <a href="">D</a>
-                        <a href="">E</a>
-                        <a href="">F</a>
-                        <a href="">G</a>
-                        <a href="">H</a>
-                        <a href="">I</a>
-                        <a href="" class="cur">J</a>
-                        <a href="">K</a>
-                        <a href="">L</a>
-                        <a href="">M</a>
-                        <a href="" class="cur">N</a>
-                        <a href="">O</a>
-                        <a href="">P</a>
-                        <a href="">Q</a>
-                        <a href="">R</a>
-                        <a href="" class="cur">S</a>
-                        <a href="" class="cur">T</a>
-                        <a href="">U</a>
-                        <a href="">V</a>
-                        <a href="">W</a>
-                        <a href="" class="cur">X</a>
-                        <a href="">Y</a>
-                        <a href="">Z</a>
-                    </div>
-                </div>
-                <div class="adrbox">
-                    <div class="clearfix spbox active">
-                        <span><a href="" target="_blank">长沙</a></span>
-                        <span><a href="" target="_blank">重庆</a></span>
-                    </div>
-                    <div class="clearfix spbox">
-                        <span><a href="" target="_blank">江门</a></span>
-                    </div>
-                    <div class="clearfix spbox">
-                        <span><a href="" target="_blank">南昌</a></span>
-                    </div>
-                    <div class="clearfix spbox">
-                        <span><a href="" target="_blank">石家庄</a></span>
-                    </div>
-                    <div class="clearfix spbox">
-                        <span><a href="" target="_blank">天津</a></span>
-                    </div>
-                    <div class="clearfix spbox">
-                        <span><a href="" target="_blank">西安</a></span>
-                    </div>
-                </div>
             </div>
         </div>
+        <script>
+            $.ajax({
+                type: "GET",
+                url: "address.json",
+                dataType: "json",
+                success: function(data){
+                    for (var i in data){
+                        var _a = '<a href="javascript:;" class="cur">'+ i +'</a>';
+                        $('#tabcity').find('.zma').append(_a);
+                        var _zmbox = data[i];
+                        var _html = '';
+                        for (var j = 0; j < _zmbox.length; j++){
+                            var _span = '<span><a href="javascript:;">'+ _zmbox[j] +'</a></span>';
+                            _html += _span;
+                        }
+                        var _box = '<div class="clearfix spbox">'+_html+'</div>';
+                        $('#tabcity').find('.adrbox').append(_box);
+                    }
+                    $('#tabcity').find('.zma').find('a').eq(0).addClass('active');
+                    $('#tabcity').find('.adrbox').find('.spbox').eq(0).addClass('active');
+                },
+                error:function(){
+                    console.log('ajax error');
+                }
+            });
+
+
+        </script>
         <!--<div class="top-right">
             <a href="#" class="top-login">登录</a>
             <a href="#" class="top-regsiter">注册</a>
@@ -161,10 +142,18 @@
                 },150)
             });
 
-            $('#tabcity .cur').on('mouseenter',function(){
+            $('#tabcity').on('mouseenter','.cur',function(){
                 $(this).addClass('active').siblings().removeClass('active');
                 var _index = $('#tabcity .cur').index($(this));
                 $('#tabcity .spbox').removeClass('active').eq(_index).addClass('active');
+            })
+
+            $('#tabcity').on('click','.adrbox a',function(){
+                var _thiscity = $(this).html();
+                $('.top-location').html(_thiscity+' [切换]');
+                timer = setTimeout(function(){
+                    tabCity.fadeOut();
+                },150)
             })
 
             
