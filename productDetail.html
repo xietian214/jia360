@@ -11,6 +11,7 @@
     <script src="js/lib/jquery.cityselect_lk.js"></script>
     <script src="js/common.js"></script>
     <script src="js/brandProducts.js"></script>
+    <link href="css/newsHome.css" rel="stylesheet"/>
     <link href="css/brandProducts.css" rel="stylesheet"/>
     <title>腾讯家居_家居装修装饰时尚门户</title>
 </head>
@@ -41,12 +42,18 @@
         </div>
         <div class="fr font_box">
             <h6>工业风loft铁艺客厅沙发办公室休闲沙发组合定制－顾家家居独创匠艺作品</h6>
-            <div class="money">¥ 8，888元</div>
+            <div class="money">¥ 8，888元<i>(市场参考价格)</i></div>
             <span class="line"></span>
-            <div class="pinpai">品牌：顾家家居</div>
+            <div class="clearfix">
+                <div class="fl pinpai">品牌：顾家家居</div>
+                <div class="fl fenlei">分类：客厅沙发</div>
+            </div>
             <span class="line"></span>
-            <div class="fenlei">分类：客厅沙发</div>
-            <span class="line"></span>
+            <div class="biref_tit">品牌简介：</div>
+            <div class="biref_font">
+                顾家家居自创立以来，专业从事客餐厅及卧室家具产品的研究、开发、生产与销售，为全球家庭提供健康、舒适、环保的客餐厅及卧室家居产品。目前，顾家家居产品远销世界120余个国家和地区，在国内外拥有超过...     <a href="#" target="_blank">（更多详情）</a>
+            </div>
+            <span class="line1"></span>
             <div class="desc">想要了解更多产品信息，体验线下门店的优质服务，欢迎光临<a href="javascript:;" id="shop_Location" target="_blank">顾家家居店面</a>。</div>
             <span class="xiaoshou">产品销售平台</span>
             <div class="xiaoshoubox clearfix">
@@ -54,14 +61,14 @@
                 <a href="" target="_blank"><img src="images/tmLogo.png" /></a>
                 <a href="" target="_blank"><img src="images/tbLogo.png" /></a>
             </div>
-            <div class="Collection"><img src="images/Collection_icon.png" />立即收藏</div>
         </div>
     </div>
     <div class="w1200 clearfix proDet_bot">
-        <div class="left">
+        <div class="left" id="cal_left">
             <ul class="tabUl clearfix proDet_tabUl">
                 <li class="active">规则参数</li>
                 <li>品牌专卖店</li>
+                <li>品牌资讯</li>
             </ul>
             <div class="tabBox proDet_tabBox">
                 <div class="tabdiv" datnum="0">
@@ -89,7 +96,7 @@
                     </p>-->
                     <div class="upDown"><span>展开</span></div>
                 </div>
-                <div class="tabdiv active" datnum="0">
+                <div class="tabdiv" datnum="0">
                     <div class="clearfix pos_information">
                         <span>您当前所在城市<i>北京</i></span><span>共有店铺<i>22</i>家</span>
                         <div class="fr clearfix" style="margin:0;">
@@ -176,6 +183,27 @@
                     </ul>
                     <div class="upDown"><span>展开</span></div>
                 </div>
+                <div class="tabdiv add_zixun active" datnum="0">
+                    <ul class="newsListli">
+                        <li class="li">
+                            <a target="_blank" href="" title="" class="fl"><img src="http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170615/h400w300-5941ddd60580d.jpg" alt=""></a>
+                            <div class="font">
+                                <h6><a target="_blank" href="" title="">江西设计公益行——温泉完小图书室捐赠活动圆满举行</a></h6>
+                                <p>近日，由江西设计·深圳组织发起的爱心捐赠活动在江西白岭镇温泉完小圆满举行。本次活动由深圳市盛堂设计顾问有限公司创始人/设计总监、江西设计轮值会长盛思民，深圳市华可可设计工程有限公司创始人/总经理、江西...</p>
+                                <span>2017-06-15</span>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <a target="_blank" href="" title="" class="fl"><img src="http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170615/h400w300-5941ddd60580d.jpg" alt=""></a>
+                            <div class="font">
+                                <h6><a target="_blank" href="" title="">江西设计公益行——温泉完小图书室捐赠活动圆满举行</a></h6>
+                                <p>近日，由江西设计·深圳组织发起的爱心捐赠活动在江西白岭镇温泉完小圆满举行。本次活动由深圳市盛堂设计顾问有限公司创始人/设计总监、江西设计轮值会长盛思民，深圳市华可可设计工程有限公司创始人/总经理、江西...</p>
+                                <span>2017-06-15</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="upDown"><span>展开</span></div>
+                </div>
             </div>
             <div class="tuijian">
                 <div class="titlediv"> <span>热门推荐</span> <a href="" target="_blank">更多<i>&gt;&gt;</i></a></div>
@@ -203,7 +231,7 @@
                 </ul>
             </div>
         </div>
-        <div class="right">
+        <div class="right" id="cal_right">
             <div class="titlediv"> <span>热门商品</span> </div>
             <dl>
                 <dd><a href="" target="_blank" title=""><img alt="" src="images/brandProducts/pDet03.jpg" /></a></dd>

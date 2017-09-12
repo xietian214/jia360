@@ -28,22 +28,25 @@ $(function(){
         $(this).removeClass('hov');
     });*/
 
-    //产品详情
-    var sHeight = $('.proDet_bot .right').outerHeight()-$('.proDet_bot .tuijian').outerHeight()-155;
-    var rightHeight1 = $('.proDet_bot .right').outerHeight();
-    var outsHeight1 = $('.proDet_bot .left .tabdiv').eq(0).outerHeight()+50+20+388;
-    var outsHeight2 = $('.proDet_bot .left .tabdiv').eq(1).outerHeight()+50+20+388;
-    if(outsHeight1<=rightHeight1){
-        $('.proDet_bot .left .tabdiv').eq(0).find('.upDown').css('display','none');
-    }else{
-        $('.proDet_tabBox .tabdiv').eq(0).height(sHeight);
-    };
-    if(outsHeight2<=rightHeight1){
-        $('.proDet_bot .left .tabdiv').eq(1).find('.upDown').css('display','none');
-    }else{
-        $('.proDet_tabBox .tabdiv').eq(1).height(sHeight);
+    //产品详情点击展开收起
+    var cal_right = $('#cal_right').height();//右边高度
+    var cal_tuijian = $('#cal_left .tuijian').outerHeight(true);//推荐的高度
+    var cal_ul = $('.proDet_tabUl').outerHeight(true);//导航的高度
+    var sHeight = cal_right - cal_tuijian - cal_ul;
+    function det_updown(){
+        $('.proDet_bot .left .tabdiv').each(function(){
+            var _thisHei = $(this).height()+cal_ul+cal_tuijian;
+            if(_thisHei>cal_right){
+                $(this).height(sHeight);
+            }else{
+                $(this).find('.upDown').css('display','none');
+            }
+        });
     }
-    
+    det_updown();//当查询店面之后在执行一遍
+    $('.proDet_bot .left .tabdiv').eq(0).find('img').load(function(){
+        det_updown();
+    });
     $('.proDet_tabBox').on('click','.upDown',function(e){
         if($(e.target).parents('.tabdiv').attr('datnum')==0){//展开
             $(e.target).parents('.tabdiv').attr('datnum','1').height('auto');
@@ -53,6 +56,7 @@ $(function(){
             $(e.target).text('展开').parent('.upDown').removeClass('up');
         }
     });
+    //详情里的图片展示
     $('.proDet_top .s img').on('mouseover',function(){
         var _index = $(this).index();
         $(this).addClass('cur').siblings().removeClass('cur').parent().siblings('.l').find('img').eq(_index).addClass('cur').siblings().removeClass('cur');
