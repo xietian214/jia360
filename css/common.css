@@ -361,6 +361,10 @@ a:hover{color:#1479d7}
 .titlediv a{position:absolute;right:0;top:5px;font-size: 14px;color:#686868;}
 .titlediv a i{font-style: normal;font-family: '宋体';}
 .titlediv .slogo{right:auto;left:100px;top:0;}
+.titlediv1{width:100%;height:32px;line-height:22px;border-bottom:1px #2888e2 solid;position: relative;overflow:hidden;}
+.titlediv1 span{padding-left:11px;font-size:16px;color:#333;}
+.titlediv1 span:after{content:'';position: absolute;left:0;top:0;width:4px;height:22px;background:#2888e2}
+.titlediv1 a.more{position:absolute;right:0;top:5px;font-size: 14px;color:#686868;}
 .imgbox{overflow: hidden;position: relative;}
 .imgbox img{width:100%;height:100%;}
 .imgbox p{width:100%;height:36px;line-height:36px;position:absolute;bottom:0;left:0;background:rgba(0,0,0,0.5);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);font-size:16px;text-align:center;}

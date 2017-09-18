@@ -1,7 +1,25 @@
 $(function(){ 
     /*banner*/
     playbox({className:'Products_banner',hovbtn:true,arrow: false});
-    
+    //产品首页-搜索产品
+    $('.bp_con_02 .bp_form>div.clearfix .int p').on('click',function(){
+        if($(this).siblings('ul').is(":hidden")){
+            $(this).siblings('ul').show();
+        }else{
+            $(this).siblings('ul').hide();
+        }
+    });
+    $('.bp_con_02 .bp_form>div.clearfix .int').on('click','ul li',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $(this).parent('ul').siblings('p').html($(this).html());
+        $(this).parent('ul').hide();
+    });
+    $('.bp_con_02 .bp_form>div.clearfix .int').on('mouseenter','ul li',function(){
+        $(this).addClass('cur');
+    });
+    $('.bp_con_02 .bp_form>div.clearfix .int').on('mouseout','ul li',function(){
+        $(this).removeClass('cur');
+    });
     /*tab标签切换*/
     $(".tab_ul li").on("mouseover",function(ev){
         var _this = $(this);
@@ -13,6 +31,37 @@ $(function(){
         ev.stopPropagation();
     }).eq(0).trigger("mouseover");
     
+    // 首页tab标签切换顶部
+    $(".labul li").on("mouseover",function(ev){
+        var _this = $(this);
+        var index = _this.index();
+        _this.addClass("active").siblings().removeClass("active");
+        var left = _this.position().left + 15;
+        $(this).parent().siblings(".line").stop().animate({left:left},150)
+        $(this).parent().siblings(".labbox").find('.labdiv').eq(index).fadeIn().siblings().fadeOut();
+        ev.stopPropagation();
+    }).eq(0).trigger("mouseover");
+    //产品tab
+    $(".bp_con_03 .bp_ul li").on("mouseover",function(ev){
+        var _this = $(this);
+        var index = _this.index();
+        if(index == 1){
+            $('.bp_con_03 .slide-line').animate({'left':'658px'},500);
+        }else{
+            $('.bp_con_03 .slide-line').animate({'left':'492px'},500);
+        }
+        _this.addClass("active").siblings().removeClass("active");
+        var left = _this.position().left + 15;
+        $(this).parent().siblings(".line").stop().animate({left:left},150)
+        $(this).parent().siblings(".bp_list").find('ul').eq(index).show().siblings().hide();
+        ev.stopPropagation();
+    }).eq(0).trigger("mouseover");
+    //产品首页右侧logo
+    $('.bp_con_box .ilogo').hover(function(){
+        $(this).children('p').stop().animate({"top":"0px"},300);
+    },function(){
+        $(this).children('p').stop().animate({"top":"61px"},300);
+    })
     //鼠标悬浮出现阴影
     $('.liHover').hover(function(){
         $(this).addClass('box_hov');
