@@ -69,32 +69,57 @@ $(function(){
         $(this).removeClass('box_hov');
     });
 
-    //品牌列表鼠标悬浮
-    /*$('.produL_content,.tuijian').on('mouseenter','li',function(){
-        $(this).addClass('hov');
-    });
-    $('.produL_content,.tuijian').on('mouseleave','li',function(){
-        $(this).removeClass('hov');
-    });*/
-
     //产品详情点击展开收起
     var cal_right = $('#cal_right').height();//右边高度
     var cal_tuijian = $('#cal_left .tuijian').outerHeight(true);//推荐的高度
     var cal_ul = $('.proDet_tabUl').outerHeight(true);//导航的高度
     var sHeight = cal_right - cal_tuijian - cal_ul;
-    function det_updown(){
-        $('.proDet_bot .left .tabdiv').each(function(){
-            var _thisHei = $(this).height()+cal_ul+cal_tuijian;
-            if(_thisHei>cal_right){
-                $(this).height(sHeight);
-            }else{
-                $(this).find('.upDown').css('display','none');
-            }
-        });
-    }
-    det_updown();//当查询店面之后在执行一遍
-    $('.proDet_bot .left .tabdiv').eq(0).find('img').load(function(){
-        det_updown();
+    var _tabdiv0=$('.proDet_bot .left .tabdiv').get(0);
+    var _tabdiv1=$('.proDet_bot .left .tabdiv').get(1);
+    var _tabdiv2=$('.proDet_bot .left .tabdiv').get(2);
+    function OnLoadElement(e){
+        var img= e.getElementsByTagName("img");
+        var num=0;
+        if(img.length<=0){
+            return 1;
+        }
+        for(var i=0;i<img.length;i++){
+            (function(j){
+                if(!img[j].complete){
+                    img[j].onload=function(){
+                        num++;
+                        if(num==img.length){
+                            det_updown(e);
+                        }
+                    }
+                }else{
+                    num++;
+                    if(num==img.length){
+                        det_updown(e);
+                    }
+                }
+            })(i);
+        }
+    };
+    OnLoadElement(_tabdiv0);
+    det_updown(_tabdiv1);
+    det_updown(_tabdiv2);
+    function det_updown(e){
+        var _this = $(e);
+        var _thisHei = _this.height()+cal_ul+cal_tuijian;
+        if(_thisHei>=cal_right){
+            _this.height(sHeight);
+            _this.find('.upDown').css('display','block');
+            console.log("123");
+        }else{
+            _this.find('.upDown').css('display','none');
+            console.log("456")
+        }
+    };
+    $('#shopSeach').on('click',function(){
+        setTimeout(function() {
+            det_updown(_tabdiv1);
+        }, 500);
     });
     $('.proDet_tabBox').on('click','.upDown',function(e){
         if($(e.target).parents('.tabdiv').attr('datnum')==0){//展开
