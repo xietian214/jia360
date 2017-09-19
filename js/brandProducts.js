@@ -69,68 +69,8 @@ $(function(){
         $(this).removeClass('box_hov');
     });
 
-    //产品详情点击展开收起
-    var cal_right = $('#cal_right').height();//右边高度
-    var cal_tuijian = $('#cal_left .tuijian').outerHeight(true);//推荐的高度
-    var cal_ul = $('.proDet_tabUl').outerHeight(true);//导航的高度
-    var sHeight = cal_right - cal_tuijian - cal_ul;
-    var _tabdiv0=$('.proDet_bot .left .tabdiv').get(0);
-    var _tabdiv1=$('.proDet_bot .left .tabdiv').get(1);
-    var _tabdiv2=$('.proDet_bot .left .tabdiv').get(2);
-    function OnLoadElement(e){
-        var img= e.getElementsByTagName("img");
-        var num=0;
-        if(img.length<=0){
-            return 1;
-        }
-        for(var i=0;i<img.length;i++){
-            (function(j){
-                if(!img[j].complete){
-                    img[j].onload=function(){
-                        num++;
-                        if(num==img.length){
-                            det_updown(e);
-                        }
-                    }
-                }else{
-                    num++;
-                    if(num==img.length){
-                        det_updown(e);
-                    }
-                }
-            })(i);
-        }
-    };
-    OnLoadElement(_tabdiv0);
-    det_updown(_tabdiv1);
-    det_updown(_tabdiv2);
-    function det_updown(e){
-        var _this = $(e);
-        var _thisHei = _this.height()+cal_ul+cal_tuijian;
-        if(_thisHei>=cal_right){
-            _this.height(sHeight);
-            _this.find('.upDown').css('display','block');
-            console.log("123");
-        }else{
-            _this.find('.upDown').css('display','none');
-            console.log("456")
-        }
-    };
-    $('#shopSeach').on('click',function(){
-        setTimeout(function() {
-            det_updown(_tabdiv1);
-        }, 500);
-    });
-    $('.proDet_tabBox').on('click','.upDown',function(e){
-        if($(e.target).parents('.tabdiv').attr('datnum')==0){//展开
-            $(e.target).parents('.tabdiv').attr('datnum','1').height('auto');
-            $(e.target).text('收起').parent('.upDown').addClass('up');
-        }else{//合上 
-            $(e.target).parents('.tabdiv').attr('datnum','0').height(sHeight);
-            $(e.target).text('展开').parent('.upDown').removeClass('up');
-        }
-    });
-    //详情里的图片展示
+    
+    //产品详情里的图片展示
     $('.proDet_top .s img').on('mouseover',function(){
         var _index = $(this).index();
         $(this).addClass('cur').siblings().removeClass('cur').parent().siblings('.l').find('img').eq(_index).addClass('cur').siblings().removeClass('cur');
