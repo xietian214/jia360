@@ -1,0 +1,73 @@
+.seachBox{width:100%;height:100%;background:#f7f7f7}
+.seachBox .content{margin-top:20px;}
+.seachBox .content .w230{width:230px;float: left}
+.seachBox .content .leftBtn{width:230px;border:1px #ececec solid;margin-bottom:20px;}
+.seachBox .content .leftBtn li{width:100%;height:58px;line-height:58px;border-bottom:1px #ececec solid;background:#fff;text-align:center;font-size:18px;text-align:center;position: relative;}
+.seachBox .content .leftBtn li:last-child{border:0;}
+.seachBox .content .leftBtn li a{color:#555;}
+.seachBox .content .leftBtn li.active:after{content: '';width:4px;height:26px;border-radius:2px;background:#2888e2;position:absolute;left:19px;top:16px;}
+.seachBox .content .leftBtn li.active a{color:#2888e2}
+.seachBox .content .top10{width:100%;border:1px #ececec solid;margin-bottom:20px;background:#fff;}
+.seachBox .content .top10 h6{height:52px;line-height:52px;border-bottom:1px #ececec solid;font-size: 16px;font-weight: normal;background: url('../images/search_top10.png') 19px 20px no-repeat;padding-left:65px;}
+.seachBox .content .top10 h6 i{color:#de3518;font-size:18px;margin-left:20px;margin-right:10px;font-weight:bold;}
+.seachBox .content .top10 ul{padding:10px 0;background:url('../images/search_top10.png') 19px -30px no-repeat;}
+.seachBox .content .top10 ul li{margin-left:48px;margin-right:33px;height:31px;line-height: 31px;font-size:14px;}
+.seachBox .content .top10 ul li a{display: block;color:#555;}
+.seachBox .content .top10 ul li.u a{background: url('../images/search_top10.png') right -370px no-repeat;}
+.seachBox .content .top10 ul li.p a{background: url('../images/search_top10.png') right -425px no-repeat;}
+.seachBox .content .rightArticle{width:940px;border:1px #ececec solid;background:#fff;float:right;margin-bottom:20px;}
+.seachBox .content .rightArticle h6.tit{width:870px;height:40px;line-height: 40px;border-bottom: 1px #ccc dashed;font-size:12px;color:#555;font-weight: normal;margin:0 auto;}
+.seachBox .content .rightArticle h6.tit .fr{color:#898989;font-size:12px;}
+.seachBox .content .rightArticle h6.tit .fr i{color:#de3518;font-style: normal}
+.seachBox .content .rightArticle .line{width:870px;height:20px;background:#f7f7f7;margin:0 auto 10px;}
+.seachBox .content .more{width:100%;height: 30px;line-height: 30px;text-align:center;color:#898989;font-size:16px;cursor:pointer;}
+.seachBox .content ul li:last-child{border-bottom:0;}
+
+/* 文章 */
+.rightArticle .article ul{width:790px;background:#fff;padding:10px 20px;margin:0 auto;}
+.rightArticle .article ul li{width:100%;height:130px;padding:19px 0;display: block;border-top:1px #eee solid;}
+.rightArticle .article ul li:first-child{border:none;}
+.rightArticle .article ul li a.fl{width:196px;height:130px;overflow:hidden;}
+.rightArticle .article ul li a.fl img{max-width:100%;height:100%;}
+.rightArticle .article ul li .font{width:574px;float:right;padding-top:10px;}
+.rightArticle .article ul li .font h6,.newsBox .tab_div li.li3 h6{font-size:18px;white-space:nowrap; overflow:hidden;text-overflow:ellipsis;margin:0;font-weight: normal;}
+.rightArticle .article ul li .font p,.newsBox .tab_div li.li3 p{color:#898989;font-size:14px;line-height: 24px;height:48px;overflow:hidden;margin-top:10px;}
+.rightArticle .article ul li .font span,.newsBox .tab_div li.li3 span{display: block;text-align: right;margin-top:20px;color:#898989;}
+
+/* 品牌 */
+.rightArticle .brand ul li{width:795px;height:120px;border-bottom:1px #eee solid;margin:0 auto;position: relative;overflow:hidden;}
+.rightArticle .brand ul li .logo{width:122px;height:61px;position:absolute;left:0;top:20px;}
+.rightArticle .brand ul li .logo img{width:100%;height: 100%;}
+.rightArticle .brand ul li .name{width:120px;height:14px;overflow:hidden;line-height: 14px;color:#898989;font-size:14px;text-align:center;position:absolute;left:0;top:90px;}
+.rightArticle .brand ul li .font{width:637px;height:60px;line-height:20px;color:#898989;position:absolute;right:0;top:20px;font-size:12px;}
+.rightArticle .brand ul li .font a{color:#2888e2;position:absolute;right:0;bottom:0;}
+
+/* 产品 */
+.rightArticle .product ul{margin:20px 0 0 77px;}
+.rightArticle .product li{width:185px;float:left;margin:0 15px 20px 0;box-shadow: 0 0 20px #eee;}
+.rightArticle .product li .a1,.rightArticle .product li .a1 img{display: block;width:185px;height:185px;}
+.rightArticle .product li .a2{display: block;width:100%;height:30px;line-height:30px;margin-top:10px;text-align:center;overflow:hidden;font-size:16px;color:#555;}
+.rightArticle .product li span{display:block;color:#898989;font-size:12px;text-align:center;width:100%;height:20px;line-height: 20px;overflow: hidden}
+.rightArticle .product li a.ppspan{display:block;text-align:center;font-size:12px;height:34px;overflow:hidden;line-height:34px;border-top:1px #eee dashed;width:80%;margin:5px auto 0;}
+
+/* 图片 */
+.rightArticle .picture ul{width:805px;margin:20px auto;position: relative}
+.rightArticle .picture .case_box_list{width:185px;float: left;margin-right:16px;margin-bottom:16px;}
+.rightArticle .picture .case_box_list:nth-child(4n){margin-right: 0;}
+.rightArticle .picture .case_box_list a{display:block;}
+.rightArticle .picture .case_box_list_img{width:100%;}
+.rightArticle .picture .case_box_list_img img{width: 100%;padding-bottom:2px;}
+.rightArticle .picture .case_box_list_img img:last-child{padding:0;}
+.rightArticle .picture .case_box_list_text{width:153px;padding:10px 15px;border:1px #f2f2f2 solid;border-top:0;line-height: 30px;font-size:14px;background:#fff;}
+
+/* 设计师 */
+.rightArticle .describe li{}
+.rightArticle .designer li{width:790px;margin:0 auto;padding:20px 0;border-bottom:1px #eee solid;position:relative;}
+.rightArticle .designer li:last-child{border:0;}
+.rightArticle .designer li .imgbox{width:152px;height:152px;border-radius:152px;float:left;margin-top:10px;}
+.rightArticle .designer li .fontbox{width:603px;float:right;}
+
+.rightArticle .designer li .fontbox .name{display: block;width:100%;height:30px;font-size:26px;color:#2888e2;}
+.rightArticle .designer li .fontbox .name i{font-style: normal;padding-left:20px;margin-left:20px;background:url('../images/rz_icon.png') left center no-repeat;font-size:12px;}
+.rightArticle .designer li .fontbox .label{width:100%;height:30px;margin-top:10px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;color:#555;font-size:16px;}
+.rightArticle .designer li .fontbox .describe{width:100%;display:block;line-height:25px;color:#898989;height:75px;overflow:hidden;font-size:16px;}
