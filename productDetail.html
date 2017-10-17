@@ -8,12 +8,16 @@
     <!-- <link rel="icon" href="images/txjj_ico.ico"> -->
     <link href="css/common.css" rel="stylesheet"/>
     <script src="js/lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.imagezoom.min.js"></script>
     <script src="js/lib/jquery.cityselect_lk.js"></script>
     <script src="js/common.js"></script>
     <script src="js/brandProducts.js"></script>
     <link href="css/newsHome.css" rel="stylesheet"/>
     <link href="css/brandProducts.css" rel="stylesheet"/>
     <title>腾讯家居_家居装修装饰时尚门户</title>
+    <style>
+    
+    </style>
 </head>
 <body>
 <!--加载网页头部-->
@@ -25,21 +29,55 @@
 <div class="container greyBg">
     <div class="w1200 proDet_top clearfix">
         <div class="fl img_box">
-            <div class="l">
-                <img alt="" src="images/brandProducts/pro_li01.jpg" />
-                <img alt="" src="images/brandProducts/pro_li02.jpg" />
-                <img alt="" src="images/brandProducts/pro_li03.jpg" />
-                <img alt="" src="images/brandProducts/pro_li04.jpg" class="cur" />
-                <img alt="" src="images/brandProducts/pro_li05.jpg" />
+            <div class="tb-booth tb-pic tb-s440">
+                <a href="img/01.jpg">
+                    <img src="img/01_mid.jpg" alt="" rel="img/01.jpg" class="jqzoom" />
+                </a>
             </div>
-            <div class="s">
-                <img alt="" src="images/brandProducts/pro_li01.jpg"/>
-                <img alt="" src="images/brandProducts/pro_li02.jpg" />
-                <img alt="" src="images/brandProducts/pro_li03.jpg" />
-                <img alt="" src="images/brandProducts/pro_li04.jpg" class="cur" />
-                <img alt="" src="images/brandProducts/pro_li05.jpg" />
-            </div>
+            <ul class="tb-thumb" id="thumblist">
+                <li class="tb-selected">
+                    <div class="tb-pic tb-s80">
+                        <a href="#">
+                            <img src="img/01_small.jpg" mid="img/01_mid.jpg" big="img/01.jpg">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tb-pic tb-s80">
+                        <a href="#">
+                            <img src="img/02_small.jpg" mid="img/02_mid.jpg" big="img/02.jpg">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tb-pic tb-s80">
+                        <a href="#">
+                            <img src="img/03_small.jpg" mid="img/03_mid.jpg" big="img/03.jpg">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tb-pic tb-s80">
+                        <a href="#">
+                            <img src="img/04_small.jpg" mid="img/04_mid.jpg" big="img/04.jpg">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tb-pic tb-s80">
+                        <a href="#">
+                            <img src="img/05_small.jpg" mid="img/05_mid.jpg" big="img/05.jpg">
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
+        <script type="text/javascript">
+            $(document).ready(
+            function () {
+                
+            });
+        </script>
         <div class="fr font_box">
             <h6>工业风loft铁艺客厅沙发办公室休闲沙发组合定制－顾家家居独创匠艺作品</h6>
             <div class="money">¥ 8，888元<i>(市场参考价格)</i></div>
@@ -232,7 +270,7 @@
             </div>
         </div>
         <div class="right" id="cal_right">
-            <div class="titlediv"> <span>热门商品</span> </div>
+            <div class="titlediv"> <span>热门商品&gt;</span> </div>
             <dl>
                 <dd><a href="" target="_blank" title=""><img alt="" src="images/brandProducts/pDet03.jpg" /></a></dd>
                 <dt><a href="" target="_blank" title="">工业风整装转角沙发组合</a></dt>
@@ -352,5 +390,13 @@
             $(e.target).parents('.tabdiv').attr('datnum','0').height(sHeight);
             $(e.target).text('展开').parent('.upDown').removeClass('up');
         }
+    });
+
+    //放大镜
+    $(".jqzoom").imagezoom();
+    $("#thumblist li a").click(function () {
+        $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+        $(".jqzoom").attr('src', $(this).find("img").attr("mid"));
+        $(".jqzoom").attr('rel', $(this).find("img").attr("big"));
     });
 </script>

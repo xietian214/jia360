@@ -127,6 +127,49 @@ $(function(){
     _more($('.caseScreenbox .list'));
     /*案例详情去style*/
     $('.caseDetBox .caseRight dt p').removeAttr("style");
+
+    // 案例详情图片轮播
+    var dataImg = 0;
+    $('#cd_swiper .img_a img').load(function(){
+        $('#cd_swiper .img_a img').each(function(i){
+            $(this).attr('dataImg',i);
+            var _img = '<img class="showImg" src="'+$(this).attr('src')+'" />';
+            $("#enlargeImg .picbox").append(_img);
+        });
+    });
+    if($("#enlargeImg .picbox img").length == 1){
+        $("#enlargeImg span").hide();
+    };
+    $('#cd_swiper .img_a img').on('click',function(){
+        $('#enlargeImg .picbox').css({'width':$(window).width(),'height':$(window).height()});//图片绝对居中
+        var _imgnum = $(this).attr('dataImg');
+        $("#enlargeImg").show().children('.picbox').children('.showImg').eq(_imgnum).show().siblings().hide();
+    });
+    //左按钮
+    $('#enlargeImg').on('click','.leftbtn',function(){
+        if($('.showImg:visible').index() <= 1){
+            $('.showImg').eq($('.showImg').length-2).show().siblings().hide();
+        }else{
+            $('.showImg:visible').prev().show().siblings().hide();
+        }
+    });
+    //右按钮
+    $('#enlargeImg').on('click','.rightbtn',function(){
+        if($('.showImg:visible').index() >= $('.showImg').length-2){
+            $('.showImg').eq(1).show().siblings().hide();
+        }else{
+            $('.showImg:visible').next().show().siblings().hide();
+        }
+    });
+    //点击关闭
+    $('#enlargeImg').on('click','.picbox',function(e){
+        var $tar = $(e.target);
+        if($tar.attr('class') != 'showImg'){
+            $('#enlargeImg').hide();
+        }
+        e.stopPropagation();
+        return false;
+    });
 })
 
 /*案例首页调用案例*/
