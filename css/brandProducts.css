@@ -241,7 +241,8 @@ div.zoomMask {position: absolute;background: url("../images/mask.png") repeat sc
 .etalage,.etalage_small_thumbs li {float: left}
 .etalage_right {float: right}
 .etalage li {position: absolute}
-.etalage img {vertical-align: bottom;width: 80px;height: 80px}
+.etalage_wrap .etalage_small_thumbs li:last-child{margin-right:0;}
+.etalage img {vertical-align: bottom;width:78px;height:78px}
 .etalage .etalage_zoom_area, .etalage_zoom_area {background: #fff url('../images/loading.gif') center no-repeat;border: 1px solid #ddd;-webkit-box-shadow: 0 0 10px #ddd;-moz-box-shadow: 0 0 10px #ddd;box-shadow: 0 0 10px #ddd;display: none;z-index: 20;}
 .etalage_zoom_area div{overflow: hidden;}
 .etalage_zoom_area .etalage_zoom_img{position: absolute;}

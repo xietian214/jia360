@@ -129,7 +129,7 @@
 					}
 				}
 
-				$small = $('<li class="etalage_small_thumbs" style="top:'+top+'px; width:'+width+'px;"><ul class="clearfix" style="width: 485px;">'+html+'</ul></li>');
+				$small = $('<li class="etalage_small_thumbs" style="top:'+top+'px; width:440px;"><ul class="clearfix" style="width: 440px;">'+html+'</ul></li>');
 				$ul.append($small);
 
 				$small.delegate("li", "mouseenter", function(event){
