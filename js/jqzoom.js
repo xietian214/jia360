@@ -56,7 +56,7 @@
 
 			// 遮罩显示的区域
 			if(!$(".etalage_magnifier").length){
-				$etalage_magnifier = $('<li class="etalage_magnifier"><div class=""><img src="" /></div></li>');
+				$etalage_magnifier = $('<li class="etalage_magnifier"><div class=""></div></li>');
                 $etalage_magnifier_img = $etalage_magnifier.find('img');
 
                 $ul.append($etalage_magnifier);
@@ -193,7 +193,8 @@
 				//$etalage_zoom_img.attr("src", $(this).find('.etalage_big_image').attr('src'));
 				$etalage_zoom_area.css({"background-image":"none"}).stop().fadeIn(400);
 
-				$ul.find('.etalage_thumb_active').stop().animate({'opacity':0.5}, _option.speed*0.7);
+				// $ul.find('.etalage_thumb_active').stop().animate({'opacity':0.5}, _option.speed*0.7);
+				$ul.find('.etalage_thumb_active').css({'opacity':1});
 				$etalage_magnifier.stop().animate({'opacity':1}, _option.speed*0.7).show();
 			}).mouseleave(function(event){
 				$etalage_zoom_area.stop().fadeOut(400);

@@ -80,6 +80,31 @@
         </div>
     </div>
 </div>
+
+<div id="pageflip">
+    <a href="http://www.jia360.com" target="_blank"><img width="100" height="100" alt="" src="img/page_flip.png"></a> 
+    <div class="msg_block" style="background:url(img/subscribe.png) no-repeat right top;"></div>
+    <div class="jl_advclose"></div>
+</div>
+<script>
+    $(function(){
+        if($(window).width()<=1399){
+            $('#jl-advbox').hide();
+        };
+        $("#pageflip").hover(function(){
+            $("#pageflip img , .msg_block").stop().animate({width: '100px', height: '100px'}, 200,function(){
+                $('.jl_advclose').css({"opacity":"1"})
+            });
+        },function(){
+            $("#pageflip img").stop().animate({width: '50px', height: '50px'}, 220);
+            $(".msg_block").stop().animate({width: '50px', height: '50px'}, 200);
+            $('.jl_advclose').css({"opacity":"0"})
+        });
+        $('.jl_advclose').on('click',function(){
+            $('#pageflip').remove();
+        })
+    })
+</script>
 <!--网页头部-->
 <div class="header">
     <div class="w1200 clearfl">
