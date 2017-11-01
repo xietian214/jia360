@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- <link rel="icon" href="images/txjj_ico.ico"> -->
+    <link href="http://www.jia360.com/themes/simplebootx/Public/pc/css/common.css" rel="stylesheet" />
+    <link href="css/live.css" rel="stylesheet"/>
+    <script src="http://www.jia360.com/themes/simplebootx/Public/pc/js/lib/jquery-1.8.3.min.js"></script>
+    <script src="http://www.jia360.com/themes/simplebootx/Public/pc/js/common.js"></script>
+    <title>腾讯家居_家居装修装饰时尚门户</title>
+</head>
+
+<body>
+    <!--加载网页头部-->
+    <div id="loadtop"></div>
+    <!--网页主体内容-->
+    <div class="liveBox">
+        <div class="breadcrumb">
+            <div class="w1200"><a href="">新闻中心</a><i>&gt;</i><a href="">视频直播</a><i>&gt;</i><span>暖心中国”久盛地板第四届爱木周品牌发布会...  </span></div>
+        </div>
+        <div class="w1200 lived_cont clearfix">
+            <div class="vediobox">
+                <h6 class="title">
+                    <span class="fl">暖心中国”久盛地板第四届爱木周品牌发布会</span>
+                    <i class="fr">86886人参与</i>
+                </h6>
+                <div class="vedioid"></div>
+            </div>
+            <div class="foxbox">
+                <h6 class="title">
+                    <span>主持人</span>
+                </h6>
+                <ul id="chatbox" class="chatbox">
+                    <li> 
+                        <img src="http://www.jia360.com/public/images/live.png" class="tx">
+                        <h6 class="clearfix">
+                            <span>直播员</span>
+                            <i>57分钟前</i>
+                        </h6>
+                        <p>2017年11月1日8:30，2017世界木地板大会暨南太湖论坛将在浙江·湖州隆重召开。大会将在原有基础上进一步发挥优势、整合资源，汇聚国内外和行业内外的领袖人物和先锋观点、创新理念、前沿技术和业务资源，以思想交流和智慧分享的方式推动中国地板产业的创新驱动实践。腾讯家居将作为战略合作媒体，对现场进行全程视频直播，敬请期待！</p>
+                        <p><img src="http://tencentjiaju.img-cn-beijing.aliyuncs.com/ueditor/20171031/h550w309-59f82eaa0fd68.png" title="木地板大会主KV.png" alt="木地板大会主KV.png"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="w1200">
+            <div class="footer-list-wrapper clearfl">
+                <div class="footer-list01 fl">
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">招贤纳士</a></li>
+                        <li><a href="#">免责声明</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list02 fl">
+                    <ul>
+                        <li><a href="#">招商加盟</a></li>
+                        <li><a href="#">广告咨询</a></li>
+                        <li><a href="#">设计师入驻</a></li>
+                        <li><a href="#">装修公司入驻</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list03 fl">
+                    <ul>
+                        <li><a href="#">网站地图</a></li>
+                        <li><a href="#">友情链接</a></li>
+                        <li><a href="#">投稿</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list04 fl">
+                    <p class="footer-telphone t-c">010-53028857</p>
+
+                    <p class="footer-time t-c">周一至周五：9：00 - 18：00</p>
+
+                    <div class="footer-btnJoin">联系客服</div>
+                </div>
+                <div class="footer-list05 fr">
+                    <img src="images/code.png" />
+                </div>
+            </div>
+            <p class="copyright t-c">Copyright 2009-2016，版权所有深圳市聚业美家科技有限公司</p>
+        </div>
+    </div>
+    <!--页脚结束-->
+</body>
+</html>
+<script>
+    var timer = setInterval(function(){
+        $.ajax({
+            type: "POST",
+            url: "live.txt",
+            data: "",
+            success: function(msg){
+                $('#chatbox').html(msg);
+            }
+        });
+    },1000)
+</script>

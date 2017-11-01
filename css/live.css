@@ -1,0 +1,37 @@
+/*  */
+.liveBox{background:#f7f7f7;padding-bottom:50px;}
+.live_content{background:#fff;}
+.live_content .tit{width:1150px;height:50px;line-height:50px;border-bottom:1px #eee solid;margin-top:20px;padding-left:50px;font-size: 18px;color: #282828;font-weight: normal;background: url('../images/live.png') 20px 14px no-repeat;}
+.live_content .liveul{padding-bottom:20px;}
+.live_content .liveul li{width:275px;margin:20px 0 0 20px;float: left;}
+.live_content .liveul li .pic{width:275px;height:155px;background:red;position: relative;}
+.live_content .liveul li .pic img{width:275px;height: 155px;}
+.live_content .liveul li .pic p{width:255px;height:30px;line-height: 30px;padding:0 10px;background:rgba(0, 0, 0, 0.5);position: absolute;left:0;bottom: 0;color:#fff;font-size:12px;}
+.live_content .liveul li .pic p .peop{float: left;padding-left:15px;background: url('../images/live_people.png') left center no-repeat;}
+.live_content .liveul li .pic p .time{float: right;}
+.live_content .liveul li .font{width:100%;height:36px;overflow:hidden;margin-top:10px;line-height: 18px;font-size:14px;font-family: '微软雅黑'}
+.live_content .liveul li .font a{color:#555;}
+.loadmore{width:1160px;height:40px;line-height:40px;text-align:center;color:#898989;font-size:14px;border-top:1px #ececec solid;margin:0 auto;cursor: pointer}
+
+.lived_cont{width:1200px;background:#fff;height:555px;position: relative;margin-top:20px;}
+.lived_cont .vediobox{width:880px;position: absolute;left: 0;top:0;}
+.lived_cont .vediobox .title{width:100%;height:60px;line-height: 59px;font-weight: normal;}
+.lived_cont .vediobox .title span{display: block;width:700px;margin-left:20px;font-size:24px;color:#555;}
+.lived_cont .vediobox .title i{display: block;width:140px;margin-right:20px;text-align:right;font-style: normal;font-size:16px;color:#898989;}
+.lived_cont .vediobox .vedioid{width:880px;height:495px;background:red;}
+.lived_cont .foxbox{width:320px;height:100%;position: absolute;right: 0;top:0;}
+.lived_cont .foxbox .title{width:100%;height:60px;line-height: 60px;border-bottom:1px #ececec solid;font-weight: normal;position: relative;}
+.lived_cont .foxbox .title span{font-size:18px;color:#2888e2;border-bottom:3px #2888e2 solid;width:98px;position: absolute;bottom:0;left:36px;text-align:center;line-height:55px;}
+.lived_cont .foxbox .chatbox{width:320px;height:495px;overflow:hidden;overflow-y:scroll;}
+
+.chatbox li{list-style:none;padding:10px 0;border-bottom:1px #eee solid;position: relative;}
+.chatbox li:last-child{border:none;}
+.chatbox li h6{width:250px;margin-left:50px;height:30px;line-height: 30px;font-size:12px;color:#898989;font-weight: normal;}
+.chatbox li h6 span{float: left;}
+.chatbox li h6 i{font-style: normal;float: right;font-size:12px;color:#898989;}
+.chatbox li p{width:250px;margin-left:50px;line-height:23px;font-size: 14px;color:#000;}
+.chatbox li img{max-width:250px;display: block;margin:10px auto;}
+.chatbox li img.tx{width:30px;height:30px;position: absolute;left:10px;top:10px;margin:0;border-radius:30px;}
+.chatbox::-webkit-scrollbar{width: 5px;height: 5px;background-color: #fff;}
+.chatbox::-webkit-scrollbar-track{border-radius: 10px;background-color: #fff;}
+.chatbox::-webkit-scrollbar-thumb{height: 20px;border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);background-color: #848484;}
