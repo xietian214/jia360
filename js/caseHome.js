@@ -77,7 +77,7 @@ $(function(){
     /*案例首页筛选*/
     $('.caseScreenbox .list1').each(function(){
         var _aNum = $(this).children('.listUl').children('a').length;
-        _aNum <= 11 && $(this).children('.more').hide();
+        _aNum <= 8 && $(this).children('.more').hide();
     });
     $('.caseScreenbox .list').each(function(){
         var _aNum = $(this).children('.listUl').children().length;
@@ -101,14 +101,16 @@ $(function(){
                     })
                 };
             }else{
+                var _listUl_height;
                 if (_list.attr('class')=='clearfl list') {
                     _heig = 54;
                     _num = 10;
+                    _listUl_height = _heig*Math.ceil(($(this).prev('.listUl').children().length)/_num);
                 }else{
                     _heig = 70;
                     _num = 7;
+                    _listUl_height = _heig*Math.ceil(($(this).prev('.listUl').children().length-1)/_num);
                 };
-                var _listUl_height = _heig*Math.ceil(($(this).prev('.listUl').children().length-1)/_num);
                 if ($(this).hasClass('moreUp')) {
                     $(this).removeClass('moreUp').prev().stop(true,true).animate({height:_heig+'px'}, "300");
                 }else{
