@@ -109,6 +109,7 @@ $(function(){
                 upd = 1;
                 $('.advDown').css('display','none');
                 $('.advUp').css('display','block');
+                $('.headA a').css('width','1200px');
             });
             $('.adverleft,.adverright,.advertise_all').stop().animate({top:"278px"},1000);
         };
@@ -118,6 +119,7 @@ $(function(){
             $('.headA').stop().animate({height:"319px"},1000,function(){
                 $('.advertise_updown').html('收起');
                 upd = 0;
+                $('.headA a').css('width','auto');
             });
             $('.adverleft,.adverright,.advertise_all').stop().animate({top:"515px"},1000);
         }
@@ -144,7 +146,20 @@ $(function(){
         /*关闭顶部广告*/
         $('.allAdvClose').on('click',function(){
             $('.headerAdv').remove();
-        })
+        });
+        $('#_top').hide();
+        $(window).scroll(function(){
+            console.log("gunugnugn");
+            if($(window).scrollTop() >= $(window).height()){
+                $("#_top").fadeIn(500);
+            } else{
+                $("#_top").stop(true,true).fadeOut(500); 
+            }
+        });
+        $('.main_con').on('click','#_top',function(e){
+            e.preventDefault();
+            $('body').animate( {scrollTop: 0}, 500);
+        });
     })();
 
     // 买家具

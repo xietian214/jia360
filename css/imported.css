@@ -1,0 +1,21 @@
+
+/*硅藻泥模块*/
+.imported .snav_listbox{border:1px #eeeeee solid;width:1200px;position: relative;}
+.imported .snav_listbox span.sp{width:1px;height: 100%;position: absolute;right:0;top:0;background:#fff;}
+.imported .snav_listbox .lab_box{padding-bottom:15px;height:35px;overflow:hidden;}
+.imported .snav_listbox .lab_box label{width:99px;float:left;text-align: center;border-right:1px #eee solid;margin-top:15px;font-size: 14px;}
+.imported .snav_listbox .lab_box label:nth-child(12n),.snav_listbox .lab_box label:last-child{border-right:none;}
+.imported .snav_listbox .sl_up{width:1160px;margin:0 auto;border-top:1px #eee dashed;height:33px;line-height: 33px;position: relative;}
+.imported .snav_listbox .sl_up span{position: absolute;right:0;bottom:0;width:78px;height:30px;line-height:30px;text-align:center;color:#1479d7;background:url('../images/snav_morebg.png') 56px -31px no-repeat;font-size:14px;cursor: pointer;}
+.imported .snav_listbox .sl_more{width:74px;padding-left:25px;height:50px;line-height:50px;background:#fff;color:#1479d7;font-size:14px;position: absolute;right:0;top:0;text-align:left;cursor:pointer;}
+.imported .snav_listbox .sl_more span{display: block;background:url('../images/snav_morebg.png') 30px 22px no-repeat;}
+
+.imported_swiper{width:870px;height:424px;margin-top:20px;}
+.imported_swiper img{width:870px;height:424px;}
+.imtitle{width:100%;height:30px;border-bottom:2px #2888e2 solid;font-size:20px;color:#282828;line-height:20px;}
+.shishangqy{width: 300px;margin-top:20px;}
+.shishangul{width:300px;}
+.shishangul li{}
+.shishangul li .font{width:100%;height:37px;line-height: 37px;font-size:16px;}
+.shishangul li .pic{display: none;}
+.shishangul li.active .pic{display: block;}
