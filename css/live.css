@@ -2,7 +2,7 @@
 .liveBox{background:#f7f7f7;padding-bottom:50px;}
 .live_content{background:#fff;}
 .live_content .tit{width:1150px;height:50px;line-height:50px;border-bottom:1px #eee solid;margin-top:20px;padding-left:50px;font-size: 18px;color: #282828;font-weight: normal;background: url('../images/live.png') 20px 14px no-repeat;}
-.live_content .liveul{padding-bottom:20px;}
+.live_content .liveul{padding-bottom:20px;display: none;}
 .live_content .liveul li{width:275px;margin:20px 0 0 20px;float: left;}
 .live_content .liveul li .pic{width:275px;height:155px;background:red;position: relative;}
 .live_content .liveul li .pic img{width:275px;height: 155px;}
@@ -18,7 +18,7 @@
 .lived_cont .vediobox .title{width:100%;height:60px;line-height: 59px;font-weight: normal;}
 .lived_cont .vediobox .title span{display: block;width:700px;margin-left:20px;font-size:24px;color:#555;}
 .lived_cont .vediobox .title i{display: block;width:140px;margin-right:20px;text-align:right;font-style: normal;font-size:16px;color:#898989;}
-.lived_cont .vediobox .vedioid{width:880px;height:495px;background:red;}
+.lived_cont .vediobox .vedioid{width:880px;height:495px;position:relative;}
 .lived_cont .foxbox{width:320px;height:100%;position: absolute;right: 0;top:0;}
 .lived_cont .foxbox .title{width:100%;height:60px;line-height: 60px;border-bottom:1px #ececec solid;font-weight: normal;position: relative;}
 .lived_cont .foxbox .title span{font-size:18px;color:#2888e2;border-bottom:3px #2888e2 solid;width:98px;position: absolute;bottom:0;left:36px;text-align:center;line-height:55px;}
@@ -35,3 +35,61 @@
 .chatbox::-webkit-scrollbar{width: 5px;height: 5px;background-color: #fff;}
 .chatbox::-webkit-scrollbar-track{border-radius: 10px;background-color: #fff;}
 .chatbox::-webkit-scrollbar-thumb{height: 20px;border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);background-color: #848484;}
+
+.veditit{width:100%;height:100%;line-height:495px;background:rgba(0,0,0,0.5);text-align:center;position:absolute;left:0;top:0;font-size:20px;color:red;}
+
+.livebanner{width:1200px;height:470px;overflow:hidden;background:#f7f7f7;margin:20px auto 15px;}
+.w900{width:900px;}
+.w250{width:250px;margin-right:24px;}
+.w770{width: 770px;}
+.w870{width: 870px;}
+.w320{width:320px;}
+.livebanner .picbaner{width:900px;height:422px;}
+.livebanner .bannerfont{font-size:18px;display: block;width:660px;height:45px;line-height:45px;margin-left:10px;overflow: hidden;}
+.livebanner .bannerfont a{color:#282828;}
+.livebanner .hot_people{display:block;width:100px;height:50px;line-height:50px;background:url('../images/liv_people_icon.png') left center no-repeat;padding-left:25px;font-size:14px;color:#8a8a8a;box-sizing: border-box}
+.livebanner .gobtn{background:#2888e2;width:100px;height:30px;color:#fff;text-align: center;line-height:30px;margin:9px 16px 0 0;border-radius:5px;}
+.remenzhibo,.zhibolanmu,.zhiboyvgao,.xianchangzhiji,.zhanhuidongtai,.dakafangtan,.zhibopaihang{background:url('../images/live_icon.png') left 12px no-repeat;display: block;height:50px;line-height: 50px;padding-left:32px;font-size:20px;color:#282828;font-weight: bold;}
+.zhibolanmu{background-position: left -36px;}
+.zhiboyvgao{background-position: left -81px;}
+.xianchangzhiji{background-position: left -126px;}
+.zhanhuidongtai{background-position: left -174px;}
+.dakafangtan{background-position: left -225px;}
+.zhibopaihang{background-position: left -278px;}
+
+.livebanner .rdl{width:100%;}
+.livebanner .rdl dd img{width:250px;height:166px;}
+.livebanner .rdl dt{width:100%;height:39px;line-height:30px;overflow: hidden;font-size:14px;}
+.live_anav{width:100%;}
+.live_anav li{width:182px;height:95px;float: left;margin:0 10px 20px 0;}
+.zhiboyvgaoul{width:420px;height:210px;background:#f4f4f4;position: relative;padding-top:20px;box-sizing: border-box;}
+.zhiboyvgaoul::after{content: '';position: absolute;width:11px;height:152px;left:17px;top:28px;background:url('../images/live_icon.png') -7px -345px no-repeat;}
+.zhiboyvgaoul li{width:353px;height:50px;margin-left:40px;margin-bottom: 20px;}
+.zhiboyvgaoul li span{float: left;font-size:12px;color:#898989;}
+.zhiboyvgaoul li a{float: right;width:285px;height:40px;line-height: 20px;font-size:14px;margin-top:8px;overflow: hidden}
+.livenewsul{width:100%;margin:5px 0 10px;}
+.livenewsul li{width:270px;float: left;margin-right:20px;}
+.livenewsul li .pic{width:270px;height:152px;margin-bottom:6px;}
+.livenewsul li .number{color:#898989;font-size:12px;float: left;}
+.livenewsul li .notice{width:50px;height:18px;text-align:center;line-height:18px;text-align:center;background:#2a88df;float: right;color:#fff;font-size:12px;}
+.livenewsul li .Playback{width:50px;height:18px;text-align:center;line-height:18px;text-align:center;background:url('../images/live_icon.png') 0 -832px no-repeat;float: right;color:#fff;font-size:12px;}
+.livenewsul li .font{line-height: 24px;height:48px;display:block;font-size: 16px;margin:5px 0 0;text-align: justify;overflow: hidden}
+.live_spanmore{font-size:14px;color:#898989;font-weight: normal;float: right;margin-right:20px;}
+.live_adv{width:320px;height:200px;margin-bottom:20px;display: block}
+.live_adv img{width:320px;height:200px;}
+.live_ranking{width:100%;height:297px;background: url('../images/live_icon.png') 0 -525px no-repeat;}
+.live_ranking li{width:100%;height:28px;line-height: 28px;overflow:hidden;font-size:14px;box-sizing: border-box;padding-left:27px;}
+/* 添加列表里切换 */
+.live_listtab{width:1000px;margin:10px 0 0 30px;}
+.live_listtab li{float: left;border:1px #cecece solid;padding:0 18px;height:30px;line-height:30px;background:#fff;border-radius:5px;margin-right:12px;color:#282828;font-size:14px;cursor:pointer;}
+
+.live_listtab li.active{background:#2888e2;color:#fff;border:1px #2888e2 solid;}
+.liveswiper{width:900px;height:472px;position: relative}
+.swiper-container {width: 100%;height: 100%;}
+.swiper-container .swiper-slide{display: block;width:100%;height: 100%;position: relative;float:left;}
+.arrow-left {display:none;width:38px;height:80px;background:url('../images/product_indexleft_swip.png') center center no-repeat;background-size:100%;left:0;position: absolute;top: 50%;margin-top: -40px;z-index: 101;}
+.arrow-right {display:none;width:38px;height:80px;background:url('../images/product_indexright_swip.png') center center no-repeat;background-size:100%;left:0;  position: absolute;left:auto;right: 0;top: 50%;margin-top: -40px;z-index: 101;}
+.pagination {position: absolute;z-index: 20;right:0;bottom: 65px;width:100%;text-align:center;}
+.swiper-pagination-switch {display: inline-block;margin-right: 5px;cursor: pointer;width:8px;height:8px;border-radius:8px;border:2px #fff solid;background:none;opacity:1;}
+.swiper-visible-switch {background: #fff;}
+.swiper-active-switch {background: #fff;}
