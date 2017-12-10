@@ -19,8 +19,20 @@ $(function() {
     });
     $("#goUp").on("click", function() {
         $('body,html').animate({ scrollTop: 0 }, 500);
-    })
-
+    });
+    (function(){
+        if($('.mainbody')){
+            var addheight = 0;
+            $('.mainbody').siblings().each(function(){
+                if($(this).context.tagName == 'SCRIPT'){return false}
+                addheight = addheight + $(this).height();
+            });
+            var mainminheight = $(window).height() - addheight;
+            console.log(mainminheight);
+            $('.mainbody').css('minHeight',mainminheight);
+        }
+    })();
+    
 })
 function playbox(){
     for (var i = 0; i < playbox.arguments.length; i++) {

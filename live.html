@@ -16,7 +16,7 @@
 
 <body>
     <!--加载网页头部-->
-    <div id="loadtop"></div>
+    <!-- <div id="loadtop"></div> -->
     <!--网页主体内容-->
     <div class="mainbody liveBox">
         <div class="breadcrumb">
@@ -133,9 +133,6 @@
             <div class="loadmore">加载更多</div>
         </div>
     </div>
-    <!--页脚开始-->
-
-    <!--页脚结束-->
 </body>
 
 </html>
@@ -188,4 +185,16 @@
         var _page = $('.live_listdiv ul').eq($('.live_listtab .active').index()).children('input').val();
         ajax(_page,type);
     });
+    (function(){
+        if($('.mainbody')){
+            var addheight = 0;
+            $('.mainbody').siblings().each(function(){
+                if($(this).context.tagName == 'SCRIPT'){return false}
+                addheight = addheight + $(this).height();
+            });
+            var mainminheight = $(window).height() - addheight;
+            console.log(mainminheight);
+            $('.mainbody').css('minHeight',mainminheight);
+        }
+    })();
 </script>

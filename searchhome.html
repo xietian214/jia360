@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--网站编码格式，UTF-8 国际编码，GBK或 gb2312 中文编码-->
+	<meta charset="UTF-8">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>Document</title>
+	<style type="text/css">
+		*{margin:0;padding:0;font-family: "Microsoft YaHei";}
+		body{overflow-x: hidden;}
+		.fl{float:left;}
+		.fr{float:right;}
+		.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+		.clearfix{zoom: 1;}
+		img{border:0;}
+		ul,li{list-style: none;}
+		a{text-decoration: none;color:#555;}
+		.s-nav{width:100%;padding:11px 0 10px 20px;border-bottom: 1px solid #ececec;}
+		.s-nav ul li{float:left;padding-right:18px;}
+		.s-nav ul li a{font-size:14px;color:#555553;}
+		.s-top{width:640px;height:66px;margin:60px auto 0;}
+		.s-t-search{height:36px;margin-left:16px;border:1px solid #bebebe;}
+		.searchTxt{position:relative;width:471px;height:36px;line-height:36px;}
+		.searchTxt span{display:inline-block;color:#555;padding:0 8px 0 12px;cursor: pointer;}
+		.searchTxt #selectStatus{display:inline-block;color:#555;padding:0 8px 0 12px;width:70px;cursor: pointer;box-sizing: border-box}
+		.searchTxt .line{font-style:normal;height:16px;padding-left:16px;color: #bebebe;}
+		.searchTxt .search-input{float: left;border: 0;background: #fff;color: #333;width: 271px;height: 28px;margin: 0;outline: medium none;padding: 4px;}
+		.searchBtn span{position:absolute;right:0;top:-1px;width:94px;height:38px;line-height:38px;color:#fff;text-align:center;background: #2888e2;}
+		.searchTab{position: absolute;top: 36px;left: -1px;width:108px;border: 1px solid #bebebe;border-top: 0;background: #fff;z-index: 20;}
+		.searchMenu ul li{width:100%;height:36px;line-height:36px;text-indent: 15px;cursor: pointer;}
+		.searchMenu ul li a{display: block;}
+		.searchMenu ul li a:hover{background: #bebebe;color:#1899d8;}
+		.s-t-sBot span.hotSearch{color:#898989;padding:0 0 0 4px;}
+		.s-t-sBot .sLeft a{color:#e30614;padding-left:9px;}
+		.searchMain{width:980px;margin:55px auto 0;}
+		.searchTop,.searchBot{width: 980px;margin:0 auto 20px;}
+		.serachLeft,.serachRight{width:450px;padding:0 20px;}
+		.searchTitle{font-size:16px;color:#282828;padding:6px 0;border-bottom: 1px solid #ebebeb;}
+		.serachLeft span.s1,.serachRight span.s1{display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;background: #ccc;color:#fff;}
+		.searchCom li{margin-top:12px;overflow: hidden;}
+		.searchCom li:nth-child(1) span.s1{background: #2888e2;}
+		.searchCom li:nth-child(2) span.s1{background: #2888e2;}
+		.searchCom li:nth-child(3) span.s1{background: #2888e2;}
+		.searchCom li .hide{display:none;width:100%;margin:12px 0;}
+		.searchCom li .hide .hidePic{display:inline-block;margin-right:20px;width:160px;height:105px;}
+		.searchCom li .hide span.des{width:270px;font-size:14px;color:#898989;}
+		.picSize{width:150px;height:75px;padding:15px 4px;border:1px solid #e9e9e9;}
+		.picproduct{width:105px;height:105px;}
+		.searchBot .serachRight .searchCom li .hide span.des{width:330px;}
+	</style>
+</head>
+
+ <body>
+ 	<div class="searchBox">
+ 		<div class="s-nav">
+ 			<ul class="clearfix">
+ 				<li><a href="" target="_blank">首页</a></li>
+ 				<li><a href="" target="_blank">新闻中心</a></li>
+ 				<li><a href="" target="_blank">灵感案例</a></li>
+ 				<li><a href="" target="_blank">找设计师</a></li>
+ 				<li><a href="" target="_blank">找装修</a></li>
+ 				<li><a href="" target="_blank">找产品</a></li>
+ 				<li><a href="" target="_blank">装修课堂</a></li>
+ 			</ul>
+ 		</div>
+ 		<div class="s-top clearfix">
+ 			<a href="" class="fl"><img src="images/logo.png" width="148"></a>
+ 			<div class="s-t-search fr">
+ 				<div class="searchTxt">
+ 					<div class="s-t-sType fl">
+	 					<span id="selectStatus">设计师</span>
+	 					<img src="images/arrow.png" class="arrow">
+	 					<i class="line">|</i>
+	 					<div class="searchMenu">
+							<div style="display:none;" class="searchTab">
+								<ul>
+									<li class="">设计师</li>
+									<li>装修</li>
+									<li>产品</li>
+								</ul>
+							</div>
+						</div>
+	 				</div>
+	 				<input type="text" class="search-input" placeholder="">
+	 				<div class="searchBtn fl"><span>搜 索</span></div>
+	 				<div class="s-t-sBot clearfix">
+	 					<span class="hotSearch fl">热门搜索：</span>
+	 					<div class="sLeft fl">
+	 						<a href="">衣橱定制</a>
+	 						<a href="">顾家家居</a>
+	 						<a href="">联邦家居</a>
+	 						<a href="">爱依瑞斯</a>
+	 						<a href="">家居物联</a>
+	 					</div>
+	 				</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="searchMain">
+ 			<div class="searchTop clearfix">
+ 				<div class="serachLeft fl">
+ 					<div class="searchTitle">文章</div>
+ 					<div class="searchCom">
+ 						<ul>
+ 							<li>
+ 								<p>
+ 									<span class="s1">1</span>
+ 									<span class="s2"><a href="">定制家具市场前景看好 行业标准须尽快统一</a></span>
+ 								</p>
+ 								<div class="hide" style="display: block;">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">2</span>
+ 									<span class="s2"><a href="">整体家居业发展迅速朝整体衣柜企业顺势...</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">3</span>
+ 									<span class="s2"><a href="">创域家居海派家装展 让世界温柔地动了起来</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">4</span>
+ 									<span class="s2"><a href="">一家一世界 定制家居将迎“黄金十年”</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">5</span>
+ 									<span class="s2"><a href="">“双十一”成转型关键节点 家居企业战备升级</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">6</span>
+ 									<span class="s2"><a href="">从标准化到定制化 地板业迎来“定制”竞争力</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">7</span>
+ 									<span class="s2"><a href="">无人零售稳步落地 建材行业是否指日可待？</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">8</span>
+ 									<span class="s2"><a href="">家居物联网启动创博会开辟新蓝海</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">9</span>
+ 									<span class="s2"><a href="">美好新生活，家居新变革 从新出发</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">10</span>
+ 									<span class="s2"><a href="">从大数据看家具消费趋势 原创设计成重头戏</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 						</ul>
+ 					</div>
+ 				</div>
+ 				<div class="serachRight fl">
+ 					<div class="searchTitle">品牌</div>
+ 					<div class="searchCom">
+ 						<ul>
+ 							<li>
+ 								<p>
+ 									<span class="s1">1</span>
+ 									<span class="s2"><a href="">箭牌衣柜</a></span>
+ 								</p>
+ 								<div class="hide" style="display: block;">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">箭牌秉承“科学设计、精工细作、持续改善、客户满意”的经营理念，凭借时尚前沿的设计创先行业的研发技术、无可挑剔的卓越品质而屡获殊荣，成为中国整体家居行业的领导者以及高品质家居生活的倡导者</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">2</span>
+ 									<span class="s2"><a href="">联邦家居</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">3</span>
+ 									<span class="s2"><a href="">简一大理石</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">4</span>
+ 									<span class="s2"><a href="">顾家家居</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">5</span>
+ 									<span class="s2"><a href="">全友家居</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">6</span>
+ 									<span class="s2"><a href="">林式木业</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">7</span>
+ 									<span class="s2"><a href="">蒙娜丽莎瓷砖</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">8</span>
+ 									<span class="s2"><a href="">梦天木门</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">9</span>
+ 									<span class="s2"><a href="">特地瓷砖</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">10</span>
+ 									<span class="s2"><a href="">箭牌卫浴</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picSize">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 						</ul>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="searchBot clearfix">
+ 				<div class="serachRight fl">
+ 					<div class="searchTitle">产品</div>
+ 					<div class="searchCom">
+ 						<ul>
+ 							<li>
+ 								<p>
+ 									<span class="s1">1</span>
+ 									<span class="s2"><a href="">恒洁 智能盖板</a></span>
+ 								</p>
+ 								<div class="hide" style="display: block;">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">恒洁卫浴创立于1998年，是专注于整体卫浴产品研发、生产、销售、服务的大型综合性企业致力于以技术为消费者创造美好品质生活，连年荣膺整体卫浴领军企业10强、中国十大卫浴品牌等多项大... </span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">2</span>
+ 									<span class="s2"><a href="">联邦家居</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">3</span>
+ 									<span class="s2"><a href="">简一大理石</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">4</span>
+ 									<span class="s2"><a href="">顾家家居</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">5</span>
+ 									<span class="s2"><a href="">全友家居</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">6</span>
+ 									<span class="s2"><a href="">林式木业</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">7</span>
+ 									<span class="s2"><a href="">蒙娜丽莎瓷砖</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">8</span>
+ 									<span class="s2"><a href="">梦天木门</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">9</span>
+ 									<span class="s2"><a href="">特地瓷砖</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">10</span>
+ 									<span class="s2"><a href="">箭牌卫浴</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img2.jpg" class="picproduct">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 						</ul>
+ 					</div>
+ 				</div>
+ 				<div class="serachLeft fl">
+ 					<div class="searchTitle">图片</div>
+ 					<div class="searchCom">
+ 						<ul>
+ 							<li>
+ 								<p>
+ 									<span class="s1">1</span>
+ 									<span class="s2"><a href="">白色简约公寓</a></span>
+ 								</p>
+ 								<div class="hide" style="display: block;">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">住宅中心不一定都在客厅，现在越来越多家庭将厨房变成情感凝聚区域</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">2</span>
+ 									<span class="s2"><a href="">整体家居业发展迅速朝整体衣柜企业顺势...</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">3</span>
+ 									<span class="s2"><a href="">创域家居海派家装展 让世界温柔地动了起来</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">4</span>
+ 									<span class="s2"><a href="">一家一世界 定制家居将迎“黄金十年”</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">5</span>
+ 									<span class="s2"><a href="">“双十一”成转型关键节点 家居企业战备升级</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">6</span>
+ 									<span class="s2"><a href="">从标准化到定制化 地板业迎来“定制”竞争力</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">7</span>
+ 									<span class="s2"><a href="">无人零售稳步落地 建材行业是否指日可待？</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">8</span>
+ 									<span class="s2"><a href="">家居物联网启动创博会开辟新蓝海</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">9</span>
+ 									<span class="s2"><a href="">美好新生活，家居新变革 从新出发</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<p>
+ 									<span class="s1">10</span>
+ 									<span class="s2"><a href="">从大数据看家具消费趋势 原创设计成重头戏</a></span>
+ 								</p>
+ 								<div class="hide">
+ 									<a href="" class="fl">
+ 										<img src="images/home/img1.jpg" class="hidePic">
+ 									</a>
+ 									<span class="des fr">房价越来越高，人们对房屋空间利用率的要求也就越来越高。如今，成品家具已不能满足消费者对个性化的追求，橱柜、整体衣柜、书柜床头柜、衣帽间等定制家具受到了广大消费者的青睐。</span>
+ 								</div>
+ 							</li>
+ 						</ul>
+ 					</div>
+ 				</div>
+ 				
+ 			</div>
+ 		</div>
+ 	</div>
+ </body>
+ <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+ <script type="text/javascript">
+ 	$(document).ready(function(){
+ 		$('.s-t-sType').mouseenter(function(){
+ 			$('.searchTab').stop().slideDown();
+ 			$('.arrow').css("transform","rotate(180deg)");
+ 		});
+ 		$('.s-t-sType').mouseleave(function(){
+ 			$('.searchTab').stop().slideUp();
+ 			$('.arrow').css("transform","rotate(0)");
+ 		});
+ 		$(".searchTab li").click(function(){
+			$(".searchTab").show();
+		});
+ 		
+ 		var $p = $('.searchCom li p');
+ 		$p.mouseover(function(){
+ 			$(this).parent('li').children('.hide').show().parent().siblings().find('.hide').hide();
+		 });
+		
+		 $('.searchMenu').on('click','ul li',function(){
+			 $('#selectStatus').html($(this).html())
+		 })
+ 	});
+ </script>
+ </html>
