@@ -231,13 +231,15 @@ a:hover{color:#1479d7}
 
 /*首页分类导航*/
 .sort-nav{}
-.sort-nav .w1200>div{padding-top:20px;border-bottom: 1px solid #eeeeee}
-.sort-nav .sort-type{font-size:16px;width: 120px;text-indent: 30px;background-position: left top;background-repeat: no-repeat}
+.sort-nav .w1200>div{padding:10px 0;border-bottom: 1px solid #eeeeee}
+.sort-nav .sort-type{font-size:16px;width: 120px;text-indent: 30px;background-position: left top;background-repeat: no-repeat;margin-top:5px;color:#898989;}
 .sort-nav .ktzx{background-image: url(../images/picture_decoration_icon.png)}
 .sort-nav .jjjc{background-image: url(../images/house_decoration_icon.png)}
+.sort-nav .qdlm{background-image: url(../images/picture_decoration_icon2.png)}
 .sort-nav .sort-link{font-size:14px;width: 1080px;}
 .sort-nav .sort-link ul{width: 100%}
-.sort-nav .sort-link li{float: left;width: 10%;/*text-align: center;*/padding-bottom: 20px;}
+.sort-nav .sort-link li{float: left;width: 89px;line-height: 33px;}
+/* .sort-nav .add_two_ul .sort-link li{float: left;width: 8.33%;line-height: 33px;} */
 
 /*友情链接*/
 .friends-links{padding-bottom:40px;}
