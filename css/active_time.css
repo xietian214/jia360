@@ -1,0 +1,32 @@
+html,body{height:100%;}
+.active_nav ul{width:100%;border-bottom:1px #ececec solid;line-height:35px;height:35px;}
+.active_nav ul li{float:left;margin-left:20px;font-size:14px;}
+.active_nav ul li a{color:#555553;}
+.active_nav ul li a:hover{color:#00baff;}
+.active_top{height:105px;width:100%;border-bottom:1px #f5f5f5 solid;box-shadow: 0 5px 10px #f5f5f5;}
+.active_top .l_img{margin-top:35px;}
+.active_top .r_logo{margin-top:45px;margin-right:32px;}
+.active_top .time{margin-top:50px;font-size:16px;color:#555;line-height: 16px;}
+.active_cen{width:100%;position: relative;background:#fff;height:100%;padding-top:40px;}
+.active_leftnav{width:250px;height:100%;background:#f7f7f7;position:absolute;left:0;top:0;bottom:0;}
+.active_leftnav>div{width:165px;margin-top:78px;text-align:right;position:relative;border-right:1px #ababab solid;}
+.active_leftnav ul{padding:20px 0;}
+.active_leftnav ul li{height:50px;line-height: 50px;position: relative;padding-right:30px;box-sizing: border-box;font-size:18px;color:#282828;}
+.active_leftnav ul li a{color:#282828;padding-right: 38px;position: absolute;right: -6px;top: 0;z-index: 1;}
+.active_leftnav ul li.cur a{color:#2888e2}
+.active_leftnav ul li::after{content: '';position: absolute;right:-10px;top:17px;width:15px;height: 15px;background:url('../images/active_timebg.png') left -129px no-repeat;}
+.active_leftnav ul li.cur::after{content: '';position: absolute;right:-9px;top:17px;width:15px;height: 15px;background:url('../images/active_timebg.png') left -70px no-repeat;}
+.active_ul{width:100%}
+.active_ul li{width:100%;height:150px;border:1px #ddd solid;margin-top:20px;position: relative;}
+.active_ul li img{width:200px;height:150px;position: absolute;right: 0;top:0;}
+.active_ul li i{width:103px;height: 33px;line-height:33px;text-align:center;background: url('../images/active_timebg.png') left -379px no-repeat;display: block;color:#fff;font-style: normal;font-size:14px;}
+.active_ul li i span{font-size:20px;}
+.active_ul li i span a{margin:0 5px;color:#fff;}
+.active_ul li h6{width:400px;height:18px;line-height: 18px;font-size: 18px;overflow: hidden;color:#282828;font-weight: normal;position: absolute;left:45px;top:55px;}
+.active_ul li p{width:400px;height:40px;line-height: 20px;font-size: 14px;overflow: hidden;color:#555;font-weight: normal;position: absolute;left:45px;top:80px;}
+.w700{width:700px;margin:0 auto;}
+.all_btn{width:66px;height:31px;line-height:31px;border:1px #2888e2 solid;border-radius:2px;text-align: center;font-size: 16px;color:#2888e2;cursor: pointer;}
+.prev_btn,.next_btn,.no_prev_btn,.no_next_btn{width:28px;height:28px;background:url('../images/active_timebg.png') left -252px no-repeat;display: block;position: absolute;right:-14px;top:-27px;cursor: pointer;}
+.next_btn{background-position: left -188px;top:auto;bottom:-27px;}
+.no_prev_btn{background-position: left top;}
+.no_next_btn{background-position: left -318px;}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="家居专题-印象收藏，腾讯家居专题回顾时光轴。">
+    <meta name="keywords" content="家居时光轴,时光轴,家居专题">
+    <!-- <link rel="icon" href="images/txjj_ico.ico"> -->
+    <link href="http://www.jia360.com/themes/simplebootx/Public/pc/css/common.css" rel="stylesheet" />
+    <link href="css/active_time.css" rel="stylesheet"/>
+    <script src="http://m.jia360.com/public/js/jquery-1.8.3.min.js"></script>
+    <script src="http://www.jia360.com/themes/simplebootx/Public/pc/js/common.js"></script>
+    <title>家居时光轴_腾讯家居</title>
+</head>
+
+<body>
+    <div class="active_nav">
+        <ul>
+            <li><a href="http://www.jia360.com" target="_blank">首页</a></li>
+            <li><a href="http://www.jia360.com/new/" target="_blank">新闻中心</a></li>
+            <li><a href="http://www.jia360.com/anli/" target="_blank">灵感案例</a></li>
+            <li><a href="http://www.jia360.com/shejishi/" target="_blank">找设计师</a></li>
+            <li><a href="http://www.jia360.com/jump.html?http://www.yoju360.com/" target="_blank">找装修</a></li>
+            <li><a href="http://www.jia360.com/product/" target="_blank">找产品</a></li>
+            <li><a href="http://www.jia360.com/ketang/" target="_blank">装修课堂</a></li>
+            <li><a href="http://baiqi.jia360.com/" target="_blank">百企万亿</a></li>
+        </ul>
+    </div>
+    <div class="active_top">
+        <div class="w1200 clearfix">
+            <img class="fl l_img" src="images/active_topleft.png" />
+            <span class="fr time" id="page-time"></span>
+            <img class="fr r_logo" src="http://tencentjiaju.img-cn-beijing.aliyuncs.com/20170605/h205w50-5935037d4f786.png" width="92"  />
+        </div>
+    </div>
+    <div class="active_cen clearfix">
+        <div class="active_leftnav">
+            <div>
+                <span class="prev_btn no_prev_btn"></span>
+                <ul id="timeUl"></ul>
+                <span class="next_btn"></span>
+            </div>
+        </div>
+        <div class="w700">
+            <div class="all_btn">全部</div>
+            <ul class="active_ul"></ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    $(function(){
+
+
+
+        /*$.post("http://zhuanti.jia360.com/ztnew/Anhua/postSpecialList",{ "page": "1" },
+          function(data){
+          alert(data); 
+          console.log(data);
+        }, "json");*/
+
+       /* $.ajax({
+                url: "http://zhuanti.jia360.com/ztnew/Yaoqing/drawshop",
+                type:"post",
+                dataType:"json",
+                data:{
+                    prov:'天津',
+                    city:'河北区'
+                },
+                success:function(res){
+                    console.log('123');
+                },
+                error: function(e){
+                    alert("ajax error");
+                    console.warn("ajax error")
+                }
+            });
+*/
+        var page = 1;
+        ajax(page);
+        function ajax(page){
+            $.ajax({
+               url: "http://zhuanti.jia360.com/ztnew/Anhua/postSpecialList",
+                type:"get",
+                dataType:"jsonp",
+                data:{
+                    page : page
+                },
+                jsonp:'jsonp_callback',  
+                success:function(res){
+                   $('#page-time').html(res.date);
+                    if(res.sident == 1){
+                        $('.next_btn').addClass('no_next_btn');
+                    };
+                    var timeUl = $('#timeUl');
+                    var timeLi = '';
+                    var activeUl = $('.active_ul');
+                    var activeLi = '';
+                    var active = res.arrsp;
+                    var _md = 0;
+                    var _time = '';
+                    for(var a in active){
+                        var _value = active[a];
+                        var active_li = '';
+                        if(_time != _value.datetime){
+                            _time = _value.datetime;
+                            _md ++;
+                            var arrTime = _time.split('-');
+                            var itime = '<i><span>'+arrTime[2]+'<a>/</a></span>'+arrTime[1]+'月</i>';
+                            if(_value.year){
+                                timeLi += '<li>'+arrTime[0]+'年'+arrTime[1]+'月</a></li>';
+                            };
+                            timeLi += '<li class="timeli"><a href="#m'+_md+'">'+arrTime[1]+'月'+arrTime[2]+'日</a></li>';
+                            active_li = '<li id="m'+_md+'">';
+                        }else{
+                            active_li = '<li>';
+                        };
+                        activeLi += active_li + itime+'<a href="'+_value.url+'" target="_blank" title="'+_value.specialname+'"><img src="'+_value.pic_url+'@300w" alt="'+_value.specialname+'" /></a><a href="'+_value.url+'" target="_blank" title="'+_value.specialname+'"><h6>'+_value.specialname+'</h6></a><a href="'+_value.url+'" target="_blank" title="'+_value.specialname+'"><p>'+_value.description+'</p></a></li>';
+                    }
+                    timeUl.html(timeLi);
+                    activeUl.html(activeLi);
+
+                    $('#timeUl li.timeli').eq(0).addClass('cur');
+                    
+                    console.log('123');
+                },
+                error:function(XMLResponse){alert(XMLResponse.responseText)}
+            });
+        
+            $('#timeUl').on('click','li.timeli a',function(){
+                $(this).parent('li').addClass('cur').siblings().removeClass('cur');
+            })
+        };
+        $('.prev_btn').on('click',function(){
+            $('.no_next_btn').removeClass('no_next_btn');
+            if(page == 1){
+                $(this).addClass('no_prev_btn')
+                return false;
+            }else if(page == 2){
+                $(this).addClass('no_prev_btn')
+            };
+            page--;
+            ajax(page);
+            $(window).scrollTop(235);
+        });
+        $('.next_btn').on('click',function(){
+            $('.no_prev_btn').removeClass('no_prev_btn');
+            if($(this).hasClass('no_next_btn')){
+                return false;
+            };
+            page++;
+            ajax(page);
+            $(window).scrollTop(235);
+        });
+    });
+        
+
+    (function(){
+        $(window).scroll(function () {  
+            if ($(window).scrollTop() >=142 ) {  
+                 $('.active_leftnav').css('position','fixed');
+            }else{
+                $('.active_leftnav').css('position','absolute');
+            }
+        }); 
+    })();
+</script>

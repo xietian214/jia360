@@ -13,13 +13,13 @@
 .live_content .liveul li .font a{color:#555;}
 .loadmore{width:1160px;height:40px;line-height:40px;text-align:center;color:#898989;font-size:14px;border-top:1px #ececec solid;margin:0 auto;cursor: pointer}
 
-.lived_cont{width:1200px;background:#fff;height:555px;position: relative;margin-top:20px;}
-.lived_cont .vediobox{width:880px;position: absolute;left: 0;top:0;}
-.lived_cont .vediobox .title{width:100%;height:60px;line-height: 59px;font-weight: normal;}
-.lived_cont .vediobox .title span{display: block;width:700px;margin-left:20px;font-size:24px;color:#555;}
+.lived_cont{width:1200px;background:#fff;position: relative;margin-top:20px;}
+.lived_cont .vediobox{width:880px;float: left;}
+.lived_cont .vediobox .title{width:100%;line-height: 59px;font-weight: normal;}
+.lived_cont .vediobox .title span{display: block;width:700px;margin-left:20px;font-size:24px;color:#555;line-height: 35px;padding:13px 0;}
 .lived_cont .vediobox .title i{display: block;width:140px;margin-right:20px;text-align:right;font-style: normal;font-size:16px;color:#898989;}
-.lived_cont .vediobox .vedioid{width:880px;height:495px;position:relative;}
-.lived_cont .foxbox{width:320px;height:100%;position: absolute;right: 0;top:0;}
+.lived_cont .vediobox .vedioid{width:880px;height:495px;position:relative;background:red;}
+.lived_cont .foxbox{width:320px;height:100%;float: right;}
 .lived_cont .foxbox .title{width:100%;height:60px;line-height: 60px;border-bottom:1px #ececec solid;font-weight: normal;position: relative;}
 .lived_cont .foxbox .title span{font-size:18px;color:#2888e2;border-bottom:3px #2888e2 solid;width:98px;position: absolute;bottom:0;left:36px;text-align:center;line-height:55px;}
 .lived_cont .foxbox .chatbox{width:320px;height:495px;overflow:hidden;overflow-y:scroll;}
