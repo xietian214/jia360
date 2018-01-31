@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"><!--申明编码-->
+    <meta content="BoreyLee 475773037@qq.com" name="author">
+    <meta content="webkit" name="renderer"><!--浏览器内核默认为webkit-->
+    <meta content="yes" name="full-screen"><!-- UC强制全屏 -->
+    <meta content="app" name="x5-page-mode"><!-- QQ应用模式 -->
+    <meta content="true" name="x5-fullscreen"><!-- QQ强制全屏 -->
+    <meta content="750" name="MobileOptimized"><!-- 微软的老式浏览器 -->
+    <meta content="true" name="HandheldFriendly"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓-->
+    <meta content="application" name="browsermode"><!-- UC应用模式 -->
+    <meta content="portrait" name="x5-orientation"><!-- QQ强制竖屏 -->
+    <meta content="portrait" name="screen-orientation"><!-- uc强制竖屏 -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"><!-- 避免IE使用兼容模式 -->
+    <meta content="no" name="msapplication-tap-highlight"><!-- windows phone 点击无高光 -->
+    <meta content="yes" name="apple-mobile-web-app-capable"/><!--启用WebApp全屏模式，可隐藏地址栏，仅针对ios的safari-->
+    <meta content="telephone=no, email=no" name="format-detection"/><!--忽略页面中的数字识别为电话号码和邮箱地址-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/><!--隐藏状态栏/设置状态栏颜色，仅针对ios的safari-->
+    <meta content="width=750,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script src="http://m.jia360.com/public/js/jquery-2.1.js"></script>
+    <script src="js/lib/jquery.cityselect_lk.js"></script>
+	<style type="text/css">
+    </style>
+</head>
+
+<body>
+    <div class="fr shop_address"> 
+        <select class="prov sel" id="shopProv"></select> 
+        <select class="city sel" id="shopCity"></select> 
+    </div> 
+     
+</body>
+</html>
+<script>
+    var nowProvince = "河北"; 
+    var nowCity = "秦皇岛"; 
+    $(".shop_address").citySelect({ 
+        url:"js/lib/city.min_lk.js", 
+        prov:nowProvince, 
+        city:nowCity, 
+        required:true, 
+        nodata:"none" 
+    })
+</script>
