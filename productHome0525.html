@@ -582,9 +582,38 @@
     </div>
 </div>
 <!--页脚结束-->
+<!--全屏广告-->
+<style>
+.advertise_all{width:800px;height:400px;background:url('flash/rgba70.png') left top repeat;position:fixed;left:50%;top:50%;margin:-200px 0 0 -400px;padding:0;z-index:9999;}
+.advertise_all .flash_adv_a{display: block;width:100%;height:100%;background:none;position: absolute;left: 0;top:0;}
+</style>
+<!-- <div class="advertise_all" style="top:50%;margin:-200px 0 0 -400px;">
+    <a href="" target="_blank"><img src="images/home/adver01.jpeg"></a>
+    <div class="advertise_allclose"><img src="images/adv_close.png" /></div>
+</div> -->
+<div class="advertise_all">
+    <object id="FlashID1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
+        <param name="movie" value="flash/hec_all.swf" />
+        <param name="quality" value="high" />
+        <param name="swfversion" value="6.0.65.0" />
+        <param name="wmode" value="transparent" />
+        <object id="FlashID1" data="flash/hec_all.swf" width="100%" height="100%">
+            <param name="quality" value="high" />
+            <param name="pluginurl" value="http://www.adobe.com/go/getflashplayer" />
+            <param name="wmode" value="transparent" />
+        </object>
+    </object>
+    <a href="" target="_blank" class="flash_adv_a"></a>
+    <div class="advertise_allclose"><img src="images/adv_close.png" /></div>
+</div>
 </body>
 </html>
 <script>
     playbox({className:'kgplaybox',hovbtn:true});
     playbox({className:'hyplaybox',hovbtn:true});
+    $(function(){
+        $('.advertise_allclose').on('click',function(){
+            $(this).parents('.advertise_all').remove();
+        })
+    })
 </script>
