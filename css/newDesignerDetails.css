@@ -1,0 +1,26 @@
+.newDesignerD_container{background:#f7f7f7}
+.designerListli{background:#fff;padding:30px 40px;position:relative;margin:20px 0;}
+.designerListli .fontbox .label{width:100%;height:30px;margin-top:10px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;color:#555;font-size:16px;}
+.designerListli .imgbox{width:152px;height:152px;border-radius:152px;float:left;margin-top:10px;border:1px #ccc solid;}
+.designerListli .fontbox{width:740px;margin-left:50px;float: left;text-align: justify;}
+.designerListli .imga{width:200px;height:200px;overflow:hidden;float: right;margin-left:20px;}
+.designerListli .imga img{width:100%;height:100%;}
+.designerListli .fontbox .name{display: block;width:100%;height:30px;font-size:24px;color:#282828;}
+.designerListli .fontbox .label{width:100%;height:30px;margin-top:10px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;color:#555;font-size:16px;}
+.designerListli .fontbox .describe{width:100%;display:block;line-height:25px;color:#898989;overflow:hidden;font-size:16px;}
+.designerListli .fontbox .describe .tit{font-size:18px;color:#898989;margin-top:20px;font-weight: normal;}
+.designerListli .fontbox .describe .font{font-size:14px;color:#555;margin-top:10px;line-height:20px;}
+.designerListli .fontbox .yysjbtn{display: none;margin-top:15px;font-size:16px;width:135px;height:35px;line-height:35px;text-align:center;color:#168eff;border:1px #168eff solid;border-radius:35px;}
+.moredesigner{width:1200px;margin:0 auto;height:60px;line-height:60px;cursor:pointer;background:#fff;color:#898989;font-size:16px;text-align: center;}
+.moredesigner i{font-style:normal;margin-left:10px;}
+.designerDmore{width:100%;text-align:right;color:#168eff;margin-top:10px;}
+.designerDmore span{cursor: pointer;}
+.designerDmore span i{font-style: normal;font-family: '宋体'}
+
+.works_list{background:#fff;overflow:hidden;margin-bottom:50px;padding-bottom:20px;}
+.title_label{font-size:24px;color: #282828;font-weight: normal;margin:30px 0 10px 40px;}
+.title_label i{font-style: normal;color:#898989;font-size:18px;}
+.works_list ul{margin-left:30px;}
+.works_list ul li{width:272px;float: left;margin:10px 0 0 10px;}
+.works_list ul li img{width:272px;height:204px;}
+.works_list ul li .font{display: block;height:40px;line-height:40px;overflow: hidden;font-size: 16px;}
