@@ -98,3 +98,11 @@
 
 .im4_pic li span{width:90%;height:100%;color:#fff;height: 40px;overflow:hidden;line-height:20px;text-align:center;font-size:16px;margin: auto; position: absolute;top: 0; left: 0; bottom: 0; right: 0;}
 .im4_pic li a{width:100%;height:100%;position:absolute;left:0;top:0;}
+/*进口家居*/
+.imcont05{margin:50px 0 60px;}
+.diban_swiper,.diban_swiper img{width:574px;height:479px;position: relative;}
+.diban_imgbox{width:276px;margin-left:20px;}
+.diban_imgbox img{width:276px;height:226px;}
+.mt27{margin-top: 27px;}
+.imcont05 .shishangul li .font{height:55px;line-height: 55px;}
+.imcont05 .shishangul li .pic img{width:300px;height:167px;}
